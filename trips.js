@@ -11,9 +11,11 @@
   const info = keys => { const c = parse(keys['lisboa.trip']) || {}, s = parse(keys['lisboa.v1']) || {}; return { name: c.name || 'טיול לליסבון', start: s.start || c.start || '' }; };
   const live = () => Object.fromEntries(KEYS.map(k => [k, get(k)]));
   // כותבת קודם את רשימת הנסיעות (הגדולה). אם אין מקום בטלפון, לא נוגעים בשום דבר
-  function commit(next, keys) {
+  function commit(next, keys, note) {
     try { localStorage.setItem('lisboa.trips', JSON.stringify(next)); } catch { A.toast('אין מספיק מקום בטלפון לשמור את הנסיעה', 5000); return false; }
+    window.__tripSwitch = true;   // מכאן שום קוד לא כותב את הנסיעה הישנה בחזרה
     for (const k of KEYS) try { keys[k] == null ? localStorage.removeItem(k) : localStorage.setItem(k, keys[k]); } catch {}
+    try { if (note) sessionStorage.setItem('lisboa.tripMsg', note); } catch {}
     location.hash = '#home'; location.reload(); return true;
   }
   async function stamp() { for (const e of await A.journal.raw()) if (!e.trip) { e.trip = 't1'; await A.journal.put(e); } }
@@ -37,14 +39,14 @@
     if (id === T.cur) {   // מחיקת הנסיעה הנוכחית: עוברים לנסיעה השמורה האחרונה, ואם אין – מתחילים נסיעה נקייה
       await A.hooks.pushOff?.();
       const to = [...T.list].sort((a, b) => b.t - a.t)[0], S = parse(get('lisboa.v1')) || {}, G = parse(get('lisboa.group')) || {}, me = { ...(S.me || {}) }; delete me.hotelRef;
-      if (to) { const old = parse(to.keys['lisboa.v1']) || {}; old.me = { ...me, hotelRef: old.me?.hotelRef }; to.keys['lisboa.v1'] = JSON.stringify(old); return commit({ cur: to.id, list: T.list.filter(x => x.id !== to.id) }, to.keys); }
-      return commit({ cur: 't' + Date.now().toString(36), list: [] }, { 'lisboa.v1': JSON.stringify({ me, rate: S.rate }), 'lisboa.trip': null, 'lisboa.group': JSON.stringify({ id: G.id, name: G.name, av: G.av }) });
+      if (to) { const old = parse(to.keys['lisboa.v1']) || {}; old.me = { ...me, hotelRef: old.me?.hotelRef }; to.keys['lisboa.v1'] = JSON.stringify(old); return commit({ cur: to.id, list: T.list.filter(x => x.id !== to.id) }, to.keys, 'הנסיעה נמחקה. עברנו לנסיעה השמורה האחרונה'); }
+      return commit({ cur: 't' + Date.now().toString(36), list: [] }, { 'lisboa.v1': JSON.stringify({ me, rate: S.rate }), 'lisboa.trip': null, 'lisboa.group': JSON.stringify({ id: G.id, name: G.name, av: G.av }) }, 'הנסיעה נמחקה. נפתחה נסיעה חדשה ונקייה');
     }
     T.list = T.list.filter(x => x.id !== id); try { localStorage.setItem('lisboa.trips', JSON.stringify(T)); } catch {} render(); A.toast('הנסיעה נמחקה');
   }
   async function render() {
     const n = {}; for (const e of await A.journal.raw().catch(() => [])) { const k = e.trip || 't1'; n[k] = (n[k] || 0) + 1; }
-    const row = (id, i, cur) => `<div class="trip-row${cur ? ' cur' : ''}"><div><b>${esc(i.name)}</b><small>${[fmt(i.start), n[id] ? n[id] + ' רשומות ביומן' : 'יומן ריק'].filter(Boolean).join(' · ')}</small></div><div class="row">${cur ? '<span class="trip-now">הנסיעה הנוכחית</span>' : `<button class="btn sm" data-open="${id}" type="button">מעבר לנסיעה</button>`}<button class="link trip-del" data-del="${id}" type="button">${sure === id ? 'למחוק עם היומן? ללחוץ שוב' : 'מחיקה'}</button></div></div>`;
+    const row = (id, i, cur) => `<div class="trip-row${cur ? ' cur' : ''}"><div><b>${esc(i.name)}</b><small>${[fmt(i.start), n[id] ? n[id] + ' רשומות ביומן' : 'יומן ריק'].filter(Boolean).join(' · ')}</small></div><div class="row">${cur ? '<span class="trip-now">הנסיעה הנוכחית</span>' : `<button class="btn sm" data-open="${id}" type="button">מעבר לנסיעה</button>`}<button class="link trip-del" data-del="${id}" type="button">${sure === id ? 'למחוק עם היומן? ללחוץ שוב' : cur && !T.list.length ? 'מחיקה והתחלה מחדש' : 'מחיקה'}</button></div></div>`;
     $('#tripsList').innerHTML = row(T.cur, info(live()), true) + [...T.list].sort((a, b) => b.t - a.t).map(x => row(x.id, info(x.keys), false)).join('');
   }
   $('#tripsList').onclick = e => {
@@ -56,5 +58,6 @@
   $('#tripNewNo').onclick = () => $('#tripNewDlg').close();
   $('#tripNewYes').onclick = () => { $('#tripNewDlg').close(); startNew(); };
   $('#tripsCard').addEventListener('toggle', render); render();
+  try { const m = sessionStorage.getItem('lisboa.tripMsg'); if (m) { sessionStorage.removeItem('lisboa.tripMsg'); setTimeout(() => A.toast(m, 6000), 900); } } catch {}
   A.trips = { render, get cur() { return T.cur; } };
 })();

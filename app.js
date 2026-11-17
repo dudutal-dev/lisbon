@@ -14,7 +14,7 @@
   // מלון: מה שהוגדר לנסיעה. בטלפונים מלפני הגרסה הגנרית נשאר המלון שהיה מוגדר אז
   if (!S.hotel && TRIP.cfg.hotel) S.hotel = TRIP.cfg.hotel;
   if (!S.pack) S.pack = PACK_DEFAULT.map(t => ({ t, done: false }));
-  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch {} };
+  const save = () => { if (window.__tripSwitch) return; try { localStorage.setItem(KEY, JSON.stringify(S)); } catch {} };   // אחרי מחיקה או החלפה של נסיעה לא שומרים שוב את הנסיעה הישנה
 
   let me = null;                  // {lat,lng,acc}
   let ui = { cat: 'all', sort: 'rec', q: '', mapCat: 'all', day: 0 };
@@ -474,7 +474,7 @@
   })();
 
   // ───── עדכון אוטומטי: בודקים אם יש גרסה חדשה באתר, ואם כן טוענים אותה ─────
-  const VERSION = 11;
+  const VERSION = 12;
   async function checkUpdate() {
     if (location.protocol !== 'https:' || !navigator.onLine) return;
     try {

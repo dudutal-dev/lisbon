@@ -7,7 +7,7 @@
   const blank = () => ({ code: '', name: '', id: Math.random().toString(36).slice(2, 10), share: false, msgs: [], members: {}, favs: {}, last: '' });
   let G = blank();
   try { G = { ...G, ...JSON.parse(localStorage.getItem(GK) || '{}') }; } catch {}
-  const save = () => { try { localStorage.setItem(GK, JSON.stringify(G)); } catch {} };
+  const save = () => { if (window.__tripSwitch) return; try { localStorage.setItem(GK, JSON.stringify(G)); } catch {} };
   let key = null, topic = '', ntopic = '', es = null, retry = null, unread = 0, online = false;
 
   // ───── הצפנה ─────

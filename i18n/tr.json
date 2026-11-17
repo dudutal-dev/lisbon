@@ -2595,6 +2595,14 @@
   "en": "The trip was deleted",
   "es": "El viaje se eliminó"
  },
+ "הנסיעה נמחקה. נפתחה נסיעה חדשה ונקייה": {
+  "en": "Trip deleted. A new, clean trip has been opened",
+  "es": "Viaje eliminado. Se ha abierto un viaje nuevo y limpio"
+ },
+ "הנסיעה נמחקה. עברנו לנסיעה השמורה האחרונה": {
+  "en": "Trip deleted. Switched to the last saved trip",
+  "es": "Viaje eliminado. Hemos pasado al último viaje guardado"
+ },
  "הנסיעה עודכנה": {
   "en": "Trip updated",
   "es": "Viaje actualizado"
@@ -4942,6 +4950,10 @@
  "מחיקה והעתקה:": {
   "en": "Delete and copy:",
   "es": "Eliminar y copiar:"
+ },
+ "מחיקה והתחלה מחדש": {
+  "en": "Delete and start over",
+  "es": "Eliminar y empezar de nuevo"
  },
  "מחיקה רק אצלי": {
   "en": "Delete for me only",
