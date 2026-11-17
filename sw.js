@@ -1,5 +1,5 @@
 // שומר את האפליקציה ואת אריחי המפה, כדי שתעבוד גם בלי אינטרנט
-const V = 'lisboa-v4', TILES = 'lisboa-tiles2';
+const V = 'lisboa-v5', TILES = 'lisboa-tiles2';
 const SHELL = ['./', 'index.html', 'app.css', 'i18n.js', 'i18n/en.js', 'i18n/es.js', 'app.js', 'data.js', 'trip.js', 'extras.js', 'group.js', 'show.js', 'backup.js', 'start.js', 'trips.js', 'notes.js', 'icon.svg', 'icon-180.png', 'manifest.webmanifest', 'vendor/leaflet.js', 'vendor/leaflet.css',
   ...Array.from({ length: 34 }, (_, i) => `audio/pt/${i + 1}.mp3`)];   // ההקלטות בפורטוגזית, כדי שיעבדו גם בלי אינטרנט
 self.addEventListener('install', e => { e.waitUntil(caches.open(V).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });

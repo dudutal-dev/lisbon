@@ -1915,6 +1915,10 @@
   "en": "The Ancient Agora or the museum",
   "es": "El Ágora Antigua o el museo"
  },
+ "האוטובוס הייעודי לשדה (Aerobus) בוטל. מי שרוצה אוטובוס: קווי העיר 744 ו־783, ובלילה 208.": {
+  "en": "The dedicated airport bus (Aerobus) no longer runs. If you want a bus: city lines 744 and 783, and 208 at night.",
+  "es": "El autobús específico del aeropuerto (Aerobus) ya no funciona. Si quieres ir en autobús: líneas urbanas 744 y 783, y la 208 por la noche."
+ },
  "האוטובוס הייעודי לשדה (Aerobus) לא תמיד פועל. לא לבנות עליו בלי לבדוק מראש.": {
   "en": "The dedicated airport bus (Aerobus) doesn't always run. Don't count on it without checking first.",
   "es": "El autobús específico del aeropuerto (Aerobus) no siempre funciona. No cuentes con él sin comprobarlo antes."
@@ -2411,6 +2415,10 @@
   "en": "Your personal guide to Lisbon: live map, shopping, restaurants, itinerary and tools",
   "es": "Tu guía personal de Lisboa: mapa en vivo, compras, restaurantes, itinerario y herramientas"
  },
+ "המוזיאון נפתח מחדש ביולי 2026 אחרי שיפוץ שהחזיר אותו לעיצוב המקורי. הגן פתוח חינם ונעים להפסקה. כדאי לבדוק באיזה יום סגור (בדרך כלל שלישי).": {
+  "en": "The museum reopened in July 2026 after a renovation that brought back its original design. The garden is free and lovely for a break. Check which day it closes (usually Tuesday).",
+  "es": "El museo reabrió en julio de 2026 tras una renovación que recuperó su diseño original. El jardín es gratuito y agradable para una pausa. Comprueba qué día cierra (normalmente el martes)."
+ },
  "המיקום הנוכחי נשמר": {
   "en": "Current location saved",
   "es": "Ubicación actual guardada"
@@ -2486,6 +2494,14 @@
  "המסמך נשמר בטלפון": {
   "en": "Document saved on your phone",
   "es": "Documento guardado en el teléfono"
+ },
+ "המעלית סגורה כרגע, אז רואים אותה מבחוץ ועולים ברגל לכיכר כרמו ולכנסייה בלי הגג.": {
+  "en": "The lift is closed for now, so see it from outside and walk up to Largo do Carmo and the roofless church.",
+  "es": "El elevador está cerrado por ahora, así que míralo por fuera y sube a pie al Largo do Carmo y a la iglesia sin techo."
+ },
+ "המעלית סגורה מאז ספטמבר 2025 ואין תאריך רשמי לפתיחה (בעיתונות דובר על תחילת 2027). אפשר לראות אותה מבחוץ, ולהגיע ברגל לאזור שלמעלה דרך כיכר כרמו שמאחורי המנזר.": {
+  "en": "The lift has been closed since September 2025 and there is no official reopening date (press reports mention early 2027). You can see it from outside, and walk to the upper area through Largo do Carmo, behind the convent.",
+  "es": "El elevador está cerrado desde septiembre de 2025 y no hay fecha oficial de reapertura (la prensa habla de principios de 2027). Puedes verlo por fuera y llegar a pie a la zona de arriba por el Largo do Carmo, detrás del convento."
  },
  "המפה אפורה:": {
   "en": "The map is grey:",
@@ -2790,6 +2806,10 @@
  "הריביירה האתונאית": {
   "en": "The Athens Riviera",
   "es": "La Riviera ateniense"
+ },
+ "הרכבל לא פועל מאז ספטמבר 2025, ואין תאריך לחזרה. הרחוב התלול והקרון הצהוב עדיין שווים ביקור ותמונה, מלמעלה ליד התחנה העליונה. אוטובוס 22B מחליף אותו.": {
+  "en": "The funicular has not been running since September 2025, and there is no date for its return. The steep street and the yellow car are still worth a visit and a photo, from the top by the upper station. Bus 22B replaces it.",
+  "es": "El funicular no funciona desde septiembre de 2025 y no hay fecha de vuelta. La calle empinada y el vagón amarillo siguen mereciendo una visita y una foto, desde arriba junto a la estación superior. Lo sustituye el autobús 22B."
  },
  "הרכבל של ביקה": {
   "en": "Bica Funicular",
@@ -3178,6 +3198,10 @@
  "חשמליות ורכבלים: 28 היא ההיסטורית והעמוסה, 15 נוסעת לבלם. הרכבלים (ביקה, גלוריה, לברה) לא תמיד פועלים – לבדוק במקום. מעלית סנטה ז׳וסטה כלולה בכרטיס היומי.": {
   "en": "Trams and funiculars: the 28 is the historic, crowded one; the 15 goes to Belém. The funiculars (Bica, Glória, Lavra) don't always run – check on the spot. The Santa Justa lift is included in the day pass.",
   "es": "Tranvías y funiculares: el 28 es el histórico y el más lleno; el 15 va a Belém. Los funiculares (Bica, Glória, Lavra) no siempre funcionan – compruébalo allí mismo. El elevador de Santa Justa está incluido en el billete diario."
+ },
+ "חשמליות ורכבלים: 28 היא ההיסטורית והעמוסה, 15 נוסעת לבלם. הרכבלים ההיסטוריים (ביקה, גלוריה, לברה) ומעלית סנטה ז׳וסטה סגורים מאז תאונת רכבל גלוריה בספטמבר 2025. אוטובוסים מחליפים אותם: 51E, 22B ו־19B. רק הרכבל החדש של גרסה פועל.": {
+  "en": "Trams and funiculars: the 28 is the historic, crowded one; the 15 goes to Belém. The historic funiculars (Bica, Glória, Lavra) and the Santa Justa lift have been closed since the Glória funicular accident in September 2025. Buses replace them: 51E, 22B and 19B. Only the new Graça funicular is running.",
+  "es": "Tranvías y funiculares: el 28 es el histórico y va lleno; el 15 va a Belém. Los funiculares históricos (Bica, Glória, Lavra) y el elevador de Santa Justa están cerrados desde el accidente del funicular de Glória en septiembre de 2025. Los sustituyen los autobuses 51E, 22B y 19B. Solo funciona el nuevo funicular de Graça."
  },
  "חשמלית 28": {
   "en": "Tram 28",
@@ -3599,6 +3623,10 @@
   "en": "One way by cable car, back on foot along the promenade.",
   "es": "Ida en teleférico, vuelta a pie por el paseo."
  },
+ "כייסים פעילים בחשמלית 28, בחשמלית 15 לבלם, במטרו ובתורים. תיק סגור ומלפנים, טלפון לא בכיס האחורי.": {
+  "en": "Pickpockets work tram 28, tram 15 to Belém, the metro and queues. Keep your bag closed and in front of you, and your phone out of your back pocket.",
+  "es": "Los carteristas actúan en el tranvía 28, el tranvía 15 a Belém, el metro y las colas. Lleva el bolso cerrado y por delante, y el móvil fuera del bolsillo trasero."
+ },
  "כייסים פעילים בחשמלית 28, בחשמלית 15 לבלם, במטרו, במעלית סנטה ז׳וסטה ובתורים. תיק סגור ומלפנים, טלפון לא בכיס האחורי.": {
   "en": "Pickpockets operate on tram 28, on tram 15 to Belém, on the metro, at the Santa Justa lift and in queues. Keep your bag closed and in front of you, and your phone out of your back pocket.",
   "es": "Hay carteristas en el tranvía 28, en el tranvía 15 a Belém, en el metro, en el elevador de Santa Justa y en las colas. Bolso cerrado y por delante, y el móvil fuera del bolsillo trasero."
@@ -3622,6 +3650,10 @@
  "כיכר המסחר מול הנהר, השער, והמדרחוב של רחוב אוגושטה.": {
   "en": "Praça do Comércio facing the river, the arch, and the pedestrian Rua Augusta.",
   "es": "La Praça do Comércio frente al río, el arco y la peatonal Rua Augusta."
+ },
+ "כיכר, כנסייה בלי גג וגלידה": {
+  "en": "A square, a roofless church and ice cream",
+  "es": "Una plaza, una iglesia sin techo y helado"
  },
  "כיכר, מעלית וגלידה": {
   "en": "Square, lift and ice cream",
@@ -3674,6 +3706,10 @@
  "כמה נסיעות: שמירה והתחלה מחדש": {
   "en": "Multiple trips: saving and starting again",
   "es": "Varios viajes: guardar y empezar de nuevo"
+ },
+ "כמה צעדים ממעלית סנטה ז׳וסטה (שסגורה כרגע). התור מתקדם מהר.": {
+  "en": "A few steps from the Santa Justa lift (closed for now). The queue moves quickly.",
+  "es": "A pocos pasos del elevador de Santa Justa (cerrado por ahora). La cola avanza rápido."
  },
  "כמה צעדים ממעלית סנטה ז׳וסטה. התור מתקדם מהר.": {
   "en": "A few steps from the Santa Justa Lift. The queue moves fast.",
@@ -4719,6 +4755,10 @@
   "en": "Fixed-price taxi to the centre: about 40 euros by day and 55 at night (after midnight). Confirm with the driver before setting off.",
   "es": "Taxi al centro a precio fijo: unos 40 euros de día y 55 de noche (después de medianoche). Confírmalo con el conductor antes de salir."
  },
+ "מונית למרכז: כ־20 דקות, בדרך כלל 15–22 אירו. לוודא שהמונה פועל. על מזוודות בתא המטען יש תוספת קטנה.": {
+  "en": "Taxi to the centre: about 20 minutes, usually €15–22. Make sure the meter is running. There is a small extra charge for suitcases in the boot.",
+  "es": "Taxi al centro: unos 20 minutos, normalmente 15–22 €. Asegúrate de que el taxímetro esté en marcha. Hay un pequeño suplemento por las maletas en el maletero."
+ },
  "מונית למרכז: כ־20 דקות, בערך 15–20 אירו. לוודא שהמונה פועל. על מזוודות בתא המטען יש תוספת קטנה.": {
   "en": "Taxi to the centre: about 20 minutes, roughly 15–20 euros. Make sure the meter is running. There's a small extra charge for suitcases in the boot.",
   "es": "Taxi al centro: unos 20 minutos, entre 15 y 20 euros. Comprueba que el taxímetro esté en marcha. Por las maletas en el maletero hay un pequeño suplemento."
@@ -5227,6 +5267,10 @@
   "en": "Santa Justa Lift",
   "es": "Elevador de Santa Justa"
  },
+ "מעלית סנטה ז׳וסטה וכנסייה בלי גג": {
+  "en": "Santa Justa lift and the roofless church",
+  "es": "Elevador de Santa Justa y la iglesia sin techo"
+ },
  "מפה": {
   "en": "Map",
   "es": "Mapa"
@@ -5578,6 +5622,10 @@
  "נפגשים במלון": {
   "en": "Meet at the hotel",
   "es": "Nos vemos en el hotel"
+ },
+ "נפתח מחדש במאי 2026 אחרי שיפוץ גדול. הכניסה היא לפי שעה שנקבעת מראש ומספר המקומות מוגבל, אז לקנות כרטיס באינטרנט לפני שמגיעים. מבחוץ הוא הכי יפה באור אחר הצהריים. סגור בימי שני.": {
+  "en": "Reopened in May 2026 after a major restoration. Entry is by timed slot and places are limited, so buy your ticket online before you go. From outside it looks best in the afternoon light. Closed on Mondays.",
+  "es": "Reabrió en mayo de 2026 tras una gran restauración. La entrada es por franja horaria y las plazas son limitadas, así que compra la entrada por internet antes de ir. Por fuera está más bonita con la luz de la tarde. Cierra los lunes."
  },
  "נראתה {}": {
   "en": "Last seen {0}",
