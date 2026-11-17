@@ -231,6 +231,10 @@
   "en": "{0} of {1}",
   "es": "{0} de {1}"
  },
+ "{} מתוך {} מקומות בשימוש": {
+  "en": "{0} of {1} places in use",
+  "es": "{0} de {1} plazas en uso"
+ },
  "{} מ׳": {
   "en": "{0} m",
   "es": "{0} m"
@@ -294,6 +298,10 @@
  "· {} ממך": {
   "en": "· {0} from you",
   "es": "· a {0} de ti"
+ },
+ "· {} מתוך {} מקומות בשימוש": {
+  "en": "· {0} of {1} places in use",
+  "es": "· {0} de {1} plazas en uso"
  },
  "· {}{} שע׳ מהשעון שלך": {
   "en": "· {0}{1} h from your clock",
@@ -654,6 +662,10 @@
  "אין חיבור כרגע. לנסות שוב": {
   "en": "No connection right now. Try again",
   "es": "Ahora no hay conexión. Inténtalo de nuevo"
+ },
+ "אין חיבור לאינטרנט. צריך חיבור בהפעלה הראשונה.": {
+  "en": "No internet connection. You need a connection the first time you activate.",
+  "es": "Sin conexión a internet. Hace falta conexión la primera vez que activas."
  },
  "אין חיבור – ההודעה לא נשלחה": {
   "en": "No connection – message not sent",
@@ -1275,6 +1287,10 @@
   "en": "When booking, ask for a rooftop table with a view (Acropolis view). In November the rooftop is heated or glassed in.",
   "es": "Al reservar, pide una mesa en la azotea con vistas (Acropolis view). En noviembre la azotea está climatizada o cerrada con cristal."
  },
+ "בוחרים": {
+  "en": "Choose",
+  "es": "Elige"
+ },
  "בוחרים סוג נסיעה (בנות, בנים, משפחה או חברים), שם ואירוע אם יש. לפי זה האפליקציה מסדרת את ההמלצות, המסלול והיומן.": {
   "en": "Choose the type of trip (girls, guys, family or friends), a name and an occasion if there is one. The app arranges the recommendations, the itinerary and the journal accordingly.",
   "es": "Elige el tipo de viaje (chicas, chicos, familia o amigos), un nombre y una ocasión si la hay. Según eso, la app organiza las recomendaciones, el itinerario y el diario."
@@ -1678,6 +1694,10 @@
  "בשקיעה, עם הגגות האדומים והנהר ברקע.": {
   "en": "At sunset, with the red rooftops and the river in the background.",
   "es": "Al atardecer, con los tejados rojos y el río de fondo."
+ },
+ "בתוקף עד {}": {
+  "en": "valid until {0}",
+  "es": "válida hasta {0}"
  },
  "בתחתית המסך": {
   "en": "at the bottom of the screen",
@@ -2684,8 +2704,8 @@
   "es": "Una breve pausa cultural"
  },
  "הפעלה": {
-  "en": "Play",
-  "es": "Reproducir"
+  "en": "Activate",
+  "es": "Activar"
  },
  "הפעלת ההתראות נכשלה. אפשר לנסות שוב": {
   "en": "Couldn't turn on notifications. You can try again",
@@ -2783,6 +2803,14 @@
   "en": "This link is for a different group. To join it, leave your current group first",
   "es": "El enlace es de otro grupo. Para unirte, primero sal del grupo actual"
  },
+ "הקישור הזה כבר הופעל בטלפון אחר.": {
+  "en": "This link has already been activated on another phone.",
+  "es": "Este enlace ya se activó en otro teléfono."
+ },
+ "הקישור לא תקין.": {
+  "en": "The link is not valid.",
+  "es": "El enlace no es válido."
+ },
  "הקניון האלגנטי של אתונה, מותגים בינוניים ומעלה, מסעדות טובות. לידו גם The Mall Athens הענק.": {
   "en": "Athens' elegant shopping centre, with mid-range and upmarket brands and good restaurants. The huge The Mall Athens is right next door.",
   "es": "El centro comercial elegante de Atenas, con marcas de gama media y alta y buenos restaurantes. Al lado está también el enorme The Mall Athens."
@@ -2810,6 +2838,14 @@
  "הריביירה האתונאית": {
   "en": "The Athens Riviera",
   "es": "La Riviera ateniense"
+ },
+ "הרישיון בוטל.": {
+  "en": "The licence has been cancelled.",
+  "es": "La licencia se ha cancelado."
+ },
+ "הרישיון הועבר לטלפון אחר.": {
+  "en": "The licence was moved to another phone.",
+  "es": "La licencia se ha pasado a otro teléfono."
  },
  "הרכבל לא פועל מאז ספטמבר 2025, ואין תאריך לחזרה. הרחוב התלול והקרון הצהוב עדיין שווים ביקור ותמונה, מלמעלה ליד התחנה העליונה. אוטובוס 22B מחליף אותו.": {
   "en": "The funicular has not been running since September 2025, and there is no date for its return. The steep street and the yellow car are still worth a visit and a photo, from the top by the upper station. Bus 22B replaces it.",
@@ -3567,13 +3603,25 @@
   "en": "Best to check opening hours and book ahead, especially for Friday night dinner.",
   "es": "Conviene confirmar el horario y reservar con antelación, sobre todo para la cena del viernes."
  },
+ "כדי להפעיל: מוסיפים את האפליקציה למסך הבית ופותחים אותה משם.": {
+  "en": "To activate: add the app to your Home Screen and open it from there.",
+  "es": "Para activar: añade la app a tu pantalla de inicio y ábrela desde allí."
+ },
  "כדי להצטרף צריך להתקין את האפליקציה במסך הבית": {
   "en": "To join, install the app on your home screen",
   "es": "Para unirte, instala la app en la pantalla de inicio"
  },
+ "כדי להשתמש באפליקציה צריך קישור הפעלה אישי.": {
+  "en": "You need a personal activation link to use the app.",
+  "es": "Necesitas un enlace de activación personal para usar la app."
+ },
  "כדי לסמן את המיקום שלך על המפה, לחשב מרחקים ולתייג תמונות ביומן, האפליקציה צריכה גישה למיקום. אחרי הלחיצה הטלפון ישאל, ויש לבחור": {
   "en": "To mark your location on the map, calculate distances and tag photos in the journal, the app needs access to your location. After you tap, the phone will ask, and you should choose",
   "es": "Para marcar tu ubicación en el mapa, calcular distancias y etiquetar las fotos del diario, la app necesita acceso a la ubicación. Tras el toque, el teléfono preguntará y hay que elegir"
+ },
+ "כדי לפתוח קבוצה צריך רישיון עם מקומות לקבוצה": {
+  "en": "To open a group you need a licence with group places",
+  "es": "Para abrir un grupo necesitas una licencia con plazas de grupo"
  },
  "כדי לקבל התראה על הודעה חדשה גם כשהאפליקציה סגורה:": {
   "en": "To get a notification about a new message even when the app is closed:",
@@ -3674,6 +3722,10 @@
  "כל הטיול": {
   "en": "The whole trip",
   "es": "Todo el viaje"
+ },
+ "כל המקומות בקבוצה הזו תפוסים. לפנות למנהל הקבוצה.": {
+  "en": "All the places in this group are taken. Contact the group admin.",
+  "es": "Todas las plazas de este grupo están ocupadas. Contacta con quien administra el grupo."
  },
  "כל השאר לוחצים על הקישור, מתקינים במסך הבית וכותבים שם. מי שכבר התקין יכול להזין שם וקוד ידנית.": {
   "en": "Everyone else taps the link, adds the app to the home screen and enters a name. Anyone who has already installed it can enter a name and code manually.",
@@ -4090,6 +4142,10 @@
  "לוחצים על הקישור, כותבים שם, וזהו:": {
   "en": "Tap the link, type your name, and that's it:",
   "es": "Toca el enlace, escribe tu nombre y listo:"
+ },
+ "לוחצים על כפתור השיתוף בדפדפן.": {
+  "en": "Tap the browser's Share button.",
+  "es": "Toca el botón Compartir del navegador."
  },
  "לוחצים עליו וההתקנה מתחילה משם: באנדרואיד בלחיצה אחת, ובאייפון בשלושה צעדים שמופיעים על המסך.": {
   "en": "Tap it and the installation starts from there: one tap on Android, and three steps shown on screen on iPhone.",
@@ -4590,6 +4646,10 @@
  "מגיעים מכיכר כרמו, דרך המעבר שלצד חורבות המנזר. בערבים קרירים יש שמיכות ותנורים.": {
   "en": "Get there from Largo do Carmo, through the passage beside the convent ruins. On cool evenings there are blankets and heaters.",
   "es": "Se llega desde el Largo do Carmo, por el pasaje junto a las ruinas del convento. En las noches frescas hay mantas y estufas."
+ },
+ "מדביקים כאן את הקישור או את הקוד שקיבלתם.": {
+  "en": "Paste the link or the code you received here.",
+  "es": "Pega aquí el enlace o el código que recibiste."
  },
  "מדברים אנגלית?": {
   "en": "Do you speak English?",
@@ -5347,6 +5407,14 @@
   "en": "A marble temple on a cliff above the Aegean Sea. The drive along the Riviera is beautiful in itself.",
   "es": "Un templo de mármol en un acantilado sobre el mar Egeo. El trayecto por la Riviera ya es precioso de por sí."
  },
+ "מקום בקבוצה": {
+  "en": "A place in the group",
+  "es": "Una plaza en el grupo"
+ },
+ "מקום בקבוצה · בתוקף עד {}": {
+  "en": "A place in the group · valid until {0}",
+  "es": "Una plaza en el grupo · válida hasta {0}"
+ },
  "מקום לא מתוחכם ומלא מקומיים. לבוא רעבים, ועדיף עם מזומן.": {
   "en": "An unfussy place full of locals. Come hungry, and preferably with cash.",
   "es": "Un sitio sin pretensiones y lleno de gente local. Ven con hambre y, mejor, con efectivo."
@@ -5463,6 +5531,10 @@
   "en": "Sunglasses",
   "es": "Gafas de sol"
  },
+ "משתמש": {
+  "en": "user",
+  "es": "usuario"
+ },
  "משתפת את 30 השקפים הראשונים. למצגת המלאה עדיף PDF": {
   "en": "Sharing the first 30 slides. For the full slideshow, the PDF is better",
   "es": "Se comparten las primeras 30 diapositivas. Para la presentación completa es mejor el PDF"
@@ -5538,6 +5610,10 @@
  "נָאוּ פֶּרְסֶבּוּ": {
   "en": "Não percebo",
   "es": "Não percebo"
+ },
+ "נדרש קישור הפעלה": {
+  "en": "An activation link is needed",
+  "es": "Hace falta un enlace de activación"
  },
  "נואל": {
   "en": "Noel",
@@ -6203,6 +6279,10 @@
   "en": "Portuguese in two minutes",
   "es": "Portugués en dos minutos"
  },
+ "פותחים את האפליקציה מהאייקון החדש.": {
+  "en": "Open the app from the new icon.",
+  "es": "Abre la app desde el icono nuevo."
+ },
  "פיירה דה לאדרה – שוק הפשפשים": {
   "en": "Feira da Ladra – the flea market",
   "es": "Feira da Ladra – el mercadillo"
@@ -6771,6 +6851,14 @@
   "en": "Record",
   "es": "Registrar"
  },
+ "רישיון עבור {}": {
+  "en": "Licence for {0}",
+  "es": "Licencia de {0}"
+ },
+ "רישיון עבור {} · בתוקף עד {}{}": {
+  "en": "Licence for {0} · valid until {1}{2}",
+  "es": "Licencia de {0} · válida hasta {1}{2}"
+ },
  "רכבות יוצאות בתדירות גבוהה. משלמים בכרטיס התחבורה הטעון, והנסיעה כלולה גם בליסבואה קארד.": {
   "en": "Trains run frequently. Pay with your pre-loaded transport card; the journey is also included in the Lisboa Card.",
   "es": "Los trenes salen con mucha frecuencia. Se paga con la tarjeta de transporte recargada, y el trayecto también está incluido en la Lisboa Card."
@@ -6846,6 +6934,10 @@
  "רצפות זכוכית מעל חפירות, ויש במוזיאון מסלול לילדים.": {
   "en": "Glass floors above the excavations, and the museum has a trail for kids.",
   "es": "Suelos de cristal sobre las excavaciones, y el museo tiene un recorrido para niños."
+ },
+ "רק מנהל הקבוצה שולח הזמנות": {
+  "en": "Only the group admin sends invitations",
+  "es": "Solo quien administra el grupo envía invitaciones"
  },
  "רשומה חדשה": {
   "en": "New entry",
@@ -7186,6 +7278,10 @@
  "תוקף הדרכון קצר מדי": {
   "en": "Passport validity is too short",
   "es": "La validez del pasaporte es demasiado corta"
+ },
+ "תוקף הרישיון הסתיים.": {
+  "en": "The licence has expired.",
+  "es": "La licencia ha caducado."
  },
  "תזכורות להיום": {
   "en": "Today's reminders",

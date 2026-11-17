@@ -4,7 +4,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 const acorn = createRequire(import.meta.url)('acorn');
-const HEB = /[֐-׿]/, FILES = ['data.js', 'trip.js', 'app.js', 'extras.js', 'group.js', 'show.js', 'backup.js', 'start.js', 'trips.js', 'notes.js'];
+const HEB = /[֐-׿]/, FILES = ['data.js', 'trip.js', 'app.js', 'extras.js', 'group.js', 'show.js', 'backup.js', 'start.js', 'trips.js', 'notes.js', 'lic.js'];
 const keys = new Map();
 const ent = s => s.replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
 function add(raw, file) {

@@ -350,11 +350,13 @@
     await derive(code); connect(); render();
     setTimeout(() => send({ t: 'hi' }).then(() => { if (G.av) send({ t: 'av', av: G.av }); if (isNew) sendTrip(); }), 800);
     A.toast(isNew ? 'הקבוצה נוצרה. עכשיו שולחים הזמנה לשאר' : 'הצטרפת לקבוצה');
+    setTimeout(() => A.lic?.sync(), 1500);   // מעדכן בשרת מי הטלפון הזה בקבוצה
   }
   $('#grpJoinForm').onsubmit = e => { e.preventDefault(); join($('#grpCodeIn').value, $('#grpName').value.trim(), false); };
   // פתיחת קבוצה: קודם מגדירים את הנסיעה, ואז נוצר הקוד
   $('#grpNew').onclick = () => {
     const name = $('#grpName').value.trim(); if (!name) return A.toast('קודם לכתוב שם');
+    if (A.lic && !A.lic.canCreate()) return A.toast('כדי לפתוח קבוצה צריך רישיון עם מקומות לקבוצה', 5000);
     A.openTrip({ title: 'הנסיעה של הקבוצה', note: 'מה שמוגדר כאן יעבור לכל מי שמצטרף עם הקוד.', onSave: async cfg => {
       cfg.by = G.id; TRIP.apply(cfg);
       const abc = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789', r = crypto.getRandomValues(new Uint8Array(8));
@@ -363,7 +365,9 @@
     } });
   };
   $('#grpInvite').onclick = () => {
-    const url = location.origin + location.pathname + '?j=' + G.code;
+    if (A.lic && !A.lic.canInvite()) return A.toast('רק מנהל הקבוצה שולח הזמנות');
+    const seat = A.lic ? A.lic.invite() : '';   // מקום מתוך הרישיון של המנהל: מי שמצטרף מהקישור לא צריך קוד משלו
+    const url = location.origin + location.pathname + '?j=' + G.code + (seat ? '&k=' + encodeURIComponent(seat) : '');
     const text = `הוזמנת לקבוצה "${TRIP.title}" באפליקציית ליסבון 🇵🇹\nלוחצים על הקישור, כותבים שם, וזהו:\n${url}\n\nכבר יש לך את האפליקציה? בלשונית הקבוצה מזינים את הקוד: ${G.code}`;
     if (navigator.share) navigator.share({ text }).catch(() => {});
     else navigator.clipboard?.writeText(text).then(() => A.toast('ההזמנה הועתקה'), () => A.toast('הקוד: ' + G.code));
@@ -491,6 +495,7 @@
     if (k) { const id = k.dataset.kick, n = G.members[id]?.n || '';
       if (kickSure !== id) { kickSure = id; k.textContent = 'להסיר? ללחוץ שוב'; return; }   // הרשימה מצוירת מחדש כל כמה שניות, לכן האישור נשמר במשתנה
       kickSure = ''; if (!(await send({ t: 'kick', k: id }))) return A.toast('אין חיבור כרגע. לנסות שוב');
+      A.lic?.unseat(id);   // המקום של מי שהוסר מתפנה ברישיון
       delete G.members[id]; (G.out ||= {})[id] = 1; save(); drawFriends(); render(); return A.toast(`${n} הוסר/ה מהקבוצה`); }
     const b = e.target.closest('[data-see]'); if (!b) return; const m = G.members[b.dataset.see]; A.go('map'); setTimeout(() => { A.map?.setView([m.lat, m.lng], 16); drawFriends(); }, 150); };
   $('#grpLeave').onclick = async e => {
@@ -498,7 +503,8 @@
     await send({ t: 'bye' }); key = null; connect(); online = false; G = { ...blank(), id: G.id, name: G.name, av: G.av }; save();
     b.dataset.sure = ''; b.textContent = 'יציאה מהקבוצה'; drawFriends(); render();
   };
-  A.hooks.group = () => { render(); renderTripCard(); pushUI(); if (G.share) A.startGPS(false); };
+  A.hooks.licChanged = () => { const b = $('#grpInvite'); if (b) b.hidden = !!A.lic && !A.lic.canInvite(); };
+  A.hooks.group = () => { A.hooks.licChanged(); render(); renderTripCard(); pushUI(); if (G.share) A.startGPS(false); };
   A.hooks.chat = () => { unread = 0; ackRead(); render(); const box = $('#grpChat'); box.scrollTop = box.scrollHeight; };
 
   // ───── התראות מובנות (Web Push דרך השרת שלנו) ─────

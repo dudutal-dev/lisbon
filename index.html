@@ -12,7 +12,7 @@
 <meta name="apple-mobile-web-app-title" content="ליסבון">
 <link rel="manifest" href="manifest.webmanifest">
 <script>/* קישור הזמנה באייפון: בלי manifest, "הוספה למסך הבית" שומרת את הכתובת עם הקוד, והאפליקציה שבמסך הבית מצטרפת לבד */
-if (/[?&]j=/.test(location.search) && /iPhone|iPad|iPod/.test(navigator.userAgent) && !navigator.standalone) document.querySelector('link[rel=manifest]').remove();</script>
+if (/[?&][jk]=/.test(location.search) && /iPhone|iPad|iPod/.test(navigator.userAgent) && !navigator.standalone) document.querySelector('link[rel=manifest]').remove();</script>
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -371,6 +371,7 @@ try { var th = localStorage.getItem('lisboa.theme'); if (th === 'dark' || th ===
         <p><b>ליסבון שלנו</b> · מדריך ומלווה לטיול בליסבון</p>
         <p>פיתוח: דודו טל</p>
         <p class="muted small">© 2026 כל הזכויות שמורות.</p>
+        <p class="small lic-info" id="licInfo" hidden></p>
       </section>
       <div class="center"><button class="btn ghost sm" id="updBtn" type="button">בדיקת עדכון</button> <span class="muted small" id="verTxt"></span></div>
       <p class="muted small center">שעות ומחירים משתנים – כדאי לוודא בגוגל מפות לפני שיוצאים.<br>כל מה שהזנת נשמר רק בטלפון הזה.</p>
@@ -480,6 +481,21 @@ try { var th = localStorage.getItem('lisboa.theme'); if (th === 'dark' || th ===
   </form>
 </dialog>
 
+<dialog id="licDlg" class="lic-gate">
+  <img src="icon-192.png" alt="" width="72" height="72">
+  <h2>נדרש קישור הפעלה</h2>
+  <p id="licMsg"></p>
+  <ol class="inst" id="licSteps" hidden>
+    <li>לוחצים על כפתור השיתוף בדפדפן.</li>
+    <li>בוחרים <b>"הוספה למסך הבית"</b>.</li>
+    <li>פותחים את האפליקציה מהאייקון החדש.</li>
+  </ol>
+  <form id="licForm">
+    <input id="licIn" autocomplete="off" autocapitalize="off" dir="ltr" placeholder="P.xxxxxxxx.xxxx">
+    <button class="btn" id="licGo">הפעלה</button>
+    <p class="muted small">מדביקים כאן את הקישור או את הקוד שקיבלתם.</p>
+  </form>
+</dialog>
 <dialog id="langDlg" class="sheet" translate="no">
   <h2>שפה · Language · Idioma</h2>
   <div class="lang-list">
@@ -606,5 +622,6 @@ try { var th = localStorage.getItem('lisboa.theme'); if (th === 'dark' || th ===
 <script src="start.js"></script>
 <script src="trips.js"></script>
 <script src="notes.js"></script>
+<script src="lic.js"></script>
 </body>
 </html>

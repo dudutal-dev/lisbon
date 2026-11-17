@@ -895,3 +895,16 @@ html[dir=rtl] .ph-play svg, html:not([dir=ltr]) .ph-play svg { transform: scaleX
 .wx b { min-height: 2.500em; }
 .wx u { flex: 1; }
 .wx p { margin: 0; white-space: nowrap; line-height: 1.100; }
+
+/* ───── רישיון: מסך נעילה ───── */
+html.locked #app, html.locked .tabbar { display: none !important; }
+html.locked dialog:not(#licDlg) { display: none !important; }
+.lic-gate { border: 0; width: min(92vw, 420px); margin: auto; padding: 28px 22px 22px; border-radius: 26px; background: var(--surface); color: var(--ink); text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,.3); }
+.lic-gate::backdrop { background: linear-gradient(165deg, var(--hero-a), var(--hero-b)); }
+.lic-gate img { border-radius: 18px; box-shadow: 0 6px 18px rgba(0,0,0,.2); }
+.lic-gate h2 { font: 800 23px/1.200 var(--display); margin: 14px 0 8px; }
+.lic-gate p { margin: 0 0 14px; }
+.lic-gate .inst { text-align: start; margin: 0 0 6px; }
+.lic-gate form { display: grid; gap: 10px; }
+.lic-gate input { text-align: center; font: 600 15px ui-monospace, Menlo, monospace; }
+.lic-info { color: var(--sea); font-weight: 600; margin-top: 6px; }

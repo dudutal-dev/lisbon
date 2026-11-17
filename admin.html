@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>ניהול רישיונות</title>
+<style>
+  :root { --bg: #f3f5f9; --card: #fff; --ink: #15233b; --muted: #5e6b83; --line: #dde3ee; --pri: #0d5eaf; --bad: #c92a2a; --ok: #2b8a3e; --warn: #d98a1c; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0d1422; --card: #172138; --ink: #edf1f8; --muted: #a3aec6; --line: #2a3654; --pri: #6aa9ff; --bad: #ff8787; --ok: #69db7c; --warn: #f2b450; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; padding: 16px 16px 60px; }
+  main { max-width: 760px; margin: 0 auto; display: grid; gap: 14px; }
+  h1 { font-size: 24px; margin: 6px 0 0; } h2 { font-size: 18px; margin: 0 0 10px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 16px; }
+  label { display: grid; gap: 4px; font-size: 13.5px; font-weight: 600; color: var(--muted); }
+  input, select { font: inherit; padding: 10px 12px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--card); color: var(--ink); min-width: 0; width: 100%; }
+  button { font: inherit; font-weight: 700; padding: 10px 16px; border-radius: 999px; border: 0; background: var(--pri); color: #fff; cursor: pointer; }
+  button.ghost { background: transparent; color: var(--pri); border: 1.5px solid var(--line); padding: 7px 12px; font-size: 14px; }
+  button.bad { color: var(--bad); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; align-items: end; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .muted { color: var(--muted); } .small { font-size: 13.5px; }
+  .sw { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid var(--line); }
+  .sw:first-of-type { border-top: 0; }
+  .sw b { font-size: 17px; } .tag { font-size: 12.5px; font-weight: 700; padding: 2px 9px; border-radius: 999px; border: 1px solid currentColor; }
+  .on { color: var(--ok); } .off { color: var(--muted); } .warn { color: var(--warn); } .badc { color: var(--bad); }
+  .pass { border-top: 1px solid var(--line); padding: 12px 0; display: grid; gap: 6px; }
+  .pass:first-child { border-top: 0; }
+  .pass h3 { margin: 0; font-size: 17px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .link { direction: ltr; text-align: left; font: 12.5px ui-monospace, Menlo, monospace; background: var(--bg); border-radius: 10px; padding: 8px 10px; overflow-wrap: anywhere; }
+  ul { margin: 0; padding-inline-start: 18px; } [hidden] { display: none !important; }
+  #msg { position: fixed; inset: auto 16px 16px 16px; max-width: 420px; margin: 0 auto; background: var(--ink); color: var(--bg); padding: 10px 14px; border-radius: 12px; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ניהול רישיונות</h1>
+
+  <section class="card" id="auth">
+    <h2 id="authTitle">כניסה</h2>
+    <p class="muted small" id="authNote"></p>
+    <form id="authForm" class="grid">
+      <label>סיסמה<input id="pw" type="password" autocomplete="current-password" minlength="8" required></label>
+      <button id="authGo">כניסה</button>
+    </form>
+  </section>
+
+  <div id="panel" hidden>
+    <section class="card">
+      <h2>האם לדרוש רישיון?</h2>
+      <p class="muted small">כשכבוי, האפליקציה פתוחה לכל מי שיש לו את הקישור, כמו היום. כשפועל, רק טלפון עם רישיון בתוקף נכנס.</p>
+      <div id="switches"></div>
+    </section>
+
+    <section class="card">
+      <h2>הנפקת קישור חדש</h2>
+      <form id="newForm" class="grid">
+        <label>אפליקציה<select id="nApp"><option value="athens">אתונה</option><option value="lisbon">ליסבון</option></select></label>
+        <label>שם<input id="nName" maxlength="40" required placeholder="למי הקישור"></label>
+        <label>תוקף בימים<input id="nDays" type="number" min="1" max="3650" value="14" required></label>
+        <label>מקומות לקבוצה<input id="nSeats" type="number" min="0" max="200" value="0" required></label>
+        <button>הנפקה</button>
+      </form>
+      <p class="muted small" style="margin:10px 0 0">הקישור מופעל על טלפון אחד. "מקומות לקבוצה" הוא מספר האנשים שבעל הקישור יכול לצרף לקבוצה שלו; 0 אומר שהוא לא יכול לפתוח קבוצה.</p>
+    </section>
+
+    <section class="card">
+      <div class="row" style="justify-content:space-between"><h2 style="margin:0">הרישיונות</h2><button class="ghost" id="refresh" type="button">רענון</button></div>
+      <div id="list"></div>
+    </section>
+  </div>
+</main>
+<div id="msg" hidden></div>
+<script>
+const API = 'https://athens-push.dudu-tal.workers.dev/lic/admin';
+const BASE = { athens: 'https://dudutal-dev.github.io/athens/', lisbon: 'https://dudutal-dev.github.io/lisbon/' }, HE = { athens: 'אתונה', lisbon: 'ליסבון' };
+const $ = s => document.querySelector(s), esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+let pw = sessionStorage.getItem('licpw') || '';
+const say = t => { const m = $('#msg'); m.textContent = t; m.hidden = false; clearTimeout(say.t); say.t = setTimeout(() => m.hidden = true, 3500); };
+const call = async (op, o = {}) => { const r = await fetch(API, { method: 'POST', body: JSON.stringify({ pw, op, ...o }) }); return r.json(); };
+const date = t => new Date(t).toLocaleString('he-IL', { day: 'numeric', month: 'numeric', hour: '2-digit', minute: '2-digit' });
+const day = t => new Date(t).toLocaleDateString('he-IL', { day: 'numeric', month: 'numeric', year: 'numeric' });
+
+async function start() {
+  try { const s = await call('state'); const first = !s.claimed;
+    $('#authTitle').textContent = first ? 'קביעת סיסמת ניהול' : 'כניסה';
+    $('#authNote').textContent = first ? 'זו הכניסה הראשונה. הסיסמה שתיקבע כאן תהיה היחידה שפותחת את המסך הזה, ואין דרך לשחזר אותה. לפחות 8 תווים.' : '';
+    $('#authGo').textContent = first ? 'קביעת הסיסמה' : 'כניסה'; $('#authForm').dataset.first = first ? '1' : '';
+    if (!first && pw && (await call('login')).ok) return open();
+  } catch { $('#authNote').textContent = 'אין חיבור לשרת. לנסות שוב בעוד רגע.'; }
+}
+$('#authForm').onsubmit = async e => { e.preventDefault(); pw = $('#pw').value;
+  const r = await call($('#authForm').dataset.first ? 'claim' : 'login').catch(() => ({}));
+  if (!r.ok) return say(r.why === 'claimed' ? 'כבר נקבעה סיסמה. לרענן את העמוד ולהיכנס' : r.why === 'short' ? 'הסיסמה קצרה מדי' : 'הסיסמה לא נכונה');
+  sessionStorage.setItem('licpw', pw); open(); };
+function open() { $('#auth').hidden = true; $('#panel').hidden = false; load(); }
+
+async function load() {
+  const r = await call('list').catch(() => ({})); if (!r.ok) return say('הטעינה נכשלה');
+  $('#switches').innerHTML = Object.keys(BASE).map(a => `<div class="sw"><span><b>${HE[a]}</b> <span class="tag ${r.cfg[a] ? 'on' : 'off'}">${r.cfg[a] ? 'דורשת רישיון' : 'פתוחה לכולם'}</span></span>
+    <button class="ghost" data-cfg="${a}" data-on="${r.cfg[a] ? '' : '1'}" type="button">${r.cfg[a] ? 'לכבות' : 'להפעיל'}</button></div>`).join('');
+  $('#list').innerHTML = r.passes.length ? r.passes.map(p => { const link = BASE[p.app] + '?k=' + p.token, exp = p.exp < r.now, d = p.devs[0];
+    return `<div class="pass"><h3>${esc(p.name || 'בלי שם')} <span class="tag">${HE[p.app]}</span>
+        ${p.revoked ? '<span class="tag badc">בוטל</span>' : exp ? '<span class="tag badc">פג תוקף</span>' : d ? '<span class="tag on">מופעל</span>' : '<span class="tag off">עוד לא הופעל</span>'}
+        ${p.rejects ? `<span class="tag warn">${p.rejects} ניסיונות שנדחו</span>` : ''}</h3>
+      <div class="small muted">בתוקף עד ${day(p.exp)}${d ? ` · הופעל ${date(d.t)} · נפתח לאחרונה ${date(d.seen)}` : ''}${p.lastReject ? ` · ניסיון אחרון שנדחה ${date(p.lastReject)}` : ''}</div>
+      ${p.seats ? `<div class="small"><b>${p.used.length} מתוך ${p.seats}</b> מקומות בקבוצה בשימוש${p.used.length ? ':' : ''}</div>
+        ${p.used.length ? `<ul class="small">${p.used.map(u => `<li>${esc(u.n || 'בלי שם')} · הצטרף ${date(u.t)} · נפתח לאחרונה ${date(u.seen)} <button class="ghost bad" data-op="unseat" data-id="${p.id}" data-dev="${u.dev}" type="button">פינוי</button></li>`).join('')}</ul>` : ''}` : '<div class="small muted">בלי מקומות לקבוצה</div>'}
+      <div class="link">${esc(link)}</div>
+      <div class="row"><button class="ghost" data-copy="${esc(link)}" type="button">העתקת הקישור</button><button class="ghost" data-share="${esc(link)}" data-name="${esc(p.name)}" type="button">שליחה</button>
+        <button class="ghost" data-op="extend" data-id="${p.id}" type="button">הארכה ב־14 יום</button><button class="ghost" data-op="seats" data-id="${p.id}" data-seats="${p.seats}" type="button">שינוי מקומות</button>
+        <button class="ghost" data-op="reset" data-id="${p.id}" type="button">איפוס טלפון</button>
+        <button class="ghost bad" data-op="revoke" data-id="${p.id}" data-on="${p.revoked ? '' : '1'}" type="button">${p.revoked ? 'החזרה לתוקף' : 'ביטול'}</button>
+        <button class="ghost bad" data-op="delete" data-id="${p.id}" type="button">מחיקה</button></div></div>`; }).join('') : '<p class="muted">עוד לא הונפקו קישורים.</p>';
+}
+$('#newForm').onsubmit = async e => { e.preventDefault();
+  const r = await call('create', { app: $('#nApp').value, name: $('#nName').value.trim(), days: +$('#nDays').value, seats: +$('#nSeats').value }).catch(() => ({}));
+  if (!r.ok) return say('ההנפקה נכשלה'); $('#nName').value = ''; say('הקישור הונפק'); load(); };
+$('#refresh').onclick = load;
+document.addEventListener('click', async e => {
+  const c = e.target.closest('[data-cfg]'), o = e.target.closest('[data-op]'), cp = e.target.closest('[data-copy]'), sh = e.target.closest('[data-share]');
+  if (cp) return navigator.clipboard.writeText(cp.dataset.copy).then(() => say('הקישור הועתק'), () => say('ההעתקה נכשלה'));
+  if (sh) { const text = `קישור אישי לאפליקציה${sh.dataset.name ? ' עבור ' + sh.dataset.name : ''}. הוא מופעל על טלפון אחד בלבד:\n${sh.dataset.share}`;
+    return navigator.share ? navigator.share({ text }).catch(() => {}) : navigator.clipboard.writeText(text).then(() => say('הועתק')); }
+  if (c) { if (c.dataset.on && !confirm(`להפעיל דרישת רישיון ב${HE[c.dataset.cfg]}? מי שאין לו רישיון בתוקף לא יוכל להיכנס.`)) return;
+    const r = await call('cfg', { app: c.dataset.cfg, enforce: !!c.dataset.on }); say(r.ok ? 'עודכן' : 'העדכון נכשל'); return load(); }
+  if (o) { const op = o.dataset.op, body = { id: o.dataset.id };
+    if (op === 'delete' && !confirm('למחוק את הרישיון לגמרי? הקישור יפסיק לעבוד.')) return;
+    if (op === 'reset' && !confirm('לאפס את הטלפון? הקישור יוכל לעבוד על טלפון חדש, והישן ייחסם.')) return;
+    if (op === 'revoke') body.on = !!o.dataset.on;
+    if (op === 'extend') body.days = 14;
+    if (op === 'unseat') body.dev = o.dataset.dev;
+    if (op === 'seats') { const n = prompt('כמה מקומות לקבוצה?', o.dataset.seats); if (n === null || isNaN(+n)) return; body.seats = +n; }
+    const r = await call(op, body).catch(() => ({})); say(r.ok ? 'עודכן' : 'הפעולה נכשלה'); load(); }
+});
+start();
+</script>
+</body>
+</html>
