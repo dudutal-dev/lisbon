@@ -869,3 +869,21 @@ html[dir=rtl] .ph-play svg, html:not([dir=ltr]) .ph-play svg { transform: scaleX
 .note-home .card-head { margin-bottom: 2px; } .note-home h2 { font-size: 18px; }
 .tdot { position: absolute; top: 2px; inset-inline-end: calc(50% - 26px); width: 11px; height: 11px; border-radius: 50%; background: #e03131; border: 2px solid var(--surface); }
 #notesCard summary .pill { margin-inline-start: 8px; }
+
+/* ═════ מזג אוויר צבעוני: לכל יום רקע לפי השמיים ═════ */
+.weather { gap: 8px; }
+.wx, .wx.wx-sun { position: relative; overflow: hidden; border: 0; border-radius: 20px; padding: 12px 6px 11px; color: #fff; box-shadow: 0 6px 16px rgba(20, 60, 120, .18);
+  background: linear-gradient(170deg, #2f9bff 0%, #6cc4ff 55%, #ffd36b 130%); }
+.wx b { color: rgba(255,255,255,.92); font-size: 12.500px; font-weight: 700; line-height: 1.250; }
+.wx i { font-size: 32px; line-height: 1.250; margin: 3px 0 2px; filter: drop-shadow(0 2px 3px rgba(0,0,0,.18)); }
+.wx span { color: #fff; font-size: 19px; font-weight: 800; }
+.wx em { color: rgba(255,255,255,.8); font-size: 13px; font-weight: 600; }
+.wx.wx-part { background: linear-gradient(170deg, #3d8fe6 0%, #86c3f5 60%, #f3d58a 140%); }
+.wx.wx-cloud { background: linear-gradient(170deg, #5d7896 0%, #93a9c0 100%); }
+.wx.wx-fog { background: linear-gradient(170deg, #7b8794 0%, #b4bcc6 100%); }
+.wx.wx-rain { background: linear-gradient(170deg, #2c4a6e 0%, #4f79a8 100%); }
+.wx.wx-shower { background: linear-gradient(170deg, #3767a3 0%, #6fa4d6 65%, #e9cf8c 150%); }
+.wx.wx-snow { background: linear-gradient(170deg, #7fa6c9 0%, #d3e3f1 100%); color: #173048; }
+.wx.wx-snow b, .wx.wx-snow span { color: #173048; } .wx.wx-snow em { color: rgba(23,48,72,.7); }
+.wx.wx-storm { background: linear-gradient(170deg, #252a4a 0%, #51557f 100%); }
+.wx::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 80% -10%, rgba(255,255,255,.28), transparent 55%); pointer-events: none; }

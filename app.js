@@ -98,6 +98,7 @@
     const d = Math.min(Math.max(i, 0), S.days - 1);
     ui.day = d; $('#todayPlan').textContent = TRIP.plan[d].title;
   }
+  const WXK = c => c === 0 ? 'sun' : c <= 2 ? 'part' : c === 3 ? 'cloud' : c <= 48 ? 'fog' : c <= 67 ? 'rain' : c <= 77 ? 'snow' : c <= 82 ? 'shower' : 'storm';   // סוג מזג האוויר, לצבע הכרטיס
   const WX = c => c === 0 ? '☀️' : c <= 2 ? '🌤️' : c === 3 ? '☁️' : c <= 48 ? '🌫️' : c <= 67 ? '🌧️' : c <= 77 ? '🌨️' : c <= 82 ? '🌦️' : '⛈️';
   async function renderWeather() {
     const box = $('#weather');
@@ -106,7 +107,7 @@
       let r = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=38.72&longitude=-9.14&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Europe%2FLisbon&start_date=${S.start}&end_date=${end}`);
       if (!r.ok) r = await fetch('https://api.open-meteo.com/v1/forecast?latitude=38.72&longitude=-9.14&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Europe%2FLisbon&forecast_days=4');
       const d = (await r.json()).daily;
-      box.innerHTML = d.time.slice(0, 4).map((t, i) => `<div class="wx"><b>${fmtDay(new Date(t + 'T12:00'))} ${fmtDate(new Date(t + 'T12:00'))}</b><i>${WX(d.weather_code[i])}</i><span>${Math.round(d.temperature_2m_max[i])}°</span> <em>${Math.round(d.temperature_2m_min[i])}°</em></div>`).join('');
+      box.innerHTML = d.time.slice(0, 4).map((t, i) => `<div class="wx wx-${WXK(d.weather_code[i])}"><b>${fmtDay(new Date(t + 'T12:00'))} ${fmtDate(new Date(t + 'T12:00'))}</b><i>${WX(d.weather_code[i])}</i><span>${Math.round(d.temperature_2m_max[i])}°</span> <em>${Math.round(d.temperature_2m_min[i])}°</em></div>`).join('');
     } catch { box.innerHTML = ''; }
   }
   function renderAlert() {
@@ -417,7 +418,7 @@
 
   function renderStatic() {
     $('#tips').innerHTML = TIPS.map(g => `<div class="tipg"><h3>${g.h}</h3><ul>${g.items.map(i => `<li>${i}</li>`).join('')}</ul></div>`).join('');
-    $('#phrases').innerHTML = PHRASES.map(p => `<div class="ph"><button type="button" class="ph-play" data-say="${p[3]}" aria-label="השמעה"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 5.500v13l11-6.500z"/></svg></button><div><b>${p[0]}</b><span>${p[2]}</span><small translate="no" lang="pt">${p[1]}</small></div></div>`).join('');
+    $('#phrases').innerHTML = PHRASES.map(p => `<div class="ph"><button type="button" class="ph-play" data-say="${p[3]}" aria-label="השמעה"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 5.500v13l11-6.500z"/></svg></button><div><b>${p[0]}</b><span>${LANG !== 'he' && T(p[2]) === p[1] ? '' : p[2]}</span><small translate="no" lang="pt">${p[1]}</small></div></div>`).join('');
     let sayNow = null;   // הקלטה בקול נשי, קובץ לכל ביטוי
     $('#phrases').onclick = e => { const b = e.target.closest('[data-say]'); if (!b) return;
       if (sayNow) { sayNow.pause(); document.querySelectorAll('.ph-play.on').forEach(x => x.classList.remove('on')); }
@@ -471,7 +472,7 @@
   })();
 
   // ───── עדכון אוטומטי: בודקים אם יש גרסה חדשה באתר, ואם כן טוענים אותה ─────
-  const VERSION = 2;
+  const VERSION = 3;
   async function checkUpdate() {
     if (location.protocol !== 'https:' || !navigator.onLine) return;
     try {
