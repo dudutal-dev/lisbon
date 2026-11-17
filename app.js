@@ -451,7 +451,7 @@
     const PLUS = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></svg>';
     let promptEv = null;
     const steps = invited => {
-      $('#installTitle').textContent = invited ? 'הוזמנת לקבוצה 🎉' : 'התקנה למסך הבית'; $('#installOk').hidden = !!invited;
+      $('#installTitle').textContent = invited ? 'הוזמנת לקבוצה 🎉' : 'התקנה למסך הבית'; $('#installOk').textContent = invited ? 'סגירה' : 'הבנתי';
       $('#installSteps').innerHTML = (ios ? [
         `ללחוץ על כפתור השיתוף <span class="inst-ic">${SHARE}</span> ${/CriOS/.test(ua) ? 'בשורת הכתובת למעלה' : 'בתחתית המסך'}.`,
         `לגלול למטה ולבחור <b>"הוספה למסך הבית"</b> <span class="inst-ic">${PLUS}</span>.`,
@@ -473,7 +473,7 @@
   })();
 
   // ───── עדכון אוטומטי: בודקים אם יש גרסה חדשה באתר, ואם כן טוענים אותה ─────
-  const VERSION = 8;
+  const VERSION = 9;
   async function checkUpdate() {
     if (location.protocol !== 'https:' || !navigator.onLine) return;
     try {

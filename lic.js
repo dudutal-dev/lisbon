@@ -74,6 +74,7 @@
     invite: () => (valid() && L.kind === 'pass' && L.invite) || '',
     unseat: gid => { if (valid() && L.kind === 'pass') api('unseat', { id: L.id, dev, gid }).then(() => check()).catch(() => {}); },
     sync: () => check(),
+    use: tok => (valid() && L.kind === 'pass' && /^I\./.test(tok) ? true : activate(tok)),   // הזמנה שהגיעה מהדפדפן דרך השרת
   };
   boot();
 })();

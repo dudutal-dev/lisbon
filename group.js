@@ -544,24 +544,38 @@
   // ───── התחלה ─────
   $('#grpName').value = G.name || '';
   // קישור הזמנה (?j=קוד): מי שכבר כתב שם מצטרף מיד, ומי שלא – כותב רק שם
-  const j = new URLSearchParams(location.search).get('j') || location.hash.match(/^#join-([A-Za-z0-9-]+)/)?.[1];
-  if (j && /^[A-Za-z0-9-]{6,20}$/.test(j)) {
-    // קישור הזמנה מצרף פעם אחת בלבד. מי שיצא או הוסר לא יצורף שוב לבד בכל פתיחה של האפליקציה ממסך הבית
-    let used = ''; try { used = localStorage.getItem('lisboa.jused') || ''; } catch {}
-    if (used.split(',').includes(norm(j))) { if (!G.code) $('#grpCodeIn').value = j; }
-    else if (!G.code) { $('#grpCodeIn').value = j; A.go('group');
-      const alone = matchMedia('(display-mode: standalone)').matches || navigator.standalone;
-      if (G.name && alone) join(j, G.name, false);   // האפליקציה כבר במסך הבית והשם ידוע: מצטרפים מיד
-      else { // חלון אחד: שם, ולחיצה אחת שמצרפת לקבוצה ומתקינה למסך הבית
-        // חובה להתקין במסך הבית. באייפון אי אפשר להתקין מתוך האתר: מראים את הצעדים, וההצטרפות נעשית באפליקציה שבמסך הבית
-        const dlg = $('#inviteDlg'), ios = /iPhone|iPad|iPod/.test(navigator.userAgent);
-        if (ios && !alone) return void setTimeout(() => A.installSteps(true), 500);
-        $('#invName').value = G.name || ''; $('#invGo').textContent = alone ? 'הצטרפות לקבוצה' : 'להצטרף ולהתקין'; $('#invQ').hidden = alone;
-        $('#invForm').onsubmit = async e => { e.preventDefault(); const name = $('#invName').value.trim(); if (!name) { A.toast('איך קוראים לך?'); return $('#invName').focus(); }
-          if (!alone) { const r = await A.installNow(); if (r === 'no') return A.toast('כדי להצטרף צריך להתקין את האפליקציה במסך הבית', 5000); }
-          dlg.close(); $('#grpName').value = name; join(j, name, false); };
-        setTimeout(() => dlg.showModal(), 500); } }
-    else if (norm(G.code) !== norm(j)) setTimeout(() => A.toast('הקישור הוא לקבוצה אחרת. כדי להצטרף אליה צריך קודם לצאת מהקבוצה הנוכחית', 7000), 1500);
+  const alone = matchMedia('(display-mode: standalone)').matches || !!navigator.standalone, iosDev = /iPhone|iPad|iPod/.test(navigator.userAgent);
+  const usedList = () => { try { return (localStorage.getItem('lisboa.jused') || '').split(','); } catch { return []; } };
+  function invited(j) {
+    if (!/^[A-Za-z0-9-]{6,20}$/.test(j || '')) return;
+    if (G.code) { if (norm(G.code) !== norm(j)) setTimeout(() => A.toast('הקישור הוא לקבוצה אחרת. כדי להצטרף אליה צריך קודם לצאת מהקבוצה הנוכחית', 7000), 1500); return; }
+    $('#grpCodeIn').value = j;
+    if (usedList().includes(norm(j))) return;   // קישור הזמנה מצרף פעם אחת בלבד: מי שיצא או הוסר לא יצורף שוב לבד
+    A.go('group');
+    if (G.name && alone) return void join(j, G.name, false);   // האפליקציה כבר במסך הבית והשם ידוע: מצטרפים מיד
+    if (iosDev && !alone) {
+      // באייפון אי אפשר להתקין מתוך האתר: מראים את הצעדים, וההצטרפות נעשית באפליקציה שבמסך הבית.
+      // האפליקציה שבמסך הבית לא תמיד נפתחת עם הקוד שבקישור, לכן ההזמנה מחכה לה גם בשרת שלנו, לרבע שעה.
+      if (PUSH_URL) fetch(PUSH_URL + '/h/put', { method: 'POST', body: JSON.stringify({ app: APP_ID, j, k: new URLSearchParams(location.search).get('k') || '' }) }).catch(() => {});
+      return void setTimeout(() => A.installSteps(true), 500);
+    }
+    // חלון אחד: שם, ולחיצה אחת שמצרפת לקבוצה (ובאנדרואיד גם מתקינה למסך הבית)
+    const dlg = $('#inviteDlg');
+    $('#invName').value = G.name || ''; $('#invGo').textContent = alone ? 'הצטרפות לקבוצה' : 'להצטרף ולהתקין'; $('#invQ').hidden = alone;
+    $('#invForm').onsubmit = async e => { e.preventDefault(); const name = $('#invName').value.trim(); if (!name) { A.toast('איך קוראים לך?'); return $('#invName').focus(); }
+      if (!alone) { const r = await A.installNow(); if (r === 'no') return A.toast('כדי להצטרף צריך להתקין את האפליקציה במסך הבית', 5000); }
+      dlg.close(); $('#grpName').value = name; join(j, name, false); };
+    setTimeout(() => { if (!dlg.open) dlg.showModal(); }, 500);
+  }
+  const jLink = new URLSearchParams(location.search).get('j') || location.hash.match(/^#join-([A-Za-z0-9-]+)/)?.[1];
+  if (jLink) invited(jLink);
+  else if (alone && iosDev && !G.code && PUSH_URL) {   // האפליקציה שבמסך הבית נפתחה בלי קוד: בודקים אם מחכה לה הזמנה מהדפדפן
+    let asked = 0; try { asked = +localStorage.getItem('lisboa.hand') || 0; } catch {}
+    if (asked < 3) { try { localStorage.setItem('lisboa.hand', String(asked + 1)); } catch {}
+      fetch(PUSH_URL + '/h/get', { method: 'POST', body: JSON.stringify({ app: APP_ID }) }).then(r => r.json()).then(async r => {
+        if (!r || !r.j || G.code) return; try { localStorage.setItem('lisboa.hand', '9'); } catch {}
+        if (r.k && A.lic) await A.lic.use(r.k);
+        invited(r.j); }).catch(() => {}); }
   }
   render();
   if (G.code) derive(G.code).then(() => { connect(); if (G.share) A.startGPS(false); pushRefresh(); render(); });
