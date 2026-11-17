@@ -553,7 +553,10 @@
     if (usedList().includes(norm(j))) return;   // קישור הזמנה מצרף פעם אחת בלבד: מי שיצא או הוסר לא יצורף שוב לבד
     A.go('group');
     if (G.name && alone) return void join(j, G.name, false);   // האפליקציה כבר במסך הבית והשם ידוע: מצטרפים מיד
-    if (iosDev && !alone) {
+    // אם כבר ראו כאן את צעדי ההתקנה וחזרו לאותו מקום (האייקון פתח שוב את הדפדפן ולא אפליקציה נפרדת), מצטרפים כאן ולא נתקעים
+    let seen = ''; try { seen = localStorage.getItem('lisboa.steps') || ''; } catch {}
+    if (iosDev && !alone && seen !== norm(j)) {
+      try { localStorage.setItem('lisboa.steps', norm(j)); } catch {}
       // באייפון אי אפשר להתקין מתוך האתר: מראים את הצעדים, וההצטרפות נעשית באפליקציה שבמסך הבית.
       // האפליקציה שבמסך הבית לא תמיד נפתחת עם הקוד שבקישור, לכן ההזמנה מחכה לה גם בשרת שלנו, לרבע שעה.
       if (PUSH_URL) fetch(PUSH_URL + '/h/put', { method: 'POST', body: JSON.stringify({ app: APP_ID, j, k: new URLSearchParams(location.search).get('k') || '' }) }).catch(() => {});
@@ -568,7 +571,9 @@
     setTimeout(() => { if (!dlg.open) dlg.showModal(); }, 500);
   }
   const jLink = new URLSearchParams(location.search).get('j') || location.hash.match(/^#join-([A-Za-z0-9-]+)/)?.[1];
+  let stepsFor = ''; try { stepsFor = localStorage.getItem('lisboa.steps') || ''; } catch {}
   if (jLink) invited(jLink);
+  else if (!G.code && stepsFor && !usedList().includes(stepsFor)) invited(stepsFor.replace(/(.{4})(?=.)/g, '$1-'));   // האייקון נפתח בלי הקוד, באותו אחסון: ממשיכים מאיפה שעצרו
   else if (alone && iosDev && !G.code && PUSH_URL) {   // האפליקציה שבמסך הבית נפתחה בלי קוד: בודקים אם מחכה לה הזמנה מהדפדפן
     let asked = 0; try { asked = +localStorage.getItem('lisboa.hand') || 0; } catch {}
     if (asked < 3) { try { localStorage.setItem('lisboa.hand', String(asked + 1)); } catch {}

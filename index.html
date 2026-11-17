@@ -12,7 +12,7 @@
 <meta name="apple-mobile-web-app-title" content="ליסבון">
 <link rel="manifest" href="manifest.webmanifest">
 <script>/* קישור הזמנה באייפון: בלי manifest, "הוספה למסך הבית" שומרת את הכתובת עם הקוד, והאפליקציה שבמסך הבית מצטרפת לבד */
-if (/[?&][jk]=/.test(location.search) && /iPhone|iPad|iPod/.test(navigator.userAgent) && !navigator.standalone) document.querySelector('link[rel=manifest]').remove();</script>
+if (/[?&][jk]=/.test(location.search) && /iPhone|iPad|iPod/.test(navigator.userAgent) && !/CriOS|FxiOS|EdgiOS/.test(navigator.userAgent) && !navigator.standalone) document.querySelector('link[rel=manifest]').remove();</script>
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">

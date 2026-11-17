@@ -453,7 +453,7 @@
     const steps = invited => {
       $('#installTitle').textContent = invited ? 'הוזמנת לקבוצה 🎉' : 'התקנה למסך הבית'; $('#installOk').textContent = invited ? 'סגירה' : 'הבנתי';
       $('#installSteps').innerHTML = (ios ? [
-        `ללחוץ על כפתור השיתוף <span class="inst-ic">${SHARE}</span> ${/CriOS/.test(ua) ? 'בשורת הכתובת למעלה' : 'בתחתית המסך'}.`,
+        `ללחוץ על כפתור השיתוף <span class="inst-ic">${SHARE}</span> ${/CriOS|FxiOS|EdgiOS/.test(ua) ? 'שליד שורת הכתובת' : 'בתחתית המסך'}.`,
         `לגלול למטה ולבחור <b>"הוספה למסך הבית"</b> <span class="inst-ic">${PLUS}</span>.`,
         'ללחוץ <b>"הוסף"</b> בפינה למעלה.'] : [
         'לפתוח את תפריט הדפדפן <span class="inst-ic">⋮</span> בפינה למעלה.',
@@ -473,7 +473,7 @@
   })();
 
   // ───── עדכון אוטומטי: בודקים אם יש גרסה חדשה באתר, ואם כן טוענים אותה ─────
-  const VERSION = 9;
+  const VERSION = 10;
   async function checkUpdate() {
     if (location.protocol !== 'https:' || !navigator.onLine) return;
     try {
