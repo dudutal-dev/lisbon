@@ -1,0 +1,25 @@
+{
+  "name": "ליסבון שלנו",
+  "short_name": "ליסבון",
+  "description": "המדריך האישי לטיול בליסבון",
+  "lang": "he",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#06492b",
+  "theme_color": "#06492b",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

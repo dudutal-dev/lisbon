@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ליסבון שלנו</title>
+<script src="i18n.js"></script>
+<meta name="description" content="המדריך האישי לטיול בליסבון: מפה חיה, שופינג, מסעדות, מסלול וכלים">
+<meta name="theme-color" content="#f5f6f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c1611" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ליסבון">
+<link rel="manifest" href="manifest.webmanifest">
+<script>/* קישור הזמנה באייפון: בלי manifest, "הוספה למסך הבית" שומרת את הכתובת עם הקוד, והאפליקציה שבמסך הבית מצטרפת לבד */
+if (/[?&]j=/.test(location.search) && /iPhone|iPad|iPod/.test(navigator.userAgent) && !navigator.standalone) document.querySelector('link[rel=manifest]').remove();</script>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&family=Frank+Ruhl+Libre:wght@500;700;900&family=Gveret+Levin&family=Caveat:wght@500;700&display=swap">
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="app.css">
+<script>/* מצב בהיר / כהה שנבחר ידנית: מפעילים או מכבים את כללי ה-CSS של "מצב כהה", בלי לשכפל אותם */
+window.applyTheme = function (t) {
+  for (var i = 0; i < document.styleSheets.length; i++) { var rules; try { rules = document.styleSheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) { var r = rules[j]; if (!r.media) continue; r._q = r._q || r.media.mediaText; if (!/prefers-color-scheme/.test(r._q)) continue;
+      r.media.mediaText = !t ? r._q : (t === 'dark') === /dark/.test(r._q) ? 'all' : 'not all'; } }
+  document.documentElement.dataset.theme = t || ''; document.documentElement.style.colorScheme = t || 'light dark';
+  var m = document.querySelector('meta[name=theme-color]'); if (m && t) { m.removeAttribute('media'); m.content = t === 'dark' ? '#0c1611' : '#f5f6f1'; }
+};
+try { var th = localStorage.getItem('lisboa.theme'); if (th === 'dark' || th === 'light') applyTheme(th); } catch (e) {}</script>
+</head>
+<body>
+
+<main id="app">
+  <!-- בית -->
+  <section class="view" id="v-home" data-view="home">
+    <header class="hero">
+      <div class="hero-top">
+        <p class="eyebrow">אוֹלָה, <span>ליסבון</span></p>
+        <span class="hero-btns"><button class="hero-set hero-lang" id="langBtn" type="button" translate="no" aria-label="Language"><i id="langFlag"></i><b id="langNow"></b></button>
+        <button class="hero-set round" id="themeBtn" type="button" aria-label="מצב בהיר או כהה"></button>
+        <button class="hero-set round" id="tripBtn" type="button" aria-label="הגדרות הנסיעה"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></svg></button></span>
+      </div>
+      <h1 id="heroTitle"></h1>
+      <p class="hero-sub"><span id="heroDates"></span><b id="heroCount"></b></p>
+      <div class="hero-clock"><i><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M12 7.500V12l3 2"/></svg></i><span><small>השעה בליסבון</small><b id="heroTime" translate="no"></b></span><em id="heroDay"></em></div>
+      <svg class="hero-art" viewBox="0 0 320 120" aria-hidden="true">
+        <g fill="currentColor">
+          <rect x="0" y="84" width="320" height="6"/>
+          <rect x="84" y="18" width="9" height="94"/><rect x="227" y="18" width="9" height="94"/>
+          <rect x="80" y="40" width="17" height="4"/><rect x="223" y="40" width="17" height="4"/><rect x="80" y="62" width="17" height="4"/><rect x="223" y="62" width="17" height="4"/>
+          <rect x="0" y="112" width="320" height="8"/>
+        </g>
+        <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+          <path d="M0 66Q46 70 88 20Q160 104 232 20Q274 70 320 66"/>
+          <path stroke-width="1.5" d="M110 44v40M128 60v24M146 70v14M160 73v11M174 70v14M192 60v24M210 44v40M66 46v38M46 60v24M24 66v18M254 46v38M274 60v24M296 66v18"/>
+        </g>
+      </svg>
+    </header>
+    <div class="stack">
+      <div id="weather" class="weather" aria-label="תחזית"></div>
+      <div id="alertBox"></div>
+      <section class="card install" id="installCard" hidden>
+        <img src="icon-180.png" alt="" width="56" height="56">
+        <div><h2>התקנה למסך הבית</h2><p class="muted small" id="installTxt"></p>
+        <div class="row"><button class="btn sm" id="installBtn" type="button">התקנה</button><button class="link" id="installHide" type="button">לא עכשיו</button></div></div>
+      </section>
+      <section class="card starthome" id="startHome" hidden>
+        <div class="card-head"><h2>איך מתחילים</h2><span class="pill" id="startCount"></span></div>
+        <p class="muted small">כמה צעדים קצרים, עם צילומי מסך. אפשר לעשות אותם בכל סדר.</p>
+        <div class="start-dots" id="startDots"></div>
+        <div class="row"><button class="btn" data-jump="startCard" type="button">למדריך ההתחלה</button><button class="link" id="startHide" type="button">הבנתי, להסתיר</button></div>
+      </section>
+      <section class="card setup" id="setupCard" hidden>
+        <h2>איזו נסיעה זו?</h2>
+        <p class="muted small">בנות, בנים, משפחה או חברים, ואולי יום הולדת? לפי זה יותאמו ההמלצות, המסלול והיומן.</p>
+        <div class="row"><button class="btn" id="setupBtn" type="button">הגדרת הנסיעה</button><button class="btn ghost" data-go="group" type="button">יש לי קוד קבוצה</button></div>
+      </section>
+      <div class="quick">
+        <button class="qbtn wide" data-go="group"><i class="ic" data-ic="chat" style="--c:#1f5fbf"></i><span><b class="grpname">הקבוצה</b><small id="grpHint">צ׳אט ומיקום חי</small></span><span class="faces" id="grpFaces"></span><em class="nbadge" id="grpBadge" hidden></em></button>
+        <button class="qbtn" data-act="near"><i class="ic" data-ic="compass" style="--c:#0b8a4f"></i><span><b>מה קרוב אליי</b><small>מקומות לפי מרחק</small></span></button>
+        <button class="qbtn" data-act="share"><i class="ic" data-ic="send" style="--c:#0b8a4f"></i><span><b>שיתוף מיקום</b><small>שליחה בוואטסאפ</small></span></button>
+        <button class="qbtn" data-go="plan"><i class="ic" data-ic="cal" style="--c:#b0562a"></i><span><b>המסלול</b><small id="todayPlan"></small></span></button>
+        <button class="qbtn" data-jump="meCard"><i class="ic" data-ic="id" style="--c:#d99a12"></i><span><b>פרטים ומסמכים</b><small>דרכון, ביטוח, אישורים</small></span></button>
+        <button class="qbtn" data-jump="taxCard"><i class="ic" data-ic="percent" style="--c:#d99a12"></i><span><b>Tax Free</b><small>איך מקבלים החזר מס</small></span></button>
+        <button class="qbtn" data-jump="offlineCard"><i class="ic" data-ic="download" style="--c:#1f5fbf"></i><span><b>מפה בלי אינטרנט</b><small id="offHint">הורדה לטלפון</small></span></button>
+        <button class="qbtn" data-act="favs"><i class="ic" data-ic="heart" style="--c:#d6392b"></i><span><b>הרשימה שלי</b><small id="favCount"></small></span></button>
+        <button class="qbtn" data-go="journal"><i class="ic" data-ic="book" style="--c:#d6392b"></i><span><b>היומן שלנו</b><small>תמונות ורגעים</small></span></button>
+      </div>
+      <section class="card" id="hotelCard"></section>
+      <section class="card" id="flightsCard"></section>
+      <details class="card bday" id="occCard" hidden></details>
+      <section>
+        <div class="sec-head"><h2>אסור לפספס</h2><button class="link" data-go="places">לכל המקומות</button></div>
+        <div class="rail" id="topRail"></div>
+      </section>
+    </div>
+  </section>
+
+  <!-- מפה -->
+  <section class="view" id="v-map" data-view="map" hidden>
+    <div id="map"></div>
+    <div class="map-chips chips" id="mapChips"></div>
+    <div class="map-fabs">
+      <button class="fab" id="btnLocate" aria-label="המיקום שלי">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+      </button>
+      <button class="fab" id="btnLayers" aria-label="סוג המפה">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5zM3 12l9 5 9-5M3 16l9 5 9-5"/></svg>
+      </button>
+      <button class="fab" id="btnHotel" aria-label="המלון">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21V10l9-7 9 7v11h-6v-6H9v6z"/></svg>
+      </button>
+    </div>
+    <div class="map-status" id="gpsStatus" hidden></div>
+  </section>
+
+  <!-- מקומות -->
+  <section class="view" id="v-places" data-view="places" hidden>
+    <header class="page-head">
+      <h1>מקומות</h1>
+      <input type="search" id="search" placeholder="חיפוש: סנדלים, גג, סובלאקי…" autocomplete="off">
+    </header>
+    <div class="chips" id="placeChips"></div>
+    <div class="sortbar" id="sortbar">
+      <button data-sort="rec" class="on">מומלצים</button>
+      <button data-sort="me">קרוב אליי</button>
+      <button data-sort="hotel">קרוב למלון</button>
+    </div>
+    <div class="list" id="placeList"></div>
+  </section>
+
+  <!-- יומן -->
+  <section class="view" id="v-journal" data-view="journal" hidden>
+    <header class="page-head jr-head">
+      <div class="jr-tabs" role="tablist"><button id="jrTabMe" type="button">היומן שלי <em id="jrNMe"></em></button><button id="jrTabUs" type="button">היומן המשותף <em id="jrNUs"></em></button></div>
+      <p class="jr-kicker" id="jrKicker"></p>
+      <h1 class="hand" id="jrTitle">היומן שלי</h1>
+    </header>
+    <div class="jr-actions">
+      <label class="btn" for="camIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>צילום</label>
+      <label class="btn ghost" for="vidIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg>סרטון</label>
+      <label class="btn ghost" for="upIn">העלאה</label>
+      <button class="btn ghost" id="jrNote">כתיבה</button>
+    </div>
+    <input type="file" id="camIn" accept="image/*" capture="environment" hidden>
+    <input type="file" id="vidIn" accept="video/*" capture="environment" hidden>
+    <input type="file" id="upIn" accept="image/*,video/*" multiple hidden>
+    <div class="jr-show"><button class="btn sea" id="jrShow" type="button"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span id="jrShowTxt">מצגת הטיול</span></button><button class="btn ghost" id="bkOpen" type="button">גיבוי תמונות<em class="nbadge" id="bkCount" hidden></em></button></div>
+    <div class="bk-banner" id="bkBanner" hidden><span id="bkBannerTxt"></span><button class="btn sm" id="bkBannerBtn" type="button">גיבוי עכשיו</button><button class="link" id="bkBannerX" type="button">אחר כך</button></div>
+    <div id="jrBody"></div>
+  </section>
+
+  <!-- הבנות -->
+  <section class="view" id="v-group" data-view="group" hidden>
+    <header class="page-head"><h1 class="grpname">הקבוצה</h1><p class="muted" id="grpStatus"></p></header>
+    <div class="stack" id="grpJoin">
+      <section class="card">
+        <h2>להצטרף לקבוצה</h2>
+        <p class="invited" id="grpInvited" hidden></p>
+        <form id="grpJoinForm" class="form-in">
+          <label>השם שלך<input id="grpName" autocomplete="off" maxlength="16" placeholder="השם שלך"></label>
+          <label>קוד הקבוצה<input id="grpCodeIn" autocomplete="off" autocapitalize="characters" placeholder="XXXX-XXXX" dir="ltr"></label>
+          <button class="btn">הצטרפות עם הקוד</button>
+        </form>
+        <p class="muted small" style="margin:14px 0 8px">מי שמארגן פותח קבוצה, מגדיר את הנסיעה ושולח את הקוד לכולם:</p>
+        <button class="btn ghost" id="grpNew" type="button">פתיחת קבוצה חדשה</button>
+      </section>
+      <p class="muted small center">ההודעות והמיקומים מוצפנים בטלפון עם הקוד. רק מי שיש לו את הקוד יכול לקרוא.</p>
+    </div>
+    <div class="stack" id="grpMain" hidden>
+      <section class="card" id="tripCard"></section>
+      <section class="card">
+        <div class="card-head"><div><small class="muted">קוד הקבוצה</small><div class="gcode" id="grpCode" dir="ltr"></div></div><button class="btn sm" id="grpInvite">הזמנה לקבוצה</button></div>
+        <div class="myav"><span id="myFace"></span><div><b>התמונה שלי</b><small class="muted">הקבוצה תראה אותה בצ׳אט, במפה ובעמוד הבית</small>
+          <div class="row"><label class="btn sm" for="avIn">בחירת תמונה</label><button class="link" id="avClear" type="button" hidden>הסרה</button></div></div></div>
+        <input type="file" id="avIn" accept="image/*" hidden>
+        <label class="switch"><input type="checkbox" id="grpShare"><span>לשתף את המיקום שלי עם הקבוצה</span></label>
+        <div id="grpMembers" class="mems"></div>
+      </section>
+      <button class="btn" data-go="chat" type="button">פתיחת הצ׳אט</button>
+      <section class="card" id="pushNative" hidden>
+        <div class="card-head"><h2 class="h-ic"><i class="ic" data-ic="phone" style="--c:#d6392b"></i>התראות</h2><span class="pill" id="pushState"></span></div>
+        <p class="muted small" id="pushTxt">התראה קופצת על כל הודעה בצ׳אט, גם כשהאפליקציה סגורה. לחיצה עליה פותחת את האפליקציה.</p>
+        <div class="row" style="margin-top:10px"><button class="btn" id="pushOn" type="button">הפעלת התראות</button><button class="btn ghost sm" id="pushTest" type="button" hidden>התראת ניסיון</button></div>
+      </section>
+      <section class="card"><h2>מקומות שסימנו</h2><div id="grpFavs" class="tags"></div></section>
+      <button class="link center" id="grpLeave">יציאה מהקבוצה</button>
+      <p class="muted small center">כשהאפליקציה פתוחה ההודעות מגיעות מיד, עם צליל.</p>
+    </div>
+  </section>
+
+  <!-- צ׳אט -->
+  <section class="view chatview" id="v-chat" data-view="chat" hidden>
+    <header class="chat-head"><div><p class="jr-kicker" id="chatStatus"></p><h1 class="hand">הצ׳אט שלנו</h1></div><button class="btn ghost sm" data-go="group" type="button">הקבוצה</button></header>
+    <div class="chat-empty" id="chatEmpty" hidden><p>עוד אין קבוצה. פותחים קבוצה או מצטרפות עם קוד, ואז הצ׳אט נפתח כאן.</p><button class="btn" data-go="group" type="button">לקבוצה</button></div>
+    <div class="chat-body" id="chatBody">
+        <div id="grpChat" class="chat"></div>
+        <div id="grpQuick" class="tags"><button class="tag" type="button">איפה כולם?</button><button class="tag" type="button">אני בדרך</button><button class="tag" type="button">נפגשים במלון</button><button class="tag" type="button" data-here>📍 אני כאן, בואו</button></div>
+        <div id="emojiPanel" class="emoji-panel" hidden></div>
+        <form id="grpForm" class="chatform"><button type="button" class="cbtn" id="emojiBtn" aria-label="סמיילים">😊</button><label class="cbtn" for="chatFile" aria-label="צירוף תמונה או מסמך">📎</label><input id="grpText" autocomplete="off" maxlength="500" placeholder="הודעה לקבוצה…" enterkeyhint="send"><button class="btn sm send" aria-label="שליחה"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12 21 3l-6 18-3-8z"/></svg></button></form>
+        <input type="file" id="chatFile" hidden>
+    </div>
+  </section>
+
+  <!-- מסלול -->
+  <section class="view" id="v-plan" data-view="plan" hidden>
+    <header class="page-head">
+      <h1>ארבעה ימים</h1>
+      <p class="muted">הצעה גמישה. לוחצים על מקום כדי לראות פרטים ולנווט.</p>
+    </header>
+    <div class="daytabs" id="dayTabs"></div>
+    <div id="planBody"></div>
+  </section>
+
+  <!-- עוד -->
+  <section class="view" id="v-more" data-view="more" hidden>
+    <header class="page-head"><h1>ארגז כלים</h1></header>
+    <div class="stack">
+      <details class="card acc" id="startCard">
+        <summary><i class="ic" data-ic="compass" style="--c:#0b8a4f"></i>איך מתחילים</summary>
+        <p class="muted small">כמה צעדים, עם צילומי מסך וכפתור שמוביל ישר למקום. צעד שהושלם מסומן ב־✓.</p>
+        <div id="startSteps" class="start-steps"></div>
+      </details>
+
+      <details class="card acc" id="guideCard">
+        <summary><i class="ic" data-ic="bulb" style="--c:#d99a12"></i>מדריך לאפליקציה</summary>
+        <p class="muted small">כל מה שחשוב לדעת, בשפה פשוטה. לוחצים על נושא כדי לפתוח.</p>
+        <div id="guide" class="guide"></div>
+      </details>
+
+      <details class="card acc" id="tripsCard">
+        <summary><i class="ic" data-ic="bag" style="--c:#b0562a"></i>הנסיעות שלי</summary>
+        <p class="muted small">נוסעים שוב לליסבון? הנסיעה הנוכחית נשמרת עם היומן, הצ'אט והמסלול שלה, ומתחילים נסיעה חדשה ונקייה. אפשר לחזור לכל נסיעה שמורה, וגם למחוק נסיעה יחד עם היומן שלה.</p>
+        <div id="tripsList" class="trips"></div>
+        <button class="btn" id="tripNew" type="button">התחלת נסיעה חדשה</button>
+      </details>
+
+      <details class="card acc" id="meCard">
+        <summary><i class="ic" data-ic="id" style="--c:#d99a12"></i>הפרטים והמסמכים שלי</summary>
+        <p class="muted small">נשמר רק בטלפון הזה ולא נשלח לשום מקום.</p>
+        <div class="grid2" id="meForm">
+          <label class="wide">שם מלא, כמו בדרכון<input id="me_name" data-k="name" autocomplete="off"></label>
+          <label>מספר דרכון<input id="me_pass" data-k="pass" autocomplete="off" autocapitalize="characters"></label>
+          <label>תוקף הדרכון<input id="me_passExp" data-k="passExp" type="date"></label>
+          <label>חברת ביטוח<input id="me_ins" data-k="ins" autocomplete="off"></label>
+          <label>מספר פוליסה<input id="me_insNo" data-k="insNo" autocomplete="off"></label>
+          <label class="wide">מוקד החירום של הביטוח<input id="me_insTel" data-k="insTel" type="tel" autocomplete="off"></label>
+          <label>איש קשר לחירום<input id="me_ice" data-k="ice" autocomplete="off"></label>
+          <label>הטלפון שלו<input id="me_iceTel" data-k="iceTel" type="tel" autocomplete="off"></label>
+          <label class="wide">מספר אישור ההזמנה במלון<input id="me_hotelRef" data-k="hotelRef" autocomplete="off"></label>
+          <label class="wide">מידע רפואי חשוב (אלרגיות, תרופות, סוג דם)<input id="me_med" data-k="med" autocomplete="off"></label>
+        </div>
+        <div id="meNote"></div>
+        <h3 class="sub-h">מסמכים מצולמים</h3>
+        <p class="muted small">דרכון, כרטיס עלייה למטוס, ביטוח, אישור מלון. התמונה מטושטשת עד שלוחצים עליה.</p>
+        <select id="docType" aria-label="סוג המסמך">
+          <option>דרכון</option><option>כרטיס עלייה למטוס</option><option>כרטיס טיסה</option><option>ביטוח נסיעות</option><option>אישור הזמנת מלון</option><option>מסמך אחר</option>
+        </select>
+        <div class="row">
+          <label class="btn sm" for="docCam">צילום המסמך</label>
+          <label class="btn ghost sm" for="docUp">העלאה מהגלריה</label>
+        </div>
+        <input type="file" id="docCam" accept="image/*" capture="environment" hidden>
+        <input type="file" id="docUp" accept="image/*" hidden>
+        <div id="docGrid" class="docgrid"></div>
+      </details>
+
+      <section class="card" id="offlineCard">
+        <div class="card-head"><h2 class="h-ic"><i class="ic" data-ic="download" style="--c:#1f5fbf"></i>מפה בלי אינטרנט</h2><span class="pill" id="offState"></span></div>
+        <p class="muted small">מורידה לטלפון את מפת הרחובות של מרכז ליסבון ברמת רחוב ואת כל האזור: בלם, שדה התעופה, סינטרה וקשקאיש. כ־20 מ״ב, עדיף ב־Wi‑Fi לפני הטיסה. ה־GPS עובד גם בלי חבילת גלישה.</p>
+        <progress id="offBar" max="100" value="0" hidden></progress>
+        <div class="row" style="margin-top:10px"><button class="btn sea" id="offBtn">הורדת המפה</button><span class="muted small" id="offMsg"></span></div>
+      </section>
+
+      <details class="card acc" id="taxCard">
+        <summary><i class="ic" data-ic="percent" style="--c:#d99a12"></i>החזר מס – Tax Free</summary>
+        <p>תיירות מחוץ לאיחוד האירופי (דרכון ישראלי) זכאיות להחזר המע״מ על קניות. המע״מ בפורטוגל 23%, וההחזר בפועל אחרי עמלה הוא בערך <b>12–15 אחוז מהמחיר</b>.</p>
+        <div class="conv taxcalc">
+          <label>סכום הקנייה ב־€<input id="taxAmt" type="number" inputmode="decimal"></label>
+          <label>החזר משוער<output id="taxOut" class="out" dir="auto">—</output></label>
+        </div>
+        <h3 class="sub-h">בחנות</h3>
+        <ol class="steps">
+          <li>מינימום של <b>בערך 61.50 אירו בחנות אחת באותו יום</b>. כדאי לרכז קניות בחנות אחת או בכל־בו כמו אל קורטה אינגלס.</li>
+          <li>לחפש שלט Tax Free (Global Blue או Planet) ולבקש בקופה: <b dir="ltr">"Tax free form, please"</b>.</li>
+          <li>להציג <b>דרכון</b>. יש חנויות שמסתפקות בצילום, אבל לא כולן.</li>
+          <li>לשמור את הטופס יחד עם הקבלה, ולא להשתמש במוצרים: הם צריכים לצאת מפורטוגל חדשים, עם התוויות.</li>
+        </ol>
+        <h3 class="sub-h">בשדה התעופה, ביום החזרה</h3>
+        <ol class="steps">
+          <li>להגיע <b>כ־45 דקות מוקדם יותר</b>. במוצאי שבת יכול להיות תור.</li>
+          <li><b>לפני הצ׳ק־אין</b>, אם הקניות במזוודה: לגשת לעמדות האימות האלקטרוניות (e‑Taxfree) או לדלפק המכס באולם היציאות, עם הטפסים, הקבלות, הדרכון, כרטיס הטיסה והמוצרים עצמם.</li>
+          <li>אחרי ביקורת הדרכונים: דלפק Global Blue או Planet. החזר <b>לכרטיס האשראי</b> מלא יותר, במזומן יש עמלה נוספת.</li>
+          <li>אין זמן או שהדלפק סגור? לשלשל את הטופס החתום לתיבת הדואר של חברת ההחזר שליד הדלפק.</li>
+        </ol>
+        <p class="muted small">ההחזר לא חל על מסעדות, מלון ושירותים. הנהלים והעמלות משתנים בין חברות, כדאי לשאול בחנות.</p>
+      </details>
+
+      <details class="card acc" open>
+        <summary><i class="ic" data-ic="euro" style="--c:#d99a12"></i>מחשבון אירו ⇄ שקל</summary>
+        <div class="conv">
+          <label>אירו<input id="eur" type="number" inputmode="decimal"></label>
+          <label>שקלים<input id="ils" type="number" inputmode="decimal"></label>
+        </div>
+        <p class="muted small">שער: <input id="rate" class="rate" type="number" step="0.01" inputmode="decimal"> ₪ לאירו <span id="rateSrc"></span></p>
+      </details>
+
+      <details class="card acc">
+        <summary><i class="ic" data-ic="wallet" style="--c:#0b8a4f"></i>קופה משותפת</summary>
+        <p class="muted small">מי שילם על מה, ומי מעביר למי בסוף.</p>
+        <form id="kupaPeople" class="row">
+          <input id="personName" placeholder="שם של משתתף" autocomplete="off">
+          <button class="btn sm">הוספה</button>
+        </form>
+        <div class="tags" id="peopleTags"></div>
+        <form id="kupaExp" class="grid2">
+          <input id="expDesc" placeholder="על מה? (מונית, ארוחה…)" autocomplete="off">
+          <input id="expAmt" type="number" step="0.01" inputmode="decimal" placeholder="סכום ב־€">
+          <select id="expPayer" aria-label="מי שילם"></select>
+          <button class="btn sm">רישום</button>
+        </form>
+        <div id="kupaList"></div>
+        <div id="kupaSum"></div>
+      </details>
+
+      <details class="card acc">
+        <summary><i class="ic" data-ic="bag" style="--c:#b0562a"></i>רשימת אריזה <span class="pill" id="packCount"></span></summary>
+        <div id="packList" class="checks"></div>
+        <form id="packAdd" class="row">
+          <input id="packNew" placeholder="להוסיף פריט" autocomplete="off">
+          <button class="btn sm">הוספה</button>
+        </form>
+      </details>
+
+      <details class="card acc">
+        <summary><i class="ic" data-ic="bulb" style="--c:#d99a12"></i>טיפים שכדאי לדעת</summary>
+        <div id="tips"></div>
+      </details>
+
+      <details class="card acc">
+        <summary><i class="ic" data-ic="chat" style="--c:#1f5fbf"></i>פורטוגזית בשתי דקות</summary>
+        <div id="phrases" class="phrases"></div>
+      </details>
+
+      <details class="card acc">
+        <summary><i class="ic" data-ic="phone" style="--c:#d6392b"></i>מספרי חירום</summary>
+        <div id="emergency" class="emg"></div>
+        <p class="muted small">לחיצה על מספר מחייגת. כדאי לשמור גם את מספר הביטוח.</p>
+      </details>
+
+      <section class="card langs" translate="no">
+        <div class="card-head"><h2>שפה · Language</h2><button class="btn sm ghost" id="langOpen2" type="button"><span id="langFlag2"></span> <span id="langName2"></span></button></div>
+      </section>
+      <section class="card about">
+        <h2>אודות</h2>
+        <p><b>ליסבון שלנו</b> · מדריך ומלווה לטיול בליסבון</p>
+        <p>פיתוח: דודו טל</p>
+        <p class="muted small">© 2026 כל הזכויות שמורות.</p>
+      </section>
+      <div class="center"><button class="btn ghost sm" id="updBtn" type="button">בדיקת עדכון</button> <span class="muted small" id="verTxt"></span></div>
+      <p class="muted small center">שעות ומחירים משתנים – כדאי לוודא בגוגל מפות לפני שיוצאים.<br>כל מה שהזנת נשמר רק בטלפון הזה.</p>
+    </div>
+  </section>
+</main>
+
+<nav class="tabbar" aria-label="ניווט">
+  <button data-go="home" style="--c:#0b7a45" class="on"><i class="tic" data-ic="home"></i>בית</button>
+  <button data-go="map" style="--c:#1f5fbf"><i class="tic" data-ic="map"></i>מפה</button>
+  <button data-go="places" style="--c:#d6392b"><i class="tic" data-ic="pin"></i>מקומות</button>
+  <button data-go="journal" style="--c:#d99a12"><i class="tic" data-ic="book"></i>יומן</button>
+  <button data-go="chat" style="--c:#0b8a4f"><i class="tic" data-ic="chat"></i>צ׳אט<em class="tbadge" id="chatBadge" hidden></em></button>
+  <button data-go="more" style="--c:#5b6b8a"><i class="tic" data-ic="grid"></i>עוד</button>
+</nav>
+
+<!-- גיליון מקום -->
+<dialog id="sheet" class="sheet"><div id="sheetBody"></div></dialog>
+
+<!-- טופס טיסה -->
+<dialog id="flightDlg" class="sheet">
+  <form id="flightForm" method="dialog" class="form">
+    <h2>טיסה</h2>
+    <label>כיוון
+      <select id="fDir"><option value="out">הלוך – לליסבון</option><option value="back">חזור – הביתה</option></select>
+    </label>
+    <div class="grid2">
+      <label>מספר טיסה<input id="fNum" placeholder="LY541" autocapitalize="characters" autocomplete="off" required></label>
+      <label>חברת תעופה<input id="fAir" placeholder="אל על" autocomplete="off"></label>
+      <label>תאריך<input id="fDate" type="date" required></label>
+      <label>שעת המראה<input id="fTime" type="time" required></label>
+      <label>שעת נחיתה<input id="fArr" type="time"></label>
+      <label>מספר הזמנה<input id="fRef" autocomplete="off" autocapitalize="characters"></label>
+    </div>
+    <label>הערות<input id="fNote" placeholder="טרמינל, מושב, כבודה…" autocomplete="off"></label>
+    <div class="row end">
+      <button type="button" class="btn ghost" id="fCancel">ביטול</button>
+      <button class="btn" value="save">שמירה</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- רשומת יומן -->
+<dialog id="entryDlg" class="sheet">
+  <form id="entryForm" method="dialog" class="form">
+    <div class="entry-img" id="entryImgWrap" hidden><img id="entryImg" alt=""><video id="entryVid" controls playsinline preload="metadata" hidden></video></div>
+    <p class="muted small" id="entryVidNote" hidden></p>
+    <label class="hand-label">מה היה כאן?
+      <textarea id="entryText" rows="3" placeholder="כמה מילים לזיכרון…"></textarea>
+    </label>
+    <label>איפה<select id="entryPlace"></select></label>
+    <a class="link small" id="entryMapLink" target="_blank" rel="noopener" hidden>פתיחה במפה</a>
+    <div class="tags" id="entryTags"></div>
+    <div class="jr-where"><small>איפה לשמור</small>
+    <label class="switch"><input type="checkbox" id="entryPersonal"><span id="entryPersonalTxt">ביומן האישי שלי</span></label>
+    <label class="switch" id="entryShareRow" hidden><input type="checkbox" id="entryShared"><span>ביומן המשותף של הקבוצה</span></label></div>
+    <div class="row end">
+      <button type="button" class="btn ghost sm" id="entryDel">מחיקה</button>
+      <button type="button" class="btn ghost sm" id="entryShare">שיתוף</button>
+      <button class="btn" value="save" autofocus>שמירה ביומן</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="layerDlg" class="sheet">
+  <div class="form"><h2>סוג המפה</h2><div id="layerList" class="opts"></div>
+  <p class="muted small">לניווט מדויק צעד־צעד: לחיצה על מקום ואז "ניווט בגוגל מפות".</p></div>
+</dialog>
+
+<dialog id="locDlg" class="sheet">
+  <div class="form" id="locAsk">
+    <h2>להציג אותך על המפה?</h2>
+    <p>כדי לסמן את המיקום שלך על המפה, לחשב מרחקים ולתייג תמונות ביומן, האפליקציה צריכה גישה למיקום. אחרי הלחיצה הטלפון ישאל, ויש לבחור <b>"אפשר"</b>.</p>
+    <p class="muted small">המיקום נשאר בטלפון ולא נשלח לאף אחד.</p>
+    <div class="row end"><button type="button" class="btn ghost" id="locLater">לא עכשיו</button><button type="button" class="btn" id="locOk">אישור מיקום</button></div>
+  </div>
+  <div class="form" id="locHelp" hidden>
+    <h2>המיקום חסום בטלפון</h2>
+    <p>הטלפון לא נותן לדפדפן גישה למיקום, ולכן חלון האישור לא קופץ. מתקנים פעם אחת:</p>
+    <ol class="steps">
+      <li><b>אייפון:</b> הגדרות ← פרטיות ואבטחה ← שירותי מיקום. לוודא שהמתג למעלה דולק.</li>
+      <li>באותה רשימה לבחור את הדפדפן (<b>Chrome</b>, או <b>אתרי Safari</b>) ולסמן <b>"בעת השימוש ביישום"</b> ו<b>"מיקום מדויק"</b>.</li>
+      <li>לחזור לכאן, ללחוץ "רענון", וכשהטלפון שואל לבחור <b>"אפשר"</b>.</li>
+      <li><b>אנדרואיד:</b> לחיצה על המנעול ליד הכתובת ← הרשאות ← מיקום ← אישור.</li>
+    </ol>
+    <div class="row end"><button type="button" class="btn ghost" id="locClose">סגירה</button><button type="button" class="btn" id="locReload">רענון</button></div>
+  </div>
+</dialog>
+
+<dialog id="shotDlg" class="sheet shot"><img id="shotImg" alt=""><button type="button" class="btn" id="shotClose">סגירה</button></dialog>
+
+<dialog id="tripDlg" class="sheet">
+  <form id="tripForm" method="dialog" class="form">
+    <h2 id="tripDlgTitle">הגדרת הנסיעה</h2>
+    <p class="muted small" id="tripDlgNote"></p>
+    <div class="opts trip-types" id="tripTypes"></div>
+    <label>שם הנסיעה<input id="tripName" maxlength="40" autocomplete="off"></label>
+    <div class="grid2">
+      <label>אירוע<select id="tripOcc"></select></label>
+      <label>תאריך ההגעה<input id="tripStart" type="date"></label>
+    </div>
+    <div class="trip-hotel"><small class="muted">המלון</small><b id="tripHotel"></b><small class="muted" id="tripHotelNote"></small></div>
+    <div class="row end">
+      <button type="button" class="btn ghost" id="tripCancel">ביטול</button>
+      <button class="btn" value="save" autofocus id="tripSave">שמירה</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="langDlg" class="sheet" translate="no">
+  <h2>שפה · Language · Idioma</h2>
+  <div class="lang-list">
+    <button type="button" class="lang-opt" data-lang="he" style="--c:#1f5fbf"><i>🇮🇱</i><span><b>עברית</b><small>Hebrew</small></span><em></em></button>
+    <button type="button" class="lang-opt" data-lang="en" style="--c:#d6392b"><i>🇬🇧</i><span><b>English</b><small>אנגלית</small></span><em></em></button>
+    <button type="button" class="lang-opt" data-lang="es" style="--c:#d99a12"><i>🇪🇸</i><span><b>Español</b><small>ספרדית · Spanish</small></span><em></em></button>
+  </div>
+</dialog>
+<dialog id="taxiDlg" class="taxi-full">
+  <button type="button" class="taxi-x" id="taxiClose" aria-label="סגירה">✕</button>
+  <p class="taxi-k">Por favor, leve-me a esta morada</p>
+  <p class="taxi-big" id="taxiBig" translate="no" dir="ltr"></p>
+  <p class="taxi-n" id="taxiName" translate="no" dir="ltr"></p>
+  <p class="taxi-he">"בבקשה, קח אותי לכאן"</p>
+</dialog>
+<dialog id="msgDlg" class="sheet">
+  <p class="msg-prev" id="msgPrev" translate="no"></p>
+  <div class="msg-acts">
+    <button class="btn ghost" id="msgCopy" type="button">העתקה</button>
+    <button class="btn danger" id="msgDelAll" type="button">מחיקה אצל כולם</button>
+    <button class="btn ghost" id="msgDelMe" type="button">מחיקה רק אצלי</button>
+    <button class="link" id="msgCancel" type="button">ביטול</button>
+  </div>
+</dialog>
+<dialog id="infoDlg" class="sheet">
+  <div class="form">
+    <h2>מי קרא</h2>
+    <p class="info-quote" id="infoQuote"></p>
+    <div id="infoBody"></div>
+    <div class="row end"><button type="button" class="btn" id="infoClose">סגירה</button></div>
+  </div>
+</dialog>
+
+<dialog id="fileDlg" class="sheet">
+  <div class="form">
+    <div class="entry-img"><img id="fileImg" alt=""></div>
+    <div class="row end">
+      <button type="button" class="btn ghost sm" id="fileShare">שמירה או שיתוף</button>
+      <button type="button" class="btn" id="fileClose">סגירה</button>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="docDlg" class="sheet">
+  <div class="form">
+    <div class="entry-img"><img id="docImg" alt=""></div>
+    <h2 id="docTitle"></h2>
+    <div class="row end">
+      <button type="button" class="btn ghost sm" id="docDel">מחיקה</button>
+      <button type="button" class="btn ghost sm" id="docShare">שיתוף</button>
+      <button type="button" class="btn" id="docClose">סגירה</button>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="bkDlg" class="sheet">
+  <div class="form">
+    <h2>גיבוי תמונות</h2>
+    <p id="bkState"></p>
+    <button class="btn" id="bkNew" type="button"></button>
+    <button class="btn ghost" id="bkAll" type="button">הורדת כל התמונות ביחד (ZIP)</button>
+    <p class="muted small" id="bkMsg" hidden></p>
+    <label class="switch"><input type="checkbox" id="bkAuto"><span id="bkAutoTxt"></span></label>
+    <p class="muted small" id="bkNote"></p>
+    <p class="muted small">הגיבוי כולל את כל התמונות שביומן, גם המשותפות (סרטונים שומרים אחד־אחד: פותחים את הסרטון ולוחצים "שיתוף"), ובקובץ ה־ZIP גם רשימה עם הכיתובים. באייפון: בחלון השיתוף לבחור "שמירת תמונות" לגלריה, או "שמירה לקבצים" ← הורדות.</p>
+    <div class="row end"><button type="button" class="btn ghost" id="bkClose">סגירה</button></div>
+  </div>
+</dialog>
+
+<!-- מצגת -->
+<div id="show" class="show" hidden>
+  <div class="show-bars" id="showBars"></div>
+  <div class="show-stage" id="showStage">
+    <img id="showA" alt=""><img id="showB" alt="">
+    <button class="show-arrow prev" id="showPrev" type="button" aria-label="הקודם">›</button>
+    <button class="show-arrow next" id="showNext" type="button" aria-label="הבא">‹</button>
+    <p id="showStatus" class="show-status" hidden></p>
+  </div>
+  <button class="show-x" id="showClose" aria-label="סגירה">×</button>
+  <div class="show-ctl">
+    <button id="showPlay" type="button" class="round" aria-label="השהיה">❚❚</button>
+    <div class="show-seg" id="showScope"><button type="button" data-s="me">אישי</button><button type="button" data-s="us">משותף</button><button type="button" data-s="all">הכול</button></div>
+    <span id="showN" class="show-n"></span>
+  </div>
+  <div class="show-ctl">
+    <button id="showPdf" type="button" class="pri">שיתוף PDF</button>
+    <button id="showImgs" type="button">שיתוף תמונות</button>
+    <button id="showFmt" type="button">לרוחב</button>
+  </div>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+
+<dialog id="inviteDlg" class="sheet">
+  <form id="invForm">
+    <h2>הוזמנת לקבוצה 🎉</h2>
+    <label class="inv-l">השם שלך<input id="invName" autocomplete="off" maxlength="16" placeholder="השם שלך"></label>
+    <p id="invQ"><b>האפליקציה תותקן במסך הבית</b><br><span class="muted small">אייקון משלה, מסך מלא, והתראות על הודעות.</span></p>
+    <div class="row"><button class="btn" id="invGo">להצטרף ולהתקין</button></div>
+  </form>
+</dialog>
+<dialog id="installDlg" class="sheet">
+  <h2 id="installTitle">התקנה למסך הבית</h2>
+  <p class="muted small">הטלפון לא מרשה לאפליקציה להתקין את עצמה, אז עושים את זה פעם אחת, בשלושה צעדים:</p>
+  <ol class="inst" id="installSteps"></ol>
+  <p class="muted small" id="installAfter"></p>
+  <div class="row"><button class="btn" id="installOk" type="button">הבנתי</button></div>
+</dialog>
+<dialog id="tripNewDlg" class="sheet">
+  <h2>נסיעה חדשה</h2>
+  <p><b>מה נשמר בצד:</b> הנסיעה הנוכחית כולה: היומן, הצ'אט, המסלול, המלון, הטיסות והקופה. אפשר לחזור אליה מתי שרוצים.</p>
+  <p><b>מה נשאר:</b> הפרטים האישיים, המסמכים המצולמים והמפה השמורה.</p>
+  <p class="muted small">הנסיעה החדשה מתחילה בלי קבוצה. מקימים קבוצה חדשה או מצטרפים עם קוד.</p>
+  <div class="row"><button class="btn" id="tripNewYes" type="button">להתחיל נסיעה חדשה</button><button class="btn ghost" id="tripNewNo" type="button">ביטול</button></div>
+</dialog>
+<script src="vendor/leaflet.js"></script>
+<script src="data.js"></script>
+<script src="trip.js"></script>
+<script src="app.js"></script>
+<script src="extras.js"></script>
+<script src="group.js"></script>
+<script src="show.js"></script>
+<script src="backup.js"></script>
+<script src="start.js"></script>
+<script src="trips.js"></script>
+</body>
+</html>
