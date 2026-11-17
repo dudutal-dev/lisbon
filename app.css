@@ -908,3 +908,4 @@ html.locked dialog:not(#licDlg) { display: none !important; }
 .lic-gate form { display: grid; gap: 10px; }
 .lic-gate input { text-align: center; font: 600 15px ui-monospace, Menlo, monospace; }
 .lic-info { color: var(--sea); font-weight: 600; margin-top: 6px; }
+.inst-code { background: var(--surface2); border-radius: 12px; padding: 10px 12px; font-size: 14.500px; margin: 0 0 12px; } .inst-code b { font: 800 17px ui-monospace, Menlo, monospace; letter-spacing: 1px; white-space: nowrap; }
