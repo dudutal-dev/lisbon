@@ -889,3 +889,9 @@ html[dir=rtl] .ph-play svg, html:not([dir=ltr]) .ph-play svg { transform: scaleX
 .wx::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 80% -10%, rgba(255,255,255,.28), transparent 55%); pointer-events: none; }
 .wx u { display: block; text-decoration: none; font-size: 11.500px; font-weight: 600; line-height: 1.200; min-height: 2.400em; color: rgba(255,255,255,.92); margin-bottom: 3px; }
 .wx.wx-snow u { color: #173048; }
+/* כרטיסי מזג האוויר: אותו מבנה בכל כרטיס, כך שהאייקונים והמספרים בקו אחד */
+.weather { align-items: stretch; }
+.wx { display: flex; flex-direction: column; align-items: center; }
+.wx b { min-height: 2.500em; }
+.wx u { flex: 1; }
+.wx p { margin: 0; white-space: nowrap; line-height: 1.100; }
