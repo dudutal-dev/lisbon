@@ -847,3 +847,25 @@ html[dir=rtl] .ph-play svg, html:not([dir=ltr]) .ph-play svg { transform: scaleX
 .taxi { background: color-mix(in srgb, #d99a12 10%, var(--surface)); }
 .card { box-shadow: 0 8px 28px rgba(10, 70, 40, .07); }
 .tabbar::before { box-shadow: 0 6px 22px rgba(10, 70, 40, .12); }
+
+/* ───── פנקס ותזכורות ───── */
+.note-form { display: grid; grid-template-columns: 1fr auto auto; gap: 8px; align-items: center; margin: 4px 0 12px; }
+.note-form input { min-width: 0; }
+.note-bell { width: 44px; height: 44px; border-radius: 14px; font-size: 20px; background: var(--surface2); display: grid; place-items: center; filter: grayscale(1); opacity: .7; }
+.note-bell.on { filter: none; opacity: 1; background: color-mix(in srgb, var(--gold) 22%, var(--surface)); }
+.note-when { grid-column: 1 / -1; display: grid; gap: 4px; font-size: 13px; font-weight: 600; color: var(--muted); }
+.notes-list { display: grid; margin-bottom: 10px; }
+.note-row, .nh-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.note-row:last-child, .nh-row:last-child { border-bottom: 0; }
+.note-row span, .nh-row span { flex: 1; min-width: 0; display: grid; gap: 1px; }
+.note-row b, .nh-row b { font-weight: 600; font-size: 16px; overflow-wrap: anywhere; }
+.note-row small, .nh-row small { font-size: 12.500px; font-weight: 700; color: var(--sea); }
+.note-row small.late, .nh-row.late small { color: var(--pink); }
+.note-row.done b { text-decoration: line-through; color: var(--muted); font-weight: 500; } .note-row.done small { color: var(--muted); }
+.note-check { flex: none; width: 26px; height: 26px; border-radius: 50%; border: 2px solid color-mix(in srgb, var(--sea) 45%, var(--line)); display: grid; place-items: center; font-size: 14px; font-weight: 800; color: #fff; }
+.note-row.done .note-check { background: var(--sea); border-color: var(--sea); }
+.note-x { flex: none; width: 30px; height: 30px; border-radius: 50%; color: var(--muted); font-size: 13px; }
+.note-home { border-inline-start: 4px solid var(--gold); padding-block: 14px; }
+.note-home .card-head { margin-bottom: 2px; } .note-home h2 { font-size: 18px; }
+.tdot { position: absolute; top: 2px; inset-inline-end: calc(50% - 26px); width: 11px; height: 11px; border-radius: 50%; background: #e03131; border: 2px solid var(--surface); }
+#notesCard summary .pill { margin-inline-start: 8px; }

@@ -60,6 +60,7 @@ try { var th = localStorage.getItem('lisboa.theme'); if (th === 'dark' || th ===
     </header>
     <div class="stack">
       <div id="weather" class="weather" aria-label="תחזית"></div>
+      <section class="card note-home" id="noteHome" hidden></section>
       <div id="alertBox"></div>
       <section class="card install" id="installCard" hidden>
         <img src="icon-180.png" alt="" width="56" height="56">
@@ -120,7 +121,7 @@ try { var th = localStorage.getItem('lisboa.theme'); if (th === 'dark' || th ===
   <section class="view" id="v-places" data-view="places" hidden>
     <header class="page-head">
       <h1>מקומות</h1>
-      <input type="search" id="search" placeholder="חיפוש: סנדלים, גג, סובלאקי…" autocomplete="off">
+      <input type="search" id="search" placeholder="חיפוש: אריחים, גג, פשטל…" autocomplete="off">
     </header>
     <div class="chips" id="placeChips"></div>
     <div class="sortbar" id="sortbar">
@@ -218,6 +219,18 @@ try { var th = localStorage.getItem('lisboa.theme'); if (th === 'dark' || th ===
   <section class="view" id="v-more" data-view="more" hidden>
     <header class="page-head"><h1>ארגז כלים</h1></header>
     <div class="stack">
+      <details class="card acc" id="notesCard" open>
+        <summary><i class="ic" data-ic="cal" style="--c:#d99a12"></i>פנקס ותזכורות <span class="pill" id="notesCount" hidden></span></summary>
+        <form id="noteForm" class="note-form">
+          <input id="noteText" maxlength="200" autocomplete="off" placeholder="מה לזכור? להזמין שולחן, לקנות מתנה…">
+          <button type="button" class="note-bell" id="noteBell" aria-label="הוספת תזכורת עם שעה">⏰</button>
+          <button class="btn sm">הוספה</button>
+          <label id="noteWhen" class="note-when" hidden>מתי להזכיר<input id="noteAt" type="datetime-local"></label>
+        </form>
+        <div id="notesList" class="notes-list"></div>
+        <p class="muted small">תזכורת עם שעה מופיעה במסך הבית ביום שלה וקופצת כשהאפליקציה פתוחה. הפנקס אישי ונשמר בטלפון, לכל נסיעה בנפרד.</p>
+      </details>
+
       <details class="card acc" id="startCard">
         <summary><i class="ic" data-ic="compass" style="--c:#0b8a4f"></i>איך מתחילים</summary>
         <p class="muted small">כמה צעדים, עם צילומי מסך וכפתור שמוביל ישר למקום. צעד שהושלם מסומן ב־✓.</p>
@@ -371,7 +384,7 @@ try { var th = localStorage.getItem('lisboa.theme'); if (th === 'dark' || th ===
   <button data-go="places" style="--c:#d6392b"><i class="tic" data-ic="pin"></i>מקומות</button>
   <button data-go="journal" style="--c:#d99a12"><i class="tic" data-ic="book"></i>יומן</button>
   <button data-go="chat" style="--c:#0b8a4f"><i class="tic" data-ic="chat"></i>צ׳אט<em class="tbadge" id="chatBadge" hidden></em></button>
-  <button data-go="more" style="--c:#5b6b8a"><i class="tic" data-ic="grid"></i>עוד</button>
+  <button data-go="more" style="--c:#5b6b8a"><i class="tic" data-ic="grid"></i>עוד<em class="tdot" id="moreDot" hidden></em></button>
 </nav>
 
 <!-- גיליון מקום -->
@@ -592,5 +605,6 @@ try { var th = localStorage.getItem('lisboa.theme'); if (th === 'dark' || th ===
 <script src="backup.js"></script>
 <script src="start.js"></script>
 <script src="trips.js"></script>
+<script src="notes.js"></script>
 </body>
 </html>

@@ -1539,6 +1539,10 @@
   "en": "Add",
   "es": "Añadir"
  },
+ "הוספת תזכורת עם שעה": {
+  "en": "Add a reminder with a time",
+  "es": "Añadir un recordatorio con hora"
+ },
  "הוסרת מהקבוצה על ידי מנהל הקבוצה": {
   "en": "The group admin removed you from the group",
   "es": "La persona que administra el grupo te ha quitado del grupo"
@@ -1626,6 +1630,10 @@
  "הטקס הגדול והחגיגי – בימי ראשון ב־11:00.": {
   "en": "The big ceremonial parade is on Sundays at 11:00.",
   "es": "La ceremonia grande y solemne es los domingos a las 11:00."
+ },
+ "היום {}": {
+  "en": "Today {0}",
+  "es": "Hoy {0}"
  },
  "היומן הוא אלבום הטיול. כל תמונה נשמרת עם השעה והמקום.": {
   "en": "The journal is the trip's album. Every photo is saved with the time and place.",
@@ -3259,6 +3267,10 @@
   "en": "Before check-in",
   "es": "Antes de facturar"
  },
+ "לפנקס": {
+  "en": "Open notes",
+  "es": "Abrir notas"
+ },
  "לפתוח את האפליקציה מהאייקון שבמסך הבית (לא מהדפדפן).": {
   "en": "Open the app from the icon on your home screen (not from the browser).",
   "es": "Abre la app desde el icono de la pantalla de inicio (no desde el navegador)."
@@ -3398,6 +3410,10 @@
  "מה היה כאן?": {
   "en": "What happened here?",
   "es": "¿Qué pasó aquí?"
+ },
+ "מה לזכור? להזמין שולחן, לקנות מתנה…": {
+  "en": "What to remember? Book a table, buy a gift…",
+  "es": "¿Qué recordar? Reservar mesa, comprar un regalo…"
  },
  "מה נשאר:": {
   "en": "What stays:",
@@ -3598,6 +3614,10 @@
  "מחפשת…": {
   "en": "Searching…",
   "es": "Buscando…"
+ },
+ "מחר {}": {
+  "en": "Tomorrow {0}",
+  "es": "Mañana {0}"
  },
  "מחר ממריאים!": {
   "en": "We take off tomorrow!",
@@ -4007,6 +4027,10 @@
   "en": "Below the €50 minimum",
   "es": "Por debajo del mínimo de €50"
  },
+ "מתי להזכיר": {
+  "en": "When to remind",
+  "es": "Cuándo avisar"
+ },
  "מתנות אחרונות": {
   "en": "Last gifts",
   "es": "Últimos regalos"
@@ -4227,6 +4251,14 @@
   "en": "Seychelles",
   "es": "Seychelles"
  },
+ "סימון כבוצע": {
+  "en": "Mark as done",
+  "es": "Marcar como hecho"
+ },
+ "סימון כלא בוצע": {
+  "en": "Mark as not done",
+  "es": "Marcar como pendiente"
+ },
  "סינטגמה": {
   "en": "Syntagma",
   "es": "Syntagma"
@@ -4338,6 +4370,10 @@
  "עוד אין קבוצה. פותחים קבוצה או מצטרפות עם קוד, ואז הצ׳אט נפתח כאן.": {
   "en": "There's no group yet. Start a group or join with a code, and the chat will open here.",
   "es": "Aún no hay grupo. Abre un grupo o únete con un código, y el chat se abrirá aquí."
+ },
+ "עוד אין רשומות. דברים לזכור, מה לקנות, מה להזמין.": {
+  "en": "Nothing here yet. Things to remember, what to buy, what to book.",
+  "es": "Aún no hay nada. Cosas que recordar, qué comprar, qué reservar."
  },
  "עוד לא גובו": {
   "en": "Not backed up yet",
@@ -4502,6 +4538,10 @@
  "פנגרטי": {
   "en": "Pangrati",
   "es": "Pangrati"
+ },
+ "פנקס ותזכורות": {
+  "en": "Notes and reminders",
+  "es": "Notas y recordatorios"
  },
  "פסירי": {
   "en": "Psyrri",
@@ -5135,9 +5175,17 @@
   "en": "Passport validity is too short",
   "es": "La validez del pasaporte es demasiado corta"
  },
+ "תזכורות להיום": {
+  "en": "Today's reminders",
+  "es": "Recordatorios de hoy"
+ },
  "תזכורת לגיבוי כל 3 שעות": {
   "en": "Backup reminder every 3 hours",
   "es": "Recordatorio de copia cada 3 horas"
+ },
+ "תזכורת עם שעה מופיעה במסך הבית ביום שלה וקופצת כשהאפליקציה פתוחה. הפנקס אישי ונשמר בטלפון, לכל נסיעה בנפרד.": {
+  "en": "A reminder with a time appears on the Home screen on its day and pops up while the app is open. The notebook is personal and stays on your phone, separately for each trip.",
+  "es": "Un recordatorio con hora aparece en la pantalla de inicio el día que toca y salta mientras la app está abierta. El cuaderno es personal y se guarda en tu teléfono, por separado para cada viaje."
  },
  "תחזית": {
   "en": "Forecast",
@@ -5230,6 +5278,10 @@
  "← ל": {
   "en": "→ to",
   "es": "→ a"
+ },
+ "⏰ {}": {
+  "en": "⏰ {0}",
+  "es": "⏰ {0}"
  },
  "★ מומלץ": {
   "en": "★ Recommended",
