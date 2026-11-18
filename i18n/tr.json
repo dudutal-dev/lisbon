@@ -7482,5 +7482,61 @@
  "📷 תמונה": {
   "en": "📷 Photo",
   "es": "📷 Foto"
+ },
+ "מלונות": {
+  "en": "Hotels",
+  "es": "Hoteles"
+ },
+ "איפה כדאי לגור": {
+  "en": "Where to stay",
+  "es": "Dónde alojarse"
+ },
+ "📍 איפה כדאי לגור": {
+  "en": "📍 Where to stay",
+  "es": "📍 Dónde alojarse"
+ },
+ "אזורים ומלונות": {
+  "en": "Areas and hotels",
+  "es": "Zonas y hoteles"
+ },
+ "{} מלונות": {
+  "en": "{0} hotels",
+  "es": "{0} hoteles"
+ },
+ "מלונות באזור": {
+  "en": "Hotels in the area",
+  "es": "Hoteles en la zona"
+ },
+ "מה יש קרוב": {
+  "en": "What's nearby",
+  "es": "Qué hay cerca"
+ },
+ "הצגת האזור במפה": {
+  "en": "Show the area on the map",
+  "es": "Ver la zona en el mapa"
+ },
+ "לקבוע כמלון שלנו": {
+  "en": "Set as our hotel",
+  "es": "Fijar como nuestro hotel"
+ },
+ "כמה זמן": {
+  "en": "How long",
+  "es": "Cuánto dura"
+ },
+ "איך מגיעים": {
+  "en": "How to get there",
+  "es": "Cómo llegar"
+ },
+ "כמה זה עולה": {
+  "en": "What it costs",
+  "es": "Cuánto cuesta"
+ },
+ "הצעה ליום": {
+  "en": "A suggested day",
+  "es": "Un día sugerido"
+ },
+ "📍 על האזור: {}": {
+  "en": "📍 About the area: {0}",
+  "es": "📍 Sobre la zona: {0}"
  }
 }

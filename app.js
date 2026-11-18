@@ -88,6 +88,10 @@
     },
     showOnMap(el) { $('#sheet').close(); go('map'); focusPlace(el.dataset.id); },
     closeSheet() { $('#sheet').close(); },
+    area(el) { openArea(el.dataset.id); },
+    areaMap(el) { const z = zoneById[el.dataset.id]; $('#sheet').close(); go('map'); setTimeout(() => { map.invalidateSize(); map.setView([z.lat, z.lng], 15); }, 150); },
+    setHotel(el) { const p = byId[el.dataset.id]; if (!p) return;   // מלון מהרשימה הופך ל"מלון שלנו"
+      S.hotel = { name: p.he.split(' – ')[0], addr: p.area, lat: p.lat, lng: p.lng, q: p.q }; save(); $('#sheet').close(); afterHotel(); },
   };
 
   // ───── home ─────
@@ -222,7 +226,28 @@
       (withFav ? `<button class="chip ${sel === 'fav' ? 'on' : ''}" data-cat="fav">♥ שלי</button>` : '') +
       TRIP.cats().map(k => `<button class="chip ${sel === k ? 'on' : ''}" data-cat="${k}">${CATS[k].emoji} ${CATS[k].he}</button>`).join('');
   }
+  const ZONES = typeof AREAS !== 'undefined' ? AREAS : [];   // אזורי לינה: אופי, למי מתאים, מלונות ומקומות קרובים
+  const zoneById = Object.fromEntries(ZONES.map(z => [z.id, z]));
+  const hotelsOf = z => PLACES.filter(p => p.cat === 'hotel' && p.zone === z.id);
+  function renderAreas() {
+    const box = $('#areaBox'); box.hidden = !ZONES.length; if (!ZONES.length) return;
+    $('#areaRail').innerHTML = ZONES.map(z => `<button class="area-tile" data-act="area" data-id="${z.id}"><b>${esc(z.he)}</b><span>${esc(z.vibe)}</span><small>${hotelsOf(z).length} מלונות</small></button>`).join('');
+  }
+  function openArea(id) {
+    const z = zoneById[id]; if (!z) return; const hs = hotelsOf(z), near = (z.near || []).map(i => byId[i]).filter(Boolean);
+    const row = p => `<button class="area-row" data-open="${p.id}"><i>${CATS[p.cat].emoji}</i><span><b>${esc(p.he)}</b><small>${esc(p.cat === 'hotel' ? p.desc : CATS[p.cat].he)}</small></span>${p.price ? `<em>${p.price}</em>` : ''}</button>`;
+    $('#sheetBody').innerHTML = `<div class="sh-top" style="--c:#3b5bdb"><button class="sh-close" data-act="closeSheet" aria-label="סגירה">×</button>
+      <small>📍 איפה כדאי לגור</small><h2>${esc(z.he)}</h2></div>
+      <div class="sh-body"><p class="area-vibe">${esc(z.vibe)}</p><p>${esc(z.desc)}</p>
+      <div class="area-fit"><p><b>👍</b> ${esc(z.good)}</p><p><b>👎</b> ${esc(z.less)}</p></div>
+      ${z.tip ? `<div class="sh-tip"><b>טיפ:</b> ${esc(z.tip)}</div>` : ''}
+      ${hs.length ? `<h3 class="sub-h">מלונות באזור</h3><div class="area-list">${hs.map(row).join('')}</div>` : ''}
+      ${near.length ? `<h3 class="sub-h">מה יש קרוב</h3><div class="area-list">${near.map(row).join('')}</div>` : ''}
+      <div class="sh-acts"><button class="btn wide" data-act="areaMap" data-id="${z.id}">הצגת האזור במפה</button></div></div>`;
+    const sh = $('#sheet'); if (!sh.open) sh.showModal(); sh.scrollTop = 0;
+  }
   function renderPlaces() {
+    renderAreas();
     $('#placeChips').innerHTML = chipsHTML(ui.cat, true);
     $$('#sortbar button').forEach(b => b.classList.toggle('on', b.dataset.sort === ui.sort));
     const o = origin(), q = ui.q.toLowerCase();
@@ -251,10 +276,14 @@
     $('#sheetBody').innerHTML = `<div class="sh-top ${IMG[id] ? 'has-img' : ''}" style="--c:${c.color}">${pic(id)}${IMG[id] ? `<span class="credit">${ILL.includes(id) ? 'אילוסטרציה · ' : ''}ויקיפדיה</span>` : ''}<button class="sh-close" data-act="closeSheet" aria-label="סגירה">×</button>
       <small>${c.emoji} ${c.he} · ${esc(p.area)}${p.price ? ' · ' + p.price : ''}</small><h2>${esc(p.he)}</h2></div>
       <div class="sh-body"><p>${esc(p.desc)}</p>
+      ${p.how || p.dur || p.cost ? `<div class="trip-facts">${p.dur ? `<p><i>⏱</i><span><b>כמה זמן</b>${esc(p.dur)}</span></p>` : ''}${p.how ? `<p><i>🚌</i><span><b>איך מגיעים</b>${esc(p.how)}</span></p>` : ''}${p.cost ? `<p><i>💶</i><span><b>כמה זה עולה</b>${esc(p.cost)}</span></p>` : ''}</div>` : ''}
+      ${p.plan && p.plan.length ? `<div class="trip-plan"><b>הצעה ליום</b><ol>${p.plan.map(x => `<li>${esc(x)}</li>`).join('')}</ol></div>` : ''}
       ${p.tip ? `<div class="sh-tip"><b>טיפ:</b> ${esc(p.tip)}</div>` : ''}
+      ${p.zone && zoneById[p.zone] ? `<button class="area-link" data-act="area" data-id="${p.zone}">📍 על האזור: ${esc(zoneById[p.zone].he)}</button>` : ''}
       ${dm != null || dh != null ? `<div class="meta">${dm != null ? `<span class="dist">ממך: ${distTxt(dm)}${walkTxt(dm)}</span>` : ''}${dh != null ? `<span>מהמלון: ${distTxt(dh)}${walkTxt(dh)}</span>` : ''}</div>` : ''}
       <div class="sh-acts">
-        <a class="btn wide" target="_blank" rel="noopener" href="${gDir(p)}">ניווט בגוגל מפות</a>
+        ${p.cat === 'hotel' ? `<button class="btn wide" data-act="setHotel" data-id="${id}">לקבוע כמלון שלנו</button>` : ''}
+        <a class="btn ${p.cat === 'hotel' ? 'ghost' : ''} wide" target="_blank" rel="noopener" href="${gDir(p)}">ניווט בגוגל מפות</a>
         <a class="btn ghost" target="_blank" rel="noopener" href="${gPlace(p)}">תמונות וביקורות</a>
         <button class="btn ghost" data-act="showOnMap" data-id="${id}">הצגה במפה</button>
         <button class="btn ghost wide ${fav ? 'on' : ''}" data-act="fav" data-id="${id}">${fav ? '♥ ברשימה שלי' : '♡ לרשימה שלי'}</button>
@@ -474,7 +503,7 @@
   })();
 
   // ───── עדכון אוטומטי: בודקים אם יש גרסה חדשה באתר, ואם כן טוענים אותה ─────
-  const VERSION = 12;
+  const VERSION = 13;
   async function checkUpdate() {
     if (location.protocol !== 'https:' || !navigator.onLine) return;
     try {

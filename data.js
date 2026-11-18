@@ -8,6 +8,7 @@ const CATS = {
   spa:   { he: 'פינוק',         emoji: '💆‍♀️', color: '#0ca678' },
   trip:  { he: 'טיולי יום',     emoji: '⛵', color: '#0b7285' },
   fun:   { he: 'אטרקציות',      emoji: '🎡', color: '#f59f00' },
+  hotel: { he: 'מלונות',        emoji: '🏨', color: '#3b5bdb' },
 };
 
 /* q = שם לחיפוש בגוגל מפות. top = מומלץ במיוחד */
@@ -256,10 +257,10 @@ const PLACES = [
 
 /* משקל לכל קטגוריה לפי סוג הקבוצה: קובע את סדר ההמלצות ואת "אסור לפספס" */
 const CAT_W = {
-  girls:  { shop: 4, spa: 3, bar: 2.5, cafe: 2.5, food: 2, sight: 2, trip: 1, fun: 0 },
-  guys:   { food: 4, bar: 4, fun: 3, sight: 2.5, trip: 2.5, cafe: 1, spa: 1, shop: 0.5 },
-  family: { fun: 4, sight: 3, cafe: 3, food: 2.5, trip: 2.5, shop: 1, spa: 0.5, bar: 0 },
-  mixed:  { food: 3, sight: 3, bar: 2.5, cafe: 2, shop: 2, trip: 2, spa: 1.5, fun: 1.5 },
+  girls:  { shop: 4, spa: 3, bar: 2.5, cafe: 2.5, food: 2, sight: 2, trip: 1, fun: 0, hotel: 0.3 },
+  guys:   { food: 4, bar: 4, fun: 3, sight: 2.5, trip: 2.5, cafe: 1, spa: 1, shop: 0.5, hotel: 0.3 },
+  family: { fun: 4, sight: 3, cafe: 3, food: 2.5, trip: 2.5, shop: 1, spa: 0.5, bar: 0, hotel: 0.3 },
+  mixed:  { food: 3, sight: 3, bar: 2.5, cafe: 2, shop: 2, trip: 2, spa: 1.5, fun: 1.5, hotel: 0.3 },
 };
 
 /* מסלול מוצע לארבעה ימים. p = מזהי מקומות */

@@ -123,6 +123,10 @@ try { var th = localStorage.getItem('lisboa.theme'); if (th === 'dark' || th ===
       <h1>מקומות</h1>
       <input type="search" id="search" placeholder="חיפוש: אריחים, גג, פשטל…" autocomplete="off">
     </header>
+    <div class="area-box" id="areaBox" hidden>
+      <div class="sec-head"><h2>איפה כדאי לגור</h2><span class="muted small">אזורים ומלונות</span></div>
+      <div class="rail" id="areaRail"></div>
+    </div>
     <div class="chips" id="placeChips"></div>
     <div class="sortbar" id="sortbar">
       <button data-sort="rec" class="on">מומלצים</button>

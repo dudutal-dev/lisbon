@@ -909,3 +909,28 @@ html.locked dialog:not(#licDlg) { display: none !important; }
 .lic-gate input { text-align: center; font: 600 15px ui-monospace, Menlo, monospace; }
 .lic-info { color: var(--sea); font-weight: 600; margin-top: 6px; }
 .inst-code { background: var(--surface2); border-radius: 12px; padding: 10px 12px; font-size: 14.500px; margin: 0 0 12px; } .inst-code b { font: 800 17px ui-monospace, Menlo, monospace; letter-spacing: 1px; white-space: nowrap; }
+
+/* ═════ אזורים, מלונות ופרטי טיולי יום ═════ */
+.area-box { padding: 0 16px; max-width: 720px; margin: 0 auto 6px; }
+.area-box .sec-head { margin-bottom: 6px; align-items: baseline; }
+.area-tile { flex: 0 0 168px; scroll-snap-align: start; text-align: start; border-radius: 18px; padding: 13px 14px; min-height: 112px; display: flex; flex-direction: column; gap: 4px; color: #fff;
+  background: linear-gradient(160deg, #3b5bdb, #233a9e); box-shadow: 0 6px 16px rgba(35, 58, 158, .22); }
+.area-tile:nth-child(3n+2) { background: linear-gradient(160deg, #0f9f94, #0b6f68); box-shadow: 0 6px 16px rgba(11, 111, 104, .22); }
+.area-tile:nth-child(3n+3) { background: linear-gradient(160deg, #d98a1c, #a8620c); box-shadow: 0 6px 16px rgba(168, 98, 12, .22); }
+.area-tile b { font: 700 18px/1.150 var(--display); } .area-tile span { font-size: 13px; line-height: 1.300; opacity: .92; flex: 1; }
+.area-tile small { font-size: 12px; font-weight: 700; background: rgba(255,255,255,.2); border-radius: 999px; padding: 2px 9px; align-self: flex-start; }
+.area-vibe { font: 400 22px/1.250 var(--hand); color: var(--sea); margin: -4px 0 -6px; }
+.area-fit { display: grid; gap: 8px; } .area-fit p { background: var(--surface2); border-radius: 14px; padding: 10px 12px; font-size: 15px; display: flex; gap: 8px; }
+.area-list { display: grid; }
+.area-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); text-align: start; width: 100%; }
+.area-row:last-child { border-bottom: 0; }
+.area-row i { font-style: normal; font-size: 22px; flex: none; width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: var(--surface2); }
+.area-row span { flex: 1; min-width: 0; display: grid; } .area-row b { font-size: 15.500px; line-height: 1.250; }
+.area-row small { color: var(--muted); font-size: 13px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.area-row em { font-style: normal; font-weight: 700; color: var(--muted); font-size: 13px; flex: none; }
+.area-link { align-self: flex-start; font-weight: 700; font-size: 14.500px; color: var(--sea); background: color-mix(in srgb, var(--sea) 11%, transparent); border-radius: 999px; padding: 7px 13px; }
+.trip-facts { display: grid; gap: 8px; }
+.trip-facts p { display: flex; gap: 10px; align-items: flex-start; background: color-mix(in srgb, var(--sea) 7%, var(--surface)); border: 1px solid var(--line); border-radius: 14px; padding: 10px 12px; font-size: 15px; }
+.trip-facts i { font-style: normal; font-size: 20px; line-height: 1.200; } .trip-facts b { display: block; font-size: 12.500px; color: var(--muted); font-weight: 700; }
+.trip-plan { border-inline-start: 3px solid var(--sea); padding-inline-start: 12px; } .trip-plan > b { font-size: 14px; color: var(--sea); }
+.trip-plan ol { margin: 6px 0 0; padding-inline-start: 20px; display: grid; gap: 6px; font-size: 15px; }
