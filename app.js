@@ -109,11 +109,21 @@
     const box = $('#weather');
     try {
       const end = dayDate(S.days - 1).toISOString().slice(0, 10);
-      let r = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=38.72&longitude=-9.14&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Europe%2FLisbon&start_date=${S.start}&end_date=${end}`);
-      if (!r.ok) r = await fetch('https://api.open-meteo.com/v1/forecast?latitude=38.72&longitude=-9.14&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Europe%2FLisbon&forecast_days=4');
-      const d = (await r.json()).daily;
-      box.innerHTML = d.time.slice(0, 4).map((t, i) => `<div class="wx wx-${WXK(d.weather_code[i])}"><b>${fmtDay(new Date(t + 'T12:00'))}<br>${fmtDate(new Date(t + 'T12:00'))}</b><i>${WX(d.weather_code[i])}</i><u>${WXT[WXK(d.weather_code[i])]}</u><p><span>${Math.round(d.temperature_2m_max[i])}°</span> <em>${Math.round(d.temperature_2m_min[i])}°</em></p></div>`).join('');
-    } catch { box.innerHTML = ''; }
+      let r = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=38.72&longitude=-9.14&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Europe%2FLisbon&start_date=${S.start}&end_date=${end}`, { cache: 'no-store' });
+      if (!r.ok) r = await fetch('https://api.open-meteo.com/v1/forecast?latitude=38.72&longitude=-9.14&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Europe%2FLisbon&forecast_days=4', { cache: 'no-store' });
+      const d = (await r.json()).daily; if (!d || !d.time) throw 0;
+      wxAt = Date.now(); try { localStorage.setItem(WXKEY, JSON.stringify({ t: wxAt, s: S.start, d })); } catch {}
+      drawWx(d, wxAt);
+    } catch {   // אין רשת: מציגים את התחזית האחרונה שנשמרה, עם השעה שבה עודכנה
+      let o = null; try { o = JSON.parse(localStorage.getItem(WXKEY) || 'null'); } catch {}
+      if (o && o.d && o.s === S.start) drawWx(o.d, o.t); else { box.innerHTML = ''; $('#wxUpd').textContent = ''; }
+    }
+  }
+  const WXKEY = 'lisboa.wx'; let wxAt = 0;
+  function drawWx(d, t) {
+    $('#weather').innerHTML = d.time.slice(0, 4).map((t, i) => `<div class="wx wx-${WXK(d.weather_code[i])}"><b>${fmtDay(new Date(t + 'T12:00'))}<br>${fmtDate(new Date(t + 'T12:00'))}</b><i>${WX(d.weather_code[i])}</i><u>${WXT[WXK(d.weather_code[i])]}</u><p><span>${Math.round(d.temperature_2m_max[i])}°</span> <em>${Math.round(d.temperature_2m_min[i])}°</em></p></div>`).join('');
+    const w = new Date(t), hm = w.toLocaleTimeString('he-IL', { hour: '2-digit', minute: '2-digit' });
+    $('#wxUpd').textContent = Date.now() - t < 20 * 3600e3 ? `התחזית עודכנה ב־${hm}` : `התחזית עודכנה ב־${fmtDate(w)}, ${hm}`;
   }
   function renderAlert() {
     $('#alertBox').innerHTML = '';
@@ -407,15 +417,24 @@
   }
 
   // ───── tools ─────
+  let loadRate = () => {}, rateAt = 0, rateManual = false;
   function initConv() {
     const eur = $('#eur'), ils = $('#ils'), rate = $('#rate');
     const upd = from => { const r = +rate.value || 0; if (from === 'ils') eur.value = r && ils.value ? (ils.value / r).toFixed(2) : ''; else ils.value = eur.value ? (eur.value * r).toFixed(2) : ''; };
     rate.value = S.rate; upd();
     eur.oninput = () => upd('eur'); ils.oninput = () => upd('ils');
     rate.oninput = () => { S.rate = +rate.value || S.rate; save(); $('#rateSrc').textContent = '(ידני)'; upd(); };
-    fetch('https://api.frankfurter.app/latest?from=EUR&to=ILS').then(r => r.json()).then(j => {
-      if (j?.rates?.ILS) { S.rate = +j.rates.ILS.toFixed(3); rate.value = S.rate; save(); $('#rateSrc').textContent = `(שער יציג, ${j.date})`; upd(); }
-    }).catch(() => { $('#rateSrc').textContent = '(משוער – אפשר לעדכן)'; });
+    loadRate = async () => {
+      const put = (v, txt) => { S.rate = +(+v).toFixed(3); rate.value = S.rate; save(); $('#rateSrc').textContent = txt; upd(); rateAt = Date.now(); };
+      const hm = t => new Date(t).toLocaleTimeString('he-IL', { hour: '2-digit', minute: '2-digit' });
+      try { const j = await (await fetch(PUSH_URL + '/fx', { cache: 'no-store' })).json();
+        if (j && j.rate) return put(j.rate, j.live ? `(שער שוק עדכני, ${hm(j.at || j.t)})` : `(שער יציג אירופי, ${j.date})`); } catch {}
+      try { const j = await (await fetch('https://api.frankfurter.app/latest?from=EUR&to=ILS', { cache: 'no-store' })).json();
+        if (j && j.rates && j.rates.ILS) return put(j.rates.ILS, `(שער יציג אירופי, ${j.date})`); } catch {}
+      if (!rateAt) $('#rateSrc').textContent = '(משוער – אפשר לעדכן)';
+    };
+    rate.addEventListener('input', () => { rateManual = true; });
+    loadRate();
   }
   function renderPack() {
     const done = S.pack.filter(i => i.done).length;
@@ -503,7 +522,7 @@
   })();
 
   // ───── עדכון אוטומטי: בודקים אם יש גרסה חדשה באתר, ואם כן טוענים אותה ─────
-  const VERSION = 19;
+  const VERSION = 20;
   async function checkUpdate() {
     if (location.protocol !== 'https:' || !navigator.onLine) return;
     try {
@@ -582,6 +601,8 @@
     tileUrl: (z, x, y) => `${ESRI}World_Street_Map/MapServer/tile/${z}/${y}/${x}` };
   renderTrip(); renderHero(); renderAlert(); renderHotel(); renderFlights(); renderFavCount(); renderRail();
   renderDayTabs(); renderPlan(); renderStatic(); renderPack(); renderKupa(); initConv(); renderWeather(); loadImages();
+  const freshen = () => { if (document.hidden) return; if (Date.now() - wxAt > 30 * 60e3) renderWeather(); if (!rateManual && Date.now() - rateAt > 15 * 60e3) loadRate(); };
+  document.addEventListener('visibilitychange', freshen); addEventListener('online', freshen); setInterval(freshen, 10 * 60e3);
   const h = location.hash.slice(1); if (['map', 'places', 'plan', 'more', 'journal', 'group', 'chat'].includes(h)) go(h);
   setInterval(renderFlights, 60000);
   if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});

@@ -87,9 +87,17 @@
   "en": "(estimated – you can update it)",
   "es": "(aproximado: puedes actualizarlo)"
  },
+ "(שער יציג אירופי, {})": {
+  "en": "(ECB reference rate, {0})",
+  "es": "(tipo de referencia del BCE, {0})"
+ },
  "(שער יציג, {})": {
   "en": "(official rate, {0})",
   "es": "(tipo de cambio oficial, {0})"
+ },
+ "(שער שוק עדכני, {})": {
+  "en": "(live market rate, {0})",
+  "es": "(tipo de mercado actual, {0})"
  },
  ") ולסמן": {
   "en": ") and select",
@@ -3510,6 +3518,14 @@
  "התור למטה ארוך. אפשר להגיע למרפסת העליונה ברגל, מכיכר כרמו שמאחורי המנזר, בלי לחכות.": {
   "en": "The queue at the bottom is long. You can reach the upper platform on foot, from Largo do Carmo behind the convent, without waiting.",
   "es": "La cola de abajo es larga. Puedes llegar a la plataforma superior a pie, desde el Largo do Carmo, detrás del convento, sin esperar."
+ },
+ "התחזית עודכנה ב־{}": {
+  "en": "Forecast updated at {0}",
+  "es": "Pronóstico actualizado a las {0}"
+ },
+ "התחזית עודכנה ב־{}, {}": {
+  "en": "Forecast updated on {0}, {1}",
+  "es": "Pronóstico actualizado el {0}, {1}"
  },
  "התחלת נסיעה חדשה": {
   "en": "Start a new trip",
