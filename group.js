@@ -204,7 +204,9 @@
     if (G.out?.[p.d]) return;   // מי שהוסר מהקבוצה: מתעלמים מההודעות שלו
     if (p.t === 'kick') {       // רק מי שהקים את הקבוצה יכול להסיר משתתף
       if (!TRIP.cfg.by || p.d !== TRIP.cfg.by || !p.k || p.k === p.d) return;
-      if (p.k === G.id) { key = null; connect(); online = false; G = { ...blank(), id: G.id, name: G.name, av: G.av }; save(); drawFriends(); render(); A.toast('הוסרת מהקבוצה על ידי מנהל הקבוצה', 6000); return; }
+      if (p.k === G.id && G.at && p.ts < G.at) {   // הסרה ישנה שמגיעה מההיסטוריה אחרי הצטרפות מחדש: ממשיכים בזהות חדשה, כי שאר הקבוצה מתעלמת מהישנה
+        delete G.members[G.id]; (G.out ||= {})[G.id] = 1; G.id = blank().id; save(); setTimeout(() => send({ t: 'hi' }).then(() => { if (G.av) send({ t: 'av', av: G.av }); }), 600); return; }
+      if (p.k === G.id) { key = null; connect(); online = false; G = { ...blank(), name: G.name, av: G.av }; save(); drawFriends(); render(); A.toast('הוסרת מהקבוצה על ידי מנהל הקבוצה', 6000); return; }
       delete G.members[p.k]; (G.out ||= {})[p.k] = 1; save(); drawFriends(); render(); return;
     }
     const mine = p.d === G.id, mem = G.members[p.d] ||= {};
@@ -345,7 +347,7 @@
     if (!window.crypto?.subtle) return A.toast('הדפדפן הזה לא תומך בהצפנה הדרושה');
     code = norm(code); if (code.length < 6) return A.toast('הקוד קצר מדי');
     if (!name) return A.toast('איך קוראים לך?');
-    G = { ...blank(), id: G.id, av: G.av, name, code: code.replace(/(.{4})(?=.)/g, '$1-') }; save();
+    G = { ...blank(), id: G.id, av: G.av, name, code: code.replace(/(.{4})(?=.)/g, '$1-'), at: Date.now() }; save();
     try { const u = (localStorage.getItem('lisboa.jused') || '').split(',').filter(Boolean); if (!u.includes(code)) localStorage.setItem('lisboa.jused', [...u, code].slice(-20).join(',')); } catch {}
     await derive(code); connect(); render();
     setTimeout(() => send({ t: 'hi' }).then(() => { if (G.av) send({ t: 'av', av: G.av }); if (isNew) sendTrip(); }), 800);
