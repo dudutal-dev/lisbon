@@ -131,6 +131,14 @@
   "en": "12–15 per cent of the price",
   "es": "el 12–15 por ciento del precio"
  },
+ "20 דקות ברכבת": {
+  "en": "20 minutes by train",
+  "es": "20 minutos en tren"
+ },
+ "25 דקות ברכבת": {
+  "en": "25 minutes by train",
+  "es": "25 minutos en tren"
+ },
  "360 קוקטייל בר": {
   "en": "360 Cocktail Bar",
   "es": "360 Cocktail Bar"
@@ -155,6 +163,18 @@
   "en": "A for Athens – rooftop",
   "es": "A for Athens – azotea"
  },
+ "Altis Belém – על הנהר": {
+  "en": "Altis Belém – on the river",
+  "es": "Altis Belém – junto al río"
+ },
+ "Bairro Alto Hotel – קלאסי עם גג": {
+  "en": "Bairro Alto Hotel – a classic with a rooftop",
+  "es": "Bairro Alto Hotel – un clásico con azotea"
+ },
+ "Bolt או מונית מעל גשר 25 באפריל, כחצי שעה. יש גם אוטובוסים מהעיר – כדאי לבדוק קו ותחנה לפני שיוצאים.": {
+  "en": "Bolt or taxi over the 25 de Abril Bridge, about half an hour. There are also buses from the city – check the route and stop before you set out.",
+  "es": "Bolt o taxi cruzando el Puente 25 de Abril, una media hora. También hay autobuses desde la ciudad; conviene comprobar la línea y la parada antes de salir."
+ },
  "Bolt ו־Uber זולים ונוחים מאוד בליסבון. נקודת האיסוף בשדה מסומנת באפליקציה, ולא תמיד צמודה ליציאה.": {
   "en": "Bolt and Uber are cheap and very convenient in Lisbon. The pick-up point at the airport is marked in the app and isn't always right by the exit.",
   "es": "Bolt y Uber son baratos y muy cómodos en Lisboa. El punto de recogida del aeropuerto aparece marcado en la app y no siempre está junto a la salida."
@@ -163,9 +183,49 @@
   "en": "Bolt and taxis are fairly cheap and save you the climbs. At night it's better to order one from the app than to walk far.",
   "es": "Bolt y los taxis son bastante baratos y te ahorran las cuestas. De noche es mejor pedir uno desde la app que caminar lejos."
  },
+ "Convento do Salvador – מנזר באלפמה": {
+  "en": "Convento do Salvador – a convent in Alfama",
+  "es": "Convento do Salvador – un convento en Alfama"
+ },
+ "Heritage Avenida Liberdade – בוטיק שקט": {
+  "en": "Heritage Avenida Liberdade – a quiet boutique",
+  "es": "Heritage Avenida Liberdade – un boutique tranquilo"
+ },
+ "Hotel Lisboa Plaza – משפחתי וותיק": {
+  "en": "Hotel Lisboa Plaza – family-friendly and long-established",
+  "es": "Hotel Lisboa Plaza – familiar y veterano"
+ },
+ "Lisbon Destination Hostel – בתוך תחנת רוסיו": {
+  "en": "Lisbon Destination Hostel – inside Rossio station",
+  "es": "Lisbon Destination Hostel – dentro de la estación de Rossio"
+ },
  "MAAT – מוזיאון על הנהר": {
   "en": "MAAT – museum on the river",
   "es": "MAAT – museo junto al río"
+ },
+ "Martinhal Chiado – דירות למשפחות": {
+  "en": "Martinhal Chiado – apartments for families",
+  "es": "Martinhal Chiado – apartamentos para familias"
+ },
+ "Memmo Alfama – נוף מהמרפסת": {
+  "en": "Memmo Alfama – views from the terrace",
+  "es": "Memmo Alfama – vistas desde la terraza"
+ },
+ "Memmo Príncipe Real – בריכה ונוף": {
+  "en": "Memmo Príncipe Real – pool and views",
+  "es": "Memmo Príncipe Real – piscina y vistas"
+ },
+ "My Story Hotel Figueira – מרכזי ונוח": {
+  "en": "My Story Hotel Figueira – central and convenient",
+  "es": "My Story Hotel Figueira – céntrico y cómodo"
+ },
+ "Myriad by SANA – מגדל על הנהר": {
+  "en": "Myriad by SANA – a tower on the river",
+  "es": "Myriad by SANA – una torre sobre el río"
+ },
+ "Olissippo Oriente – ליד האוקיינריום": {
+  "en": "Olissippo Oriente – near the Oceanarium",
+  "es": "Olissippo Oriente – junto al Oceanario"
  },
  "Parabéns · עד 120": {
   "en": "Parabéns · many happy returns",
@@ -175,9 +235,25 @@
   "en": "Parabéns · pah-rah-BAYNSH",
   "es": "Parabéns · pa-ra-BÉINSH"
  },
+ "Pousada de Lisboa – על כיכר המסחר": {
+  "en": "Pousada de Lisboa – on Praça do Comércio",
+  "es": "Pousada de Lisboa – en la Praça do Comércio"
+ },
  "Stadiou 22, בין סינטגמה לפנפיסטימיו": {
   "en": "Stadiou 22, between Syntagma and Panepistimio",
   "es": "Stadiou 22, entre Syntagma y Panepistimio"
+ },
+ "The Lumiares – דירות עם מטבח": {
+  "en": "The Lumiares – apartments with a kitchen",
+  "es": "The Lumiares – apartamentos con cocina"
+ },
+ "Tivoli Avenida Liberdade – קלאסיקה עם בריכה": {
+  "en": "Tivoli Avenida Liberdade – a classic with a pool",
+  "es": "Tivoli Avenida Liberdade – un clásico con piscina"
+ },
+ "Yes! Lisbon Hostel – הוסטל חברתי": {
+  "en": "Yes! Lisbon Hostel – a social hostel",
+  "es": "Yes! Lisbon Hostel – un hostel social"
  },
  "{} {} · {} רגעים": {
   "en": "{0} {1} · {2} moments",
@@ -415,6 +491,10 @@
   "en": "Ab",
   "es": "Ab"
  },
+ "אבורה – בירת אלנטז׳ו": {
+  "en": "Évora – capital of the Alentejo",
+  "es": "Évora: capital del Alentejo"
+ },
  "אביב וסתיו: 18–25 מעלות ונעים, עם ערבים קרירים. קיץ: חם ויבש, 28 ומעלה, ושמש חזקה – כובע ומים.": {
   "en": "Spring and autumn: 18–25 degrees and pleasant, with cool evenings. Summer: hot and dry, 28 and above, with strong sun – hat and water.",
   "es": "Primavera y otoño: 18–25 grados y agradable, con noches frescas. Verano: calor seco, 28 grados o más, y sol fuerte – gorra y agua."
@@ -495,6 +575,10 @@
   "en": "Uma mesa para quatro, por favor",
   "es": "Uma mesa para quatro, por favor"
  },
+ "אובידוש – עיירה בתוך חומה": {
+  "en": "Óbidos – a town within walls",
+  "es": "Óbidos: un pueblo dentro de una muralla"
+ },
  "אודות": {
   "en": "About",
   "es": "Acerca de"
@@ -507,9 +591,41 @@
   "en": "The X95 bus to Syntagma runs 24 hours a day, takes about an hour and is cheaper than the metro.",
   "es": "El autobús X95 a Syntagma funciona las 24 horas, tarda alrededor de una hora y es más barato que el metro."
  },
+ "אוטובוס חזרה אחר הצהריים.": {
+  "en": "Bus back in the afternoon.",
+  "es": "Autobús de vuelta por la tarde."
+ },
+ "אוטובוס ישיר (Rápida Verde) מאזור קמפו גרנדה, כשעה. כדאי לבדוק לוח זמנים ונקודת יציאה. ברכב כשעה, ויש גם סיורים מאורגנים שמשלבים את אובידוש עם נזארה.": {
+  "en": "Direct bus (Rápida Verde) from the Campo Grande area, about an hour. Check the timetable and departure point. About an hour by car, and there are also organized tours combining Óbidos with Nazaré.",
+  "es": "Autobús directo (Rápida Verde) desde la zona de Campo Grande, aproximadamente una hora. Conviene comprobar el horario y el punto de salida. En coche, alrededor de una hora; también hay tours organizados que combinan Óbidos con Nazaré."
+ },
+ "אוטובוס ישיר חזרה לליסבון.": {
+  "en": "Direct bus back to Lisbon.",
+  "es": "Autobús directo de vuelta a Lisboa."
+ },
+ "אוטובוס מאזור קמפו גרנדה למאפרה, כ־50 דקות, והוא ממשיך לאריסיירה, עוד כ־20 דקות. כדאי לבדוק קו ולוח זמנים. ברכב כ־40 דקות.": {
+  "en": "Bus from the Campo Grande area to Mafra, about 50 minutes, continuing on to Ericeira, about 20 minutes more. Check the route and timetable. About 40 minutes by car.",
+  "es": "Autobús desde la zona de Campo Grande hasta Mafra, unos 50 minutos, que continúa hasta Ericeira, unos 20 minutos más. Conviene comprobar la línea y el horario. En coche, unos 40 minutos."
+ },
+ "אוטובוס קצר לאריסיירה.": {
+  "en": "Short bus ride to Ericeira.",
+  "es": "Trayecto corto en autobús hasta Ericeira."
+ },
+ "אוטובוס של בוקר מקמפו גרנדה למאפרה.": {
+  "en": "Morning bus from Campo Grande to Mafra.",
+  "es": "Autobús de la mañana desde Campo Grande hasta Mafra."
+ },
+ "אוטובוס של בוקר מקמפו גרנדה.": {
+  "en": "Morning bus from Campo Grande.",
+  "es": "Autobús de la mañana desde Campo Grande."
+ },
  "אוכל": {
   "en": "Food",
   "es": "Comida"
+ },
+ "אוכל: המסעדות נפתחות לארוחת ערב בסביבות 19:00–19:30, ומי שמגיע בפתיחה מוצא שולחן בקלות. ברוב המקומות יש כיסא גבוה ומקבלים ילדים בחיוך. מרק ירקות, עוף על האש, אורז וצ׳יפס יש כמעט בכל תפריט.": {
+  "en": "Food: restaurants open for dinner around 19:00–19:30, and if you arrive at opening you'll find a table easily. Most places have a high chair and welcome children with a smile. Vegetable soup, grilled chicken, rice and chips are on almost every menu.",
+  "es": "Comida: los restaurantes abren para cenar hacia las 19:00–19:30, y quien llega a la apertura encuentra mesa fácilmente. En casi todos hay trona y reciben a los niños con una sonrisa. Sopa de verduras, pollo a la brasa, arroz y patatas fritas hay en casi todas las cartas."
  },
  "אוכלים בעמידה ליד הדלפק, עם ביקה (אספרסו). יש סניף גם בטיים אאוט מרקט.": {
   "en": "Eat standing at the counter, with a bica (espresso). There's also a branch at Time Out Market.",
@@ -523,6 +639,10 @@
   "en": "A historic market hall turned into a huge food hall: stalls from the city's well-known chefs and restaurants, seafood, prego, pastéis de nata and wine, around shared tables.",
   "es": "Un mercado histórico convertido en un enorme espacio gastronómico: puestos de chefs y restaurantes conocidos de la ciudad, marisco, prego, pastéis de nata y vino, alrededor de mesas compartidas."
  },
+ "אולמות הארמון: חדר הכס וחדר המוזיקה.": {
+  "en": "The palace halls: the Throne Room and the Music Room.",
+  "es": "Los salones del palacio: la Sala del Trono y la Sala de Música."
+ },
  "אוסף פרטי יוצא דופן: ממצרים העתיקה ועד רמברנדט, מונה ותכשיטי לאליק, בתוך גן גדול עם אגם וברווזים.": {
   "en": "An exceptional private collection: from ancient Egypt to Rembrandt, Monet and Lalique jewellery, set in a large garden with a lake and ducks.",
   "es": "Una colección privada excepcional: del antiguo Egipto a Rembrandt, Monet y las joyas de Lalique, dentro de un gran jardín con lago y patos."
@@ -530,6 +650,10 @@
  "אוקיינריום, רכבל ומוזיאון מדע": {
   "en": "Oceanarium, cable car and science museum",
   "es": "Oceanario, teleférico y museo de ciencias"
+ },
+ "אוקיינריום, רכבל ומוזיאון מדע – הכול שטוח": {
+  "en": "Oceanarium, cable car and science museum – all flat",
+  "es": "Oceanario, teleférico y museo de ciencia: todo llano"
  },
  "אזורים ומלונות": {
   "en": "Areas and hotels",
@@ -691,6 +815,10 @@
   "en": "Nobody who has the file saved is connected right now",
   "es": "Ahora mismo no hay nadie conectado que tenga el archivo guardado"
  },
+ "אין מטרו. למרכז נוסעים בחשמלית 15, ברכבת לקאיש דו סודרה או ב־Bolt. בערב יש מעט מסעדות פתוחות – כדאי לתכנן.": {
+  "en": "No metro. To reach the centre take tram 15, the train to Cais do Sodré or a Bolt. Few restaurants are open in the evening – plan ahead.",
+  "es": "No hay metro. Al centro se va en el tranvía 15, en tren hasta Cais do Sodré o en Bolt. Por la noche hay pocos restaurantes abiertos: conviene planificar."
+ },
  "אין מספיק מקום בטלפון לשמור את הנסיעה": {
   "en": "There isn't enough space on the phone to save the trip",
   "es": "No hay espacio suficiente en el teléfono para guardar el viaje"
@@ -794,6 +922,10 @@
  "אל קורטה אינגלס – כל־בו": {
   "en": "El Corte Inglés – department store",
   "es": "El Corte Inglés – grandes almacenes"
+ },
+ "אלגנטי ותוסס: קניות, קפה ותיאטראות": {
+  "en": "Elegant and lively: shopping, cafés and theatres",
+  "es": "Elegante y animado: compras, cafés y teatros"
  },
  "אלו! פאן פארק": {
   "en": "Allou! Fun Park",
@@ -975,6 +1107,10 @@
   "en": "Option A – the zoo",
   "es": "Opción A – el zoo"
  },
+ "אפשרות א׳ – חשמלית צהובה וגן שעשועים": {
+  "en": "Option A – yellow tram and playground",
+  "es": "Opción A – tranvía amarillo y parque infantil"
+ },
  "אפשרות א׳ – סינטרה": {
   "en": "Option A – Sintra",
   "es": "Opción A – Sintra"
@@ -995,6 +1131,10 @@
   "en": "Option B – a morning in Cascais",
   "es": "Opción B – mañana en Cascais"
  },
+ "אפשרות ב׳ – גן החיות": {
+  "en": "Option B – the zoo",
+  "es": "Opción B – el zoo"
+ },
  "אפשרות ב׳ – חמאם ואגם": {
   "en": "Option B – hammam and lake",
   "es": "Opción B – hammam y lago"
@@ -1014,6 +1154,14 @@
  "אפשרות ב׳ – שייט קצר לאי": {
   "en": "Option B – a short boat trip to an island",
   "es": "Opción B: excursión corta en barco a una isla"
+ },
+ "אפשרות ג׳ – בוקר בים": {
+  "en": "Option C – a morning at the beach",
+  "es": "Opción C – mañana de playa"
+ },
+ "אפשרות ד׳ – יום גשום": {
+  "en": "Option D – a rainy day",
+  "es": "Opción D – día de lluvia"
  },
  "אצטדיון דה לוז ומוזיאון בנפיקה": {
   "en": "Estádio da Luz and the Benfica museum",
@@ -1099,6 +1247,10 @@
   "en": "Early dinner",
   "es": "Cena temprana"
  },
+ "ארוחת ערב מוקדמת בשוק": {
+  "en": "Early dinner at the market",
+  "es": "Cena temprana en el mercado"
+ },
  "ארוחת ערב מתחילה בסביבות 20:00. מסעדות מבוקשות להזמין מראש. הלחם, הזיתים והגבינה שמניחים על השולחן (couvert) עולים כסף – אפשר להחזיר בחיוך.": {
   "en": "Dinner starts at around 20:00. Book popular restaurants ahead. The bread, olives and cheese placed on the table (couvert) cost money – you can send them back with a smile.",
   "es": "La cena empieza sobre las 20:00. Reserva con antelación en los restaurantes más solicitados. El pan, las aceitunas y el queso que dejan en la mesa (couvert) se cobran – puedes devolverlos con una sonrisa."
@@ -1127,6 +1279,34 @@
   "en": "A 19th-century Moorish-style palace turned into a gallery of Portuguese designers: fashion, jewellery, homeware and cosmetics. The whole neighbourhood around it is full of concept stores.",
   "es": "Un palacio de estilo morisco del siglo XIX convertido en galería de diseñadores portugueses: moda, joyería, decoración y cosmética. Todo el barrio de alrededor está lleno de concept stores."
  },
+ "ארמון מאפרה ואריסיירה": {
+  "en": "Mafra Palace and Ericeira",
+  "es": "Palacio de Mafra y Ericeira"
+ },
+ "ארמון מאפרה: הבזיליקה, המסדרונות הארוכים והספרייה.": {
+  "en": "Mafra Palace: the basilica, the long corridors and the library.",
+  "es": "Palacio de Mafra: la basílica, los largos pasillos y la biblioteca."
+ },
+ "ארמון מהמאה ה־18 שהפך למלון דירות מעוצב: סלון, מטבח מאובזר, ספא קטן ומסעדת גג עם נוף. נוח למשפחות ולקבוצות קטנות שרוצות מרחב.": {
+  "en": "An 18th-century palace turned stylish apartment hotel: living room, fully equipped kitchen, a small spa and a rooftop restaurant with a view. Comfortable for families and small groups who want space.",
+  "es": "Un palacio del siglo XVIII convertido en un aparthotel de diseño: salón, cocina equipada, un pequeño spa y un restaurante en la azotea con vistas. Cómodo para familias y grupos pequeños que quieren espacio."
+ },
+ "ארמון פנה והגנים שלו, עם כרטיס לשעה שנקבעה מראש.": {
+  "en": "Pena Palace and its gardens, with a pre-booked timed ticket.",
+  "es": "Palacio da Pena y sus jardines, con entrada con hora reservada de antemano."
+ },
+ "ארמון קיץ מלכותי ורוד מהמאה ה־18: אולמות מראות ונברשות, וגנים עם מזרקות, פסלים ותעלה מצופה אריחים. קרוב לעיר והרבה פחות עמוס מסינטרה.": {
+  "en": "A pink 18th-century royal summer palace: halls of mirrors and chandeliers, and gardens with fountains, statues and a tile-lined canal. Close to the city and far less crowded than Sintra.",
+  "es": "Un palacio real de verano rosa del siglo XVIII: salones de espejos y lámparas de araña, y jardines con fuentes, estatuas y un canal revestido de azulejos. Cerca de la ciudad y mucho menos concurrido que Sintra."
+ },
+ "ארמון קלוז – ורסאי הקטן": {
+  "en": "Queluz Palace – the little Versailles",
+  "es": "Palacio de Queluz – el pequeño Versalles"
+ },
+ "ארמון־מנזר עצום מהמאה ה־18, עם אחת הספריות היפות באירופה, ואחריו אריסיירה – עיירת דייגים וגולשים לבנה־כחולה מעל האוקיינוס.": {
+  "en": "A vast 18th-century palace-monastery with one of the most beautiful libraries in Europe, followed by Ericeira – a white-and-blue fishing and surfing town above the ocean.",
+  "es": "Un inmenso palacio-convento del siglo XVIII, con una de las bibliotecas más bellas de Europa, y después Ericeira: un pueblo blanco y azul de pescadores y surfistas sobre el océano."
+ },
  "ארמונות וגנים רומנטיים בתוך יער.": {
   "en": "Palaces and romantic gardens in the middle of a forest.",
   "es": "Palacios y jardines románticos en medio de un bosque."
@@ -1134,6 +1314,14 @@
  "אש ביפאנש דו אפונסו": {
   "en": "As Bifanas do Afonso",
   "es": "As Bifanas do Afonso"
+ },
+ "אשטופה פריה – ג׳ונגל בלב העיר": {
+  "en": "Estufa Fria – a jungle in the heart of the city",
+  "es": "Estufa Fria – una selva en el corazón de la ciudad"
+ },
+ "אשטרלה": {
+  "en": "Estrela",
+  "es": "Estrela"
  },
  "את הנסיעה מגדיר מי שהקים את הקבוצה.": {
   "en": "The trip is set up by whoever created the group.",
@@ -1235,6 +1423,10 @@
   "en": "Baixa",
   "es": "Baixa"
  },
+ "באישה ורוסיו": {
+  "en": "Baixa & Rossio",
+  "es": "Baixa y Rossio"
+ },
  "באישה – שיאדו": {
   "en": "Baixa – Chiado",
   "es": "Baixa – Chiado"
@@ -1326,6 +1518,10 @@
  "בונז׳רדים – מלך העופות": {
   "en": "Bonjardim – the king of chicken",
   "es": "Bonjardim – el rey del pollo"
+ },
+ "בוקר בחוף: פורטיניו דה ארביטה או פיגיירינה.": {
+  "en": "Morning at the beach: Portinho da Arrábida or Figueirinha.",
+  "es": "Mañana de playa: Portinho da Arrábida o Figueirinha."
  },
  "בוקר טוב": {
   "en": "Good morning",
@@ -1479,6 +1675,10 @@
   "en": "Belém and a yellow tram",
   "es": "Belém y un tranvía amarillo"
  },
+ "בלם, חשמליות וטוק־טוק": {
+  "en": "Belém, trams and a tuk-tuk",
+  "es": "Belém, tranvías y tuk-tuk"
+ },
  "בלם, כדורגל ונהר": {
   "en": "Belém, football and the river",
   "es": "Belém, fútbol y río"
@@ -1543,6 +1743,10 @@
   "en": "On the map",
   "es": "En el mapa"
  },
+ "במקום לטפס ברגל: סיבוב של שעה בסמטאות, עם עצירה בתצפית. מי שרוצה מסיים בטירה, בין הטווסים.": {
+  "en": "Instead of climbing on foot: a one-hour ride through the lanes, with a stop at a viewpoint. If you like, finish at the castle, among the peacocks.",
+  "es": "En lugar de subir a pie: un recorrido de una hora por las callejuelas, con parada en un mirador. Quien quiera, termina en el castillo, entre los pavos reales."
+ },
  "בנובמבר השמש שוקעת בסביבות 17:10.": {
   "en": "In November the sun sets at around 17:10.",
   "es": "En noviembre el sol se pone sobre las 17:10."
@@ -1574,6 +1778,10 @@
  "בעוד {} שע׳ ו־{} דק׳": {
   "en": "In {0} h {1} min",
   "es": "En {0} h {1} min"
+ },
+ "בעונה החמה: 25 דקות ברכבת לחוף חולי רחב, או 40 דקות לקשקאיש.": {
+  "en": "In the warm season: 25 minutes by train to a wide sandy beach, or 40 minutes to Cascais.",
+  "es": "En temporada cálida: 25 minutos en tren hasta una amplia playa de arena, o 40 minutos hasta Cascais."
  },
  "בעמוד הבית ללחוץ על גלגל השיניים שבכותרת, או על \"הגדרת הנסיעה\".": {
   "en": "On the home page, tap the cog in the header, or \"Trip setup\".",
@@ -1607,9 +1815,61 @@
   "en": "In the evening avoid Omonia Square and the Exarchia area, and don't stay on the hills after dark.",
   "es": "Por la noche evita la plaza Omonia y la zona de Exarchia, y no te quedes en las colinas cuando oscurezca."
  },
+ "בערך 10 אירו לאדם לרכבת הלוך ושוב, ועוד מונית או אוטובוס לחוף. סיור מאורגן: בערך 60–90 אירו לאדם.": {
+  "en": "About €10 per person for the return train, plus a taxi or bus to the beach. Organized tour: about €60–90 per person.",
+  "es": "Unos 10 € por persona por el tren de ida y vuelta, más taxi o autobús a la playa. Tour organizado: unos 60–90 € por persona."
+ },
+ "בערך 15–20 אירו לאדם לאוטובוס הלוך ושוב. הכניסה לעיירה ולחומה חינם.": {
+  "en": "About €15–20 per person for the return bus. Entry to the town and the walls is free.",
+  "es": "Unos 15–20 € por persona por el autobús de ida y vuelta. La entrada al pueblo y a la muralla es gratuita."
+ },
+ "בערך 15–20 אירו לאדם: רכבת וכניסה לארמון ולגנים. לילדים ולמשפחות יש בדרך כלל כרטיס מוזל – כדאי לבדוק.": {
+  "en": "About 15–20 euros per person: train plus entry to the palace and gardens. There are usually discounted tickets for children and families – worth checking.",
+  "es": "Unos 15–20 euros por persona: tren y entrada al palacio y los jardines. Suele haber entradas reducidas para niños y familias – conviene comprobarlo."
+ },
+ "בערך 15–25 אירו לרכב לכל כיוון, ועוד ארוחה על החוף.": {
+  "en": "About €15–25 per car each way, plus a meal on the beach.",
+  "es": "Unos 15–25 € por coche y trayecto, más una comida en la playa."
+ },
+ "בערך 2.5 אירו לאדם לכל כיוון לסינטרה, בכרטיס הטעון.": {
+  "en": "About €2.5 per person each way to Sintra, with the topped-up card.",
+  "es": "Unos 2,5 € por persona y trayecto hasta Sintra, con la tarjeta recargada."
+ },
+ "בערך 2.5 אירו לאדם לכל כיוון לקשקאיש, ובערך אירו וחצי למעבורת, בכרטיס הטעון.": {
+  "en": "About €2.5 per person each way to Cascais, and about €1.5 for the ferry, with the topped-up card.",
+  "es": "Unos 2,5 € por persona y trayecto hasta Cascais, y alrededor de 1,5 € el ferri, con la tarjeta recargada."
+ },
+ "בערך 20–25 אירו לאדם: אוטובוסים וכניסה לארמון.": {
+  "en": "About €20–25 per person: buses and palace entry.",
+  "es": "Unos 20–25 € por persona: autobuses y entrada al palacio."
+ },
+ "בערך 30–40 אירו לאדם: רכבת הלוך ושוב וכניסה לשניים־שלושה אתרים.": {
+  "en": "About €30–40 per person: return train and entry to two or three sights.",
+  "es": "Unos 30–40 € por persona: tren de ida y vuelta y entrada a dos o tres sitios."
+ },
+ "בערך 40–50 אירו לאדם: רכבת, אוטובוס לארמון וכניסה לשני אתרים. סיור מאורגן יקר יותר.": {
+  "en": "About €40–50 per person: train, bus to the palace and entry to two sights. An organized tour costs more.",
+  "es": "Unos 40–50 € por persona: tren, autobús al palacio y entrada a dos sitios. Un tour organizado sale más caro."
+ },
+ "בערך 4–5 אירו לאדם לרכבת הלוך ושוב. שמשייה ומיטות שיזוף בתשלום נוסף.": {
+  "en": "About 4–5 euros per person for the round-trip train. Umbrellas and sunbeds cost extra.",
+  "es": "Unos 4–5 euros por persona por el tren de ida y vuelta. Sombrilla y tumbonas con coste adicional."
+ },
+ "בערך 5 אירו לאדם לרכבת הלוך ושוב, ועוד אוכל וגלידה.": {
+  "en": "About €5 per person for the return train, plus food and ice cream.",
+  "es": "Unos 5 € por persona por el tren de ida y vuelta, más comida y helado."
+ },
  "בערך 61.50 אירו בחנות אחת באותו יום": {
   "en": "about 61.50 euros in one shop on the same day",
   "es": "unos 61,50 euros en una misma tienda el mismo día"
+ },
+ "בערך 70–100 אירו לאדם בסיור מאורגן. ברכב שכור: דלק ואגרות כביש, והכניסה למנזר בטליה בתשלום.": {
+  "en": "About €70–100 per person on an organized tour. By rental car: fuel and road tolls, and entry to Batalha Monastery is paid.",
+  "es": "Unos 70–100 € por persona en tour organizado. En coche de alquiler: combustible y peajes, y la entrada al monasterio de Batalha es de pago."
+ },
+ "בפטימה מתלבשים בצניעות ושומרים על שקט. הרבה נסיעה ליום אחד – מתאים למי שאוהב לראות הרבה, פחות לילדים קטנים.": {
+  "en": "In Fátima, dress modestly and keep quiet. A lot of driving for one day – good for those who like to see a lot, less so for small children.",
+  "es": "En Fátima hay que vestir con recato y guardar silencio. Mucha carretera para un solo día: ideal para quien disfruta viendo mucho, menos para niños pequeños."
  },
  "בפינה למעלה.": {
   "en": "in the top corner.",
@@ -1623,6 +1883,10 @@
   "en": "At opening time, at the kids' pace. Closed on Mondays – swap with another day.",
   "es": "A la hora de apertura y al ritmo de los niños. Cerrado los lunes – cámbialo por otro día."
  },
+ "בפתיחה ובקצב של הילדים. הכי נוח להגיע ב־Bolt. בימי שני סגור – להחליף עם יום אחר.": {
+  "en": "At opening and at the kids' pace. Bolt is the easiest way to get there. Closed on Mondays – swap with another day.",
+  "es": "A la apertura y al ritmo de los niños. Lo más cómodo es llegar en Bolt. Cierra los lunes: cámbialo por otro día."
+ },
  "בפתיחה, לפני הקבוצות. בימי שני סגור – להחליף עם יום אחר.": {
   "en": "At opening time, before the tour groups. Closed on Mondays – swap with another day.",
   "es": "A la hora de apertura, antes de los grupos. Cerrado los lunes – cámbialo por otro día."
@@ -1635,6 +1899,10 @@
   "en": "At opening time, with tickets booked ahead. Two to three hours.",
   "es": "A la hora de apertura, con entradas compradas de antemano. De dos a tres horas."
  },
+ "בפתיחה, עם כרטיסים מראש. שעתיים עד שלוש. מטרו קו אדום עד אוריינטה.": {
+  "en": "At opening, with tickets booked ahead. Two to three hours. Red metro line to Oriente.",
+  "es": "A la apertura, con entradas compradas con antelación. De dos a tres horas. Metro línea roja hasta Oriente."
+ },
  "בקבוצה, מי שהקים אותה מגדיר את הנסיעה ואת המלון, וההגדרה עוברת לבד לכל מי שמצטרף. רק הוא יכול לשנות אותה.": {
   "en": "In a group, whoever created it sets up the trip and the hotel, and the setup is passed on automatically to everyone who joins. Only they can change it.",
   "es": "En un grupo, quien lo creó configura el viaje y el hotel, y la configuración llega sola a todas las personas que se unen. Solo esa persona puede cambiarla."
@@ -1643,6 +1911,14 @@
   "en": "On the second floor there's a restaurant with a terrace facing the Acropolis.",
   "es": "En la segunda planta hay un restaurante con terraza frente a la Acrópolis."
  },
+ "בקיץ הגישה ברכב לחופים מוגבלת ויש הסעות – כדאי לבדוק מראש. המים רגועים יותר מבחופים הפתוחים, אבל קרים. לשים לב שלא להשאיר דברים גלויים ברכב.": {
+  "en": "In summer, car access to the beaches is restricted and there are shuttles – check ahead. The water is calmer than at the open beaches, but cold. Take care not to leave anything visible in the car.",
+  "es": "En verano el acceso en coche a las playas está restringido y hay lanzaderas; conviene informarse antes. El agua es más tranquila que en las playas abiertas, pero fría. No dejes objetos a la vista en el coche."
+ },
+ "בקיץ חם שם בהרבה מבליסבון – כובע ומים, ולהתחיל מוקדם. קפלת העצמות עלולה להפחיד ילדים קטנים. במסעדות האזור מגישים מנות אלנטז׳ו ויין מקומי.": {
+  "en": "In summer it's much hotter there than in Lisbon – bring a hat and water, and start early. The Chapel of Bones may frighten small children. Local restaurants serve Alentejo dishes and regional wine.",
+  "es": "En verano hace mucho más calor que en Lisboa: sombrero, agua y empezar temprano. La Capilla de los Huesos puede asustar a los niños pequeños. Los restaurantes de la zona sirven platos alentejanos y vino local."
+ },
  "בקנייה מעל 50 אירו בחנות אחת מבקשים טופס החזר מס. הכרטיס \"החזר מס\" מסביר מה עושים בחנות ומה בשדה, ומחשב כמה חוזר אליך.": {
   "en": "When you spend over 50 euros in one shop, ask for a tax refund form. The \"Tax refund\" card explains what to do in the shop and at the airport, and works out how much you get back.",
   "es": "En una compra de más de 50 euros en una misma tienda, pide el formulario de devolución de impuestos. La tarjeta \"Devolución de impuestos\" explica qué hacer en la tienda y en el aeropuerto, y calcula cuánto te devuelven."
@@ -1650,6 +1926,10 @@
  "בקנייה מעל כ־61.50 אירו בחנות אחת מבקשים טופס החזר מס. הכרטיס \"החזר מס\" מסביר מה עושים בחנות ומה בשדה, ומחשב כמה חוזר אליך.": {
   "en": "When you spend more than about 61.50 euros in one shop, ask for a tax refund form. The \"Tax refund\" card explains what to do in the shop and at the airport, and works out how much you get back.",
   "es": "Si gastas más de unos 61,50 euros en una misma tienda, pide el formulario de devolución de impuestos. La tarjeta \"Devolución de impuestos\" explica qué hacer en la tienda y en el aeropuerto, y calcula cuánto te devuelven."
+ },
+ "בקצה העליון והשקט יותר של באירו אלטו, ליד תצפית סאו פדרו דה אלקנטרה. הרחובות מסביב צרים – מונית עוצרת קרוב, לא תמיד בדלת.": {
+  "en": "At the upper, quieter end of Bairro Alto, near the São Pedro de Alcântara viewpoint. The surrounding streets are narrow – a taxi will stop close by, not always at the door.",
+  "es": "En el extremo alto y más tranquilo de Bairro Alto, junto al mirador de São Pedro de Alcântara. Las calles de alrededor son estrechas – el taxi para cerca, no siempre en la puerta."
  },
  "בר בירה עם מבחר ענק של בירות יווניות מבשלות קטנות, מהחבית ובבקבוק.": {
   "en": "A beer bar with a huge selection of Greek craft beers from small breweries, on tap and bottled.",
@@ -1699,6 +1979,10 @@
   "en": "Bars & rooftops",
   "es": "Bares y azoteas"
  },
+ "ברכבת לקשקאיש לשבת בצד שמאל, מול הים.": {
+  "en": "On the Cascais train, sit on the left, facing the sea.",
+  "es": "En el tren a Cascais, siéntate a la izquierda, del lado del mar."
+ },
  "בשדה התעופה, ביום החזרה": {
   "en": "At the airport, on the day you fly back",
   "es": "En el aeropuerto, el día de la vuelta"
@@ -1719,6 +2003,10 @@
   "en": "valid until {0}",
   "es": "válida hasta {0}"
  },
+ "בתחבורה ציבורית קשה לחבר את שלושתם ביום אחד. הכי פשוט בסיור מאורגן מליסבון או ברכב שכור.": {
+  "en": "It's hard to link all three in one day by public transport. The simplest way is an organized tour from Lisbon or a rental car.",
+  "es": "En transporte público es difícil enlazar los tres en un solo día. Lo más sencillo es un tour organizado desde Lisboa o un coche de alquiler."
+ },
  "בתחתית המסך": {
   "en": "at the bottom of the screen",
   "es": "en la parte inferior de la pantalla"
@@ -1726,6 +2014,10 @@
  "בתי המרקחת (צלב ירוק) זולים משמעותית מהארץ. לחפש מבצעי 1+1.": {
   "en": "Pharmacies (green cross) are much cheaper than in Israel. Look out for 1+1 deals.",
   "es": "Las farmacias (cruz verde) son bastante más baratas que en Israel. Busca las ofertas 1+1."
+ },
+ "בתי מרקחת (Farmácia) מסומנים בצלב ירוק, ויש בהם חיתולים, מזון לתינוקות, קרם הגנה ותרופות לילדים. תמיד יש בית מרקחת תורן בלילה – הרשימה תלויה על הדלת.": {
+  "en": "Pharmacies (Farmácia) are marked with a green cross and stock nappies, baby food, sunscreen and children's medicines. There's always a duty pharmacy open at night – the list is posted on the door.",
+  "es": "Las farmacias (Farmácia) se señalan con una cruz verde y tienen pañales, comida para bebés, protector solar y medicamentos infantiles. Siempre hay una farmacia de guardia por la noche: la lista está colgada en la puerta."
  },
  "בתיאבון": {
   "en": "Enjoy your meal",
@@ -1819,9 +2111,17 @@
   "en": "Ice cream",
   "es": "Helado"
  },
+ "גלידה ומזכרות אחרונות": {
+  "en": "Ice cream and last souvenirs",
+  "es": "Helado y últimos recuerdos"
+ },
  "גלידה ופשטל דה נאטה": {
   "en": "Ice cream and pastel de nata",
   "es": "Helado y pastel de nata"
+ },
+ "גלידרייה קטנה בסגנון רומאי, אהובה מאוד על המקומיים: טעמים שמתחלפים, מנות נדיבות וקצפת מעל למי שרוצה.": {
+  "en": "A small Roman-style gelateria, much loved by locals: rotating flavors, generous portions and whipped cream on top for those who want it.",
+  "es": "Una pequeña heladería de estilo romano, muy querida por los lisboetas: sabores que cambian, raciones generosas y nata montada por encima para quien quiera."
  },
  "גליפדה – ווליאגמני": {
   "en": "Glyfada – Vouliagmeni",
@@ -1842,6 +2142,14 @@
  "גם בנובמבר.": {
   "en": "Even in November.",
   "es": "También en noviembre."
+ },
+ "גם מי שלא ישן כאן יכול לעלות לקוקטייל במרפסת הגג. בסופי שבוע הכיכר רועשת בלילה – לבקש חדר שקט.": {
+  "en": "Even non-guests can go up for a cocktail on the rooftop terrace. On weekends the square is noisy at night – ask for a quiet room.",
+  "es": "Aunque no te alojes aquí, puedes subir a tomar un cóctel en la terraza de la azotea. Los fines de semana la plaza es ruidosa por la noche – pedir una habitación tranquila."
+ },
+ "גן אשטרלה – גן שעשועים וברווזים": {
+  "en": "Jardim da Estrela – playground and ducks",
+  "es": "Jardim da Estrela – parque infantil y patos"
  },
  "גן החיות": {
   "en": "The zoo",
@@ -1867,9 +2175,21 @@
   "en": "A hidden garden with trees and lights, cocktails and music. Young and lively.",
   "es": "Un jardín escondido con árboles y luces, cócteles y música. Joven y animado."
  },
+ "גן עירוני ותיק ומוצל מול בזיליקת אשטרלה: גן שעשועים גדול, אגם עם ברווזים, ביתן נגינה מברזל וקיוסק קפה עם שולחנות.": {
+  "en": "A shady, long-established city garden opposite the Estrela Basilica: a large playground, a duck pond, a wrought-iron bandstand and a café kiosk with tables.",
+  "es": "Un jardín urbano veterano y sombreado frente a la Basílica da Estrela: un gran parque infantil, un estanque con patos, un quiosco de música de hierro y un quiosco-café con mesas."
+ },
+ "גן, חיות או ים, ופרידה": {
+  "en": "Park, animals or beach, and goodbye",
+  "es": "Parque, animales o playa, y despedida"
+ },
  "גן, רכבת קטנה וגלידה": {
   "en": "Garden, little train and ice cream",
   "es": "Jardín, trenecito y helado"
+ },
+ "גני שעשועים להפסקה באמצע היום: גן אשטרלה, פרינסיפה ריאל, פארק אדוארדו השביעי והטיילת של פארק האומות. בכולם יש קיוסק קפה להורים.": {
+  "en": "Playgrounds for a midday break: Jardim da Estrela, Príncipe Real, Parque Eduardo VII and the Parque das Nações promenade. All have a café kiosk for the parents.",
+  "es": "Parques infantiles para una pausa a mediodía: Jardim da Estrela, Príncipe Real, Parque Eduardo VII y el paseo del Parque das Nações. Todos tienen un quiosco con café para los padres."
  },
  "גראסה": {
   "en": "Graça",
@@ -2127,6 +2447,10 @@
   "en": "The garden is free and a pleasant place for a break. Parts of the museum have been under renovation – check what's open and which day it's closed (usually Tuesday).",
   "es": "El jardín es gratuito y agradable para hacer una pausa. Partes del museo han estado en obras: comprueba qué está abierto y qué día cierra (normalmente los martes)."
  },
+ "הגנים, המזרקות ותעלת האריחים.": {
+  "en": "The gardens, the fountains and the tile canal.",
+  "es": "Los jardines, las fuentes y el canal de azulejos."
+ },
  "הגענו למגבלת ההודעות של השירות. אפשר לנסות שוב בעוד כמה דקות": {
   "en": "We've reached the service's message limit. Try again in a few minutes",
   "es": "Hemos alcanzado el límite de mensajes del servicio. Prueba de nuevo en unos minutos"
@@ -2211,6 +2535,14 @@
   "en": "You've been invited to the group 🎉",
   "es": "Te han invitado al grupo 🎉"
  },
+ "הוסטל ותיק ומוכר, שתי דקות מכיכר המסחר, עם ארוחות ערב משותפות ואווירה שמחה. מתאים לצעירים ולחבר׳ה, פחות למי שמחפש שקט.": {
+  "en": "A well-known, long-running hostel two minutes from Praça do Comércio, with communal dinners and a cheerful vibe. Good for young travelers and groups of friends, less so if you're after quiet.",
+  "es": "Un hostel veterano y conocido, a dos minutos de la Praça do Comércio, con cenas compartidas y ambiente alegre. Ideal para jóvenes y grupos de amigos, menos para quien busca tranquilidad."
+ },
+ "הוסטל מעוצב בקומה העליונה של תחנת הרכבת ההיסטורית, עם חלל משותף גדול ומואר. חדרים משותפים וגם חדרים פרטיים – לחבר׳ה ולתקציב קטן.": {
+  "en": "A stylish hostel on the top floor of the historic train station, with a large, bright common area. Dorms as well as private rooms – for groups of friends and small budgets.",
+  "es": "Un hostel de diseño en la planta superior de la histórica estación de tren, con una zona común amplia y luminosa. Dormitorios compartidos y también habitaciones privadas – para grupos de amigos y presupuestos ajustados."
+ },
  "הוספה": {
   "en": "Add",
   "es": "Añadir"
@@ -2262,6 +2594,10 @@
  "החבר׳ה": {
   "en": "The lads",
   "es": "Los chicos"
+ },
+ "החוף הגדול הקרוב ביותר לליסבון: רצועת חול רחבה וארוכה, מצילים בעונה, מסעדות וקיוסקים על הטיילת ובתי ספר לגלישה. הרבה מקום לארמונות חול.": {
+  "en": "The closest big beach to Lisbon: a long, wide stretch of sand, lifeguards in season, restaurants and kiosks along the promenade, and surf schools. Plenty of room for sandcastles.",
+  "es": "La playa grande más cercana a Lisboa: una franja de arena ancha y larga, socorristas en temporada, restaurantes y quioscos en el paseo marítimo y escuelas de surf. Mucho espacio para castillos de arena."
  },
  "החזר מס – Tax Free": {
   "en": "Tax refund – Tax Free",
@@ -2403,6 +2739,10 @@
   "en": "It's best to build it at the end of the trip, when all the photos are already in the journal.",
   "es": "Lo mejor es crearla al final del viaje, cuando todas las fotos ya están en el diario."
  },
+ "הכי נוח ברכב שכור או בסיור מאורגן. לסטובל עצמה מגיעים גם ברכבת פרטגוש שחוצה את הגשר (מתחנות רומא־אריירו, אנטרקמפוש וסטה ריוש), כשעה, ומשם אוטובוס או מונית לחופים.": {
+  "en": "Easiest by rental car or organized tour. Setúbal itself can also be reached on the Fertagus train that crosses the bridge (from Roma-Areeiro, Entrecampos and Sete Rios stations), about an hour, then a bus or taxi to the beaches.",
+  "es": "Lo más cómodo es ir en coche de alquiler o en tour organizado. A Setúbal también se llega en el tren Fertagus, que cruza el puente (desde las estaciones de Roma-Areeiro, Entrecampos y Sete Rios), en alrededor de una hora, y desde allí autobús o taxi a las playas."
+ },
  "הכי פשוט במונית או ב־Bolt מעל הגשר. המים של האטלנטי קרים גם בקיץ. מחוץ לעונה חלק מברי החוף סגורים.": {
   "en": "Simplest by taxi or Bolt over the bridge. The Atlantic water is cold even in summer. Out of season some of the beach bars are closed.",
   "es": "Lo más sencillo es ir en taxi o en Bolt cruzando el puente. El agua del Atlántico está fría incluso en verano. Fuera de temporada, algunos bares de playa están cerrados."
@@ -2410,6 +2750,14 @@
  "הכיכר הגדולה של ליסבון, פתוחה אל הנהר ומוקפת ארקדות צהובות. מכאן מתחיל רחוב אוגושטה.": {
   "en": "Lisbon's grand square, open to the river and lined with yellow arcades. Rua Augusta starts here.",
   "es": "La gran plaza de Lisboa, abierta al río y rodeada de soportales amarillos. Aquí empieza la Rua Augusta."
+ },
+ "הכיכר שוקקת עד מאוחר. למי שרגיש לרעש – לבקש חדר פנימי או בקומה גבוהה.": {
+  "en": "The square is lively until late. If you're sensitive to noise, ask for an interior room or a high floor.",
+  "es": "La plaza está animada hasta tarde. Si el ruido molesta, pedir una habitación interior o en un piso alto."
+ },
+ "הכניסה בסמטה צדדית מרחוב דום פדרו החמישי, לא תמיד קל למצוא בפעם הראשונה. הבריכה קטנה ועונתית – כדאי לבדוק.": {
+  "en": "The entrance is on a side lane off Rua Dom Pedro V, not always easy to find the first time. The pool is small and seasonal – worth checking.",
+  "es": "La entrada está en un callejón lateral de la Rua Dom Pedro V; no siempre es fácil encontrarla la primera vez. La piscina es pequeña y de temporada – conviene comprobarlo."
  },
  "הכניסה דרך פסאז׳ קטן ומעלית – לא להתייאש.": {
   "en": "The entrance is through a small arcade and a lift – don't give up.",
@@ -2422,6 +2770,10 @@
  "הכנסייה העתיקה בעיר, מהמאה ה־12, עם שני מגדלים שנראים כמו מבצר. חשמלית 28 עוברת ממש מול הדלת.": {
   "en": "The oldest church in the city, from the 12th century, with two towers that make it look like a fortress. Tram 28 passes right in front of the door.",
   "es": "La iglesia más antigua de la ciudad, del siglo XII, con dos torres que parecen una fortaleza. El tranvía 28 pasa justo delante de la puerta."
+ },
+ "הכפר העתיק: סמטאות, פאדו ונוף": {
+  "en": "The old village: lanes, fado and views",
+  "es": "El pueblo antiguo: callejuelas, fado y vistas"
  },
  "הכפתור \"סרטון\" פותח את המצלמה במצב וידאו, ו\"העלאה\" מוסיף גם סרטונים מהגלריה. הסרטון נשמר בטלפון באורך מלא (עד 300 מ״ב). ליומן המשותף ולצ׳אט אפשר לשתף סרטון של עד 95 מ״ב, בערך דקה. סרטון גדול עולה לאט יותר, ונשמר לקבוצה 30 יום.": {
   "en": "The \"Video\" button opens the camera in video mode, and \"Upload\" also adds videos from your gallery. The video is saved on your phone at full length (up to 300 MB). You can share a video of up to 95 MB, about a minute, to the shared journal and the chat. A large video uploads more slowly, and is kept for the group for 30 days.",
@@ -2443,6 +2795,10 @@
   "en": "A walk along the river.",
   "es": "Un paseo junto al río."
  },
+ "הליכה שטוחה לאורך הים עד בוקה דו אינפרנו, או בטיילת לכיוון אשטוריל.": {
+  "en": "A flat walk along the sea to Boca do Inferno, or along the promenade towards Estoril.",
+  "es": "Caminata llana junto al mar hasta la Boca do Inferno, o por el paseo marítimo hacia Estoril."
+ },
  "הלשונית \"צ׳אט\" היא שיחה של הקבוצה בלבד: הודעות, סמיילים, תמונות, סרטונים קצרים ומיקום. ✓✓ כחול אומר שכולם קראו. כדאי להפעיל התראות בעמוד הקבוצה.": {
   "en": "The \"Chat\" tab is a conversation for the group only: messages, emojis, photos, short videos and location. A blue ✓✓ means everyone has read it. It's worth turning on notifications on the group page.",
   "es": "La pestaña \"Chat\" es una conversación solo del grupo: mensajes, emojis, fotos, vídeos cortos y ubicación. Un ✓✓ azul significa que todo el grupo lo ha leído. Conviene activar las notificaciones en la página del grupo."
@@ -2462,6 +2818,14 @@
  "המוזיאון נפתח מחדש ביולי 2026 אחרי שיפוץ שהחזיר אותו לעיצוב המקורי. הגן פתוח חינם ונעים להפסקה. כדאי לבדוק באיזה יום סגור (בדרך כלל שלישי).": {
   "en": "The museum reopened in July 2026 after a renovation that brought back its original design. The garden is free and lovely for a break. Check which day it closes (usually Tuesday).",
   "es": "El museo reabrió en julio de 2026 tras una renovación que recuperó su diseño original. El jardín es gratuito y agradable para una pausa. Comprueba qué día cierra (normalmente el martes)."
+ },
+ "המטרו הקרוב הוא ראטו, כעשר דקות הליכה. לבאישה יורדים ברגל ברבע שעה, ובחזרה עדיף Bolt או אוטובוס.": {
+  "en": "The nearest metro is Rato, about a ten-minute walk. It's a 15-minute walk down to Baixa; coming back, Bolt or a bus is better.",
+  "es": "El metro más cercano es Rato, a unos diez minutos a pie. A la Baixa se baja andando en un cuarto de hora; para volver, mejor Bolt o autobús."
+ },
+ "המים קרים גם בקיץ ולפעמים יש גלים – להיכנס רק מול עמדת המצילים ולפי צבע הדגל. להביא כובעים וקרם הגנה, הצל מועט. בסופי שבוע של קיץ צפוף.": {
+  "en": "The water is cold even in summer and there are sometimes waves – swim only in front of the lifeguard station and according to the flag color. Bring hats and sunscreen; there is little shade. Crowded on summer weekends.",
+  "es": "El agua está fría incluso en verano y a veces hay olas – bañarse solo frente al puesto de socorristas y según el color de la bandera. Llevar gorras y protector solar; hay poca sombra. Los fines de semana de verano se llena."
  },
  "המיקום הנוכחי נשמר": {
   "en": "Current location saved",
@@ -2510,6 +2874,10 @@
  "המלון כבר מוגדר בעמוד הבית. \"ניווט למלון\" מוביל אליו מכל מקום, והכתובת בפורטוגזית מיועדת להראות לנהג מונית.": {
   "en": "The hotel is already set on the home page. \"Navigate to hotel\" takes you there from anywhere, and the address in Portuguese is there to show a taxi driver.",
   "es": "El hotel ya está configurado en la página de inicio. \"Ir al hotel\" te lleva hasta allí desde cualquier lugar, y la dirección en portugués sirve para enseñársela al taxista."
+ },
+ "המלון מיועד למבוגרים – כדאי לבדוק את מגבלת הגיל לפני שמזמינים עם ילדים. מונית מגיעה עד קרוב לכניסה, ואת הצעדים האחרונים הולכים ברגל.": {
+  "en": "The hotel is for adults – check the age limit before booking with children. A taxi gets you close to the entrance, and the last few steps are on foot.",
+  "es": "El hotel es para adultos – conviene comprobar el límite de edad antes de reservar con niños. El taxi llega hasta cerca de la entrada y los últimos pasos se hacen a pie."
  },
  "המלון נשלח לקבוצה": {
   "en": "Hotel sent to the group",
@@ -2582,6 +2950,10 @@
  "המריאה": {
   "en": "Departed",
   "es": "Ya despegó"
+ },
+ "המרכז השטוח: כיכרות, מדרחובים והנהר": {
+  "en": "The flat centre: squares, pedestrian streets and the river",
+  "es": "El centro llano: plazas, calles peatonales y el río"
  },
  "המרכז קטן והליכתי: סינטגמה, פלאקה, מונסטירקי, פסירי וקולונאקי – הכול ברגל.": {
   "en": "The centre is small and walkable: Syntagma, Plaka, Monastiraki, Psyrri and Kolonaki – all on foot.",
@@ -2851,9 +3223,21 @@
   "en": "Athens' elegant shopping centre, with mid-range and upmarket brands and good restaurants. The huge The Mall Athens is right next door.",
   "es": "El centro comercial elegante de Atenas, con marcas de gama media y alta y buenos restaurantes. Al lado está también el enorme The Mall Athens."
  },
+ "הקתדרלה והגג שלה, והמקדש הרומי שלידה.": {
+  "en": "The cathedral and its roof, and the Roman temple next to it.",
+  "es": "La catedral y su tejado, y el templo romano de al lado."
+ },
+ "הרובע החדש שנבנה לאקספו 98: מגדלים, טיילת רחבה, קניון, האוקיינריום ותחנת אוריינטה. מלונות חדשים עם חדרים גדולים במחיר נוח יותר מבמרכז.": {
+  "en": "The new district built for Expo 98: towers, a wide promenade, a shopping centre, the Oceanarium and Oriente station. New hotels with large rooms at better prices than in the centre.",
+  "es": "El barrio nuevo construido para la Expo 98: torres, un amplio paseo, un centro comercial, el Oceanario y la estación de Oriente. Hoteles nuevos con habitaciones grandes a mejor precio que en el centro."
+ },
  "הרובע המודרני שנבנה לאקספו 98: טיילת רחבה על הנהר, גנים, תחנת אוריינטה של קלטרווה ונוף לגשר וסקו דה גאמה, הארוך באירופה.": {
   "en": "The modern district built for Expo 98: a wide riverside promenade, gardens, Calatrava's Oriente station and a view of the Vasco da Gama Bridge, the longest in Europe.",
   "es": "El barrio moderno construido para la Expo 98: un amplio paseo junto al río, jardines, la estación de Oriente de Calatrava y vistas al puente Vasco da Gama, el más largo de Europa."
+ },
+ "הרובע שנבנה מחדש אחרי רעידת האדמה של 1755: רחובות ישרים בין רוסיו לכיכר המסחר, מלאים חנויות, מסעדות ותיירים. מכאן מגיעים ברגל כמעט לכל מקום במרכז.": {
+  "en": "The district rebuilt after the 1755 earthquake: straight streets between Rossio and Praça do Comércio, full of shops, restaurants and tourists. From here you can walk to almost anywhere in the centre.",
+  "es": "El barrio reconstruido tras el terremoto de 1755: calles rectas entre Rossio y la Praça do Comércio, llenas de tiendas, restaurantes y turistas. Desde aquí se llega a pie a casi cualquier punto del centro."
  },
  "הרחוב הוורוד": {
   "en": "Pink Street",
@@ -2895,9 +3279,17 @@
   "en": "Parque das Nações cable car",
   "es": "Teleférico del Parque das Nações"
  },
+ "הרכבלים ההיסטוריים ומעלית סנטה ז׳וסטה סגורים כרגע, אז את הגבעות עולים באוטובוס, ב־Bolt או בטוק־טוק. בחשמלית 28 צפוף מאוד – עם עגלה כמעט בלתי אפשרי בשעות העומס.": {
+  "en": "The historic funiculars and the Santa Justa Lift are currently closed, so you go up the hills by bus, Bolt or tuk-tuk. Tram 28 is very crowded – with a stroller it's almost impossible at rush hour.",
+  "es": "Los funiculares históricos y el Elevador de Santa Justa están cerrados actualmente, así que las colinas se suben en autobús, Bolt o tuk-tuk. El tranvía 28 va muy lleno: con carrito es casi imposible en hora punta."
+ },
  "הרכבת התיירותית של אתונה": {
   "en": "The Athens tourist train",
   "es": "El tren turístico de Atenas"
+ },
+ "הרכבת לסינטרה יוצאת ממש מתחת. חדרים פרטיים נגמרים מהר – להזמין מוקדם.": {
+  "en": "The train to Sintra leaves from right below. Private rooms sell out fast – book early.",
+  "es": "El tren a Sintra sale justo debajo. Las habitaciones privadas se agotan rápido – reservar con antelación."
  },
  "הרמת כוסית בשקיעה": {
   "en": "A toast at sunset",
@@ -2910,6 +3302,10 @@
  "הרשתות פתוחות ברצף עד 21:00 בימי חול. הכי נעים בבוקר לפני העומס.": {
   "en": "The chains stay open all day until 21:00 on weekdays. Nicest in the morning, before the crowds.",
   "es": "Las cadenas abren sin interrupción hasta las 21:00 entre semana. Lo más agradable es ir por la mañana, antes del gentío."
+ },
+ "השדרה הראשית שעולה מרסטאורדורש לכיכר מרקש דה פומבל. כאן רוב המלונות הגדולים, חנויות היוקרה ומדרכות רחבות עם עצים וקיוסקים.": {
+  "en": "The main avenue running up from Restauradores to Marquês de Pombal square. Most of the big hotels are here, along with luxury shops and wide pavements with trees and kiosks.",
+  "es": "La avenida principal que sube de Restauradores a la plaza Marquês de Pombal. Aquí están la mayoría de los grandes hoteles, las tiendas de lujo y aceras anchas con árboles y quioscos."
  },
  "השדרה הרחבה והירוקה של ליסבון: לואי ויטון, פראדה, גוצ׳י, ברברי, וגם מאסימו דוטי ומותגים נגישים יותר, בין מדרכות מרוצפות ועצים.": {
   "en": "Lisbon's wide, leafy boulevard: Louis Vuitton, Prada, Gucci, Burberry, plus Massimo Dutti and more affordable brands, among patterned pavements and trees.",
@@ -2943,9 +3339,17 @@
   "en": "The old quarter at the foot of the Acropolis. Anafiotika is a slice of a Cycladic island in the heart of the city: white houses, cats and bougainvillea.",
   "es": "El barrio antiguo a los pies de la Acrópolis. Anafiotika es un pedacito de isla cicládica en plena ciudad: casas blancas, gatos y buganvillas."
  },
+ "השכונה העתיקה של העיר, על המדרון שבין הטירה לנהר. מבוך של מדרגות, כביסה תלויה ותצפיות, עם מלונות בוטיק קטנים ודירות.": {
+  "en": "The city's oldest neighbourhood, on the slope between the castle and the river. A maze of stairs, hanging laundry and viewpoints, with small boutique hotels and apartments.",
+  "es": "El barrio más antiguo de la ciudad, en la ladera entre el castillo y el río. Un laberinto de escaleras, ropa tendida y miradores, con pequeños hoteles boutique y apartamentos."
+ },
  "השכונה השיקית של אתונה. רחובות סקופה, צקאלוף ופטריארכו יואקים מלאים בבוטיקים של מעצבים יוונים, תכשיטים, נעליים ובתי קפה יפים.": {
   "en": "Athens' chic neighbourhood. Skoufa, Tsakalof and Patriarchou Ioakeim streets are full of Greek designer boutiques, jewellery, shoes and lovely cafés.",
   "es": "El barrio chic de Atenas. Las calles Skoufa, Tsakalof y Patriarchou Ioakeim están llenas de boutiques de diseñadores griegos, joyas, zapatos y cafés con encanto."
+ },
+ "השכונה שמעל באישה: רחוב גארט עם החנויות ובתי הקפה הוותיקים, כיכרות קטנות ומסעדות טובות. באמצע הדרך בין הנהר לבאירו אלטו.": {
+  "en": "The neighbourhood above Baixa: Rua Garrett with its shops and historic cafés, small squares and good restaurants. Halfway between the river and Bairro Alto.",
+  "es": "El barrio sobre la Baixa: la Rua Garrett con sus tiendas y cafés históricos, pequeñas plazas y buenos restaurantes. A medio camino entre el río y el Bairro Alto."
  },
  "השליחה נכשלה": {
   "en": "Sending failed",
@@ -2994,6 +3398,10 @@
  "התחלת נסיעה חדשה": {
   "en": "Start a new trip",
   "es": "Empezar un viaje nuevo"
+ },
+ "התחנה העליונה של הרכבל ממש ליד. מתאים גם ללילה אחרון לפני טיסה מוקדמת – השדה במרחק נסיעה קצרה.": {
+  "en": "The upper cable car station is right next door. Also good for a last night before an early flight – the airport is a short ride away.",
+  "es": "La estación superior del teleférico está justo al lado. También va bien para la última noche antes de un vuelo temprano: el aeropuerto está a un corto trayecto."
  },
  "התמונה": {
   "en": "The photo",
@@ -3111,6 +3519,10 @@
   "en": "Walls to climb and peacocks in the garden.",
   "es": "Murallas para trepar y pavos reales en el jardín."
  },
+ "חוף קרקבלוש – ים קרוב לעיר": {
+  "en": "Carcavelos Beach – the sea close to the city",
+  "es": "Playa de Carcavelos – el mar cerca de la ciudad"
+ },
  "חופשה משפחתית": {
   "en": "Family holiday",
   "es": "Vacaciones en familia"
@@ -3122,6 +3534,18 @@
  "חזור – הביתה": {
   "en": "Return – home",
   "es": "Vuelta – a casa"
+ },
+ "חזרה לליסבון אחר הצהריים.": {
+  "en": "Back to Lisbon in the afternoon.",
+  "es": "Regreso a Lisboa por la tarde."
+ },
+ "חזרה לליסבון לקראת ערב.": {
+  "en": "Back to Lisbon towards evening.",
+  "es": "Regreso a Lisboa al caer la tarde."
+ },
+ "חזרה למלון": {
+  "en": "Back to the hotel",
+  "es": "Vuelta al hotel"
  },
  "חיוג ל{}": {
   "en": "Call {0}",
@@ -3171,6 +3595,10 @@
   "en": "General emergency: police, ambulance, fire brigade",
   "es": "Emergencias: policía, ambulancia, bomberos"
  },
+ "חלון קטן ותור שמתקדם מהר. כמה דקות הליכה מגן אשטרלה ומפרינסיפה ריאל. כדאי לבדוק שעות פתיחה בחורף.": {
+  "en": "A small window and a line that moves fast. A few minutes' walk from Jardim da Estrela and Príncipe Real. Worth checking winter opening hours.",
+  "es": "Una ventanilla pequeña y una cola que avanza rápido. A pocos minutos a pie del Jardim da Estrela y de Príncipe Real. Conviene comprobar el horario en invierno."
+ },
  "חלון קטן מ־1840 שמוזג רק דבר אחד: ז׳ינז׳יניה, ליקר דובדבני חמוצים. שותים בעמידה בכיכר, עם כל העיר.": {
   "en": "A tiny window from 1840 that pours just one thing: ginjinha, a sour cherry liqueur. You drink it standing in the square, along with the whole city.",
   "es": "Una ventanita de 1840 que sirve una sola cosa: ginjinha, licor de guindas. Se bebe de pie en la plaza, con toda la ciudad."
@@ -3203,9 +3631,21 @@
   "en": "A beautiful traditional hammam: steam, scrub, massage and a cup of tea at the end. The perfect treat in the middle of a trip.",
   "es": "Un hammam tradicional precioso: vapor, exfoliación, masaje y una taza de té al final. El capricho perfecto en mitad del viaje."
  },
+ "חממה ענקית בתוך פארק אדוארדו השביעי: שבילים בין שרכים, דקלים וקקטוסים, בריכות, מפלים קטנים וגשרונים. הרפתקה קצרה לילדים.": {
+  "en": "A huge greenhouse inside Parque Eduardo VII: paths among ferns, palms and cacti, ponds, small waterfalls and little bridges. A short adventure for kids.",
+  "es": "Un invernadero enorme dentro del Parque Eduardo VII: senderos entre helechos, palmeras y cactus, estanques, pequeñas cascadas y puentecitos. Una aventura corta para los niños."
+ },
+ "חמש דקות הליכה מ־LX Factory, אז קל לשלב. מקורה ברובו. כדאי לבדוק ימים ושעות (בדרך כלל סגור בראשון).": {
+  "en": "A five-minute walk from LX Factory, so it's easy to combine. Mostly covered. Worth checking days and hours (usually closed on Sunday).",
+  "es": "A cinco minutos a pie de LX Factory, así que es fácil de combinar. Cubierto en su mayor parte. Conviene comprobar días y horarios (normalmente cierra los domingos)."
+ },
  "חמש דקות הליכה מהאוקיינריום. כדאי לבדוק באיזה יום סגור (בדרך כלל שני).": {
   "en": "A five-minute walk from the Oceanarium. Check which day it's closed (usually Monday).",
   "es": "A cinco minutos a pie del Oceanario. Comprueba qué día cierra (normalmente los lunes)."
+ },
+ "חמש דקות הליכה מהצהריים. עולים על חשמליות ישנות ונוסעים באחת.": {
+  "en": "A five-minute walk from lunch. Climb aboard old trams and take a ride on one.",
+  "es": "A cinco minutos a pie del almuerzo. Se sube a tranvías antiguos y se da una vuelta en uno."
  },
  "חנויות המסטיקה (Mastiha Shop) והסבונים הטבעיים – מתנות מעולות וקלות למזוודה.": {
   "en": "The mastiha shops (Mastiha Shop) and natural soaps make great gifts that travel light in a suitcase.",
@@ -3243,9 +3683,25 @@
   "en": "A small 1930s shop with a wooden counter and walls lined with tins of sardines, tuna and mackerel in colourful paper wrapping.",
   "es": "Una tiendecita de los años treinta con mostrador de madera y paredes llenas de latas de sardinas, atún y caballa envueltas en papel de colores."
  },
+ "חצי יום": {
+  "en": "Half a day",
+  "es": "Medio día"
+ },
  "חצי יום לפחות. הכי פשוט להגיע במונית.": {
   "en": "Half a day at least. A taxi is the easiest way to get there.",
   "es": "Medio día como mínimo. Lo más fácil es ir en taxi."
+ },
+ "חצי יום עד יום מלא": {
+  "en": "Half a day to a full day",
+  "es": "De medio día a día completo"
+ },
+ "חצי יום עד יום מלא, כ־6 שעות": {
+  "en": "Half a day to a full day, about 6 hours",
+  "es": "De medio día a día completo, unas 6 horas"
+ },
+ "חצי יום, כ־4 שעות": {
+  "en": "Half a day, about 4 hours",
+  "es": "Medio día, unas 4 horas"
  },
  "חצי יום. בנובמבר השקיעה מוקדמת, אז יוצאים בסביבות 13:30–14:00. הכי נוח בסיור מאורגן או מונית לחצי יום.": {
   "en": "Half a day. In November the sun sets early, so leave around 13:30–14:00. Easiest with an organised tour or a half-day taxi.",
@@ -3287,9 +3743,21 @@
   "en": "Tram 28 and the castle",
   "es": "El tranvía 28 y el castillo"
  },
+ "חשמלית 28 מוקדם עד גן אשטרלה: מתקנים, ברווזים וקפה להורים. לצהריים ממשיכים באותה חשמלית כמה תחנות, עד השוק השכונתי.": {
+  "en": "Tram 28 early to Jardim da Estrela: play equipment, ducks and coffee for the parents. For lunch, stay on the same tram a few more stops to the neighbourhood market.",
+  "es": "Tranvía 28 temprano hasta el Jardim da Estrela: juegos, patos y café para los padres. Para comer, se sigue en el mismo tranvía unas paradas más, hasta el mercado del barrio."
+ },
  "חשמלית 28 מוקדם, תצפיות, סמטאות, ובשלישי ובשבת גם שוק הפשפשים.": {
   "en": "Tram 28 early, viewpoints, alleyways, and on Tuesdays and Saturdays the flea market too.",
   "es": "Tranvía 28 temprano, miradores, callejuelas y, los martes y sábados, también el mercadillo."
+ },
+ "חשמלית 28 עוברת ממש ליד. עם מזוודות להגיע במונית או ב־Bolt – הסמטאות תלולות ומרוצפות.": {
+  "en": "Tram 28 passes right by. With suitcases, arrive by taxi or Bolt – the alleys are steep and cobbled.",
+  "es": "El tranvía 28 pasa justo al lado. Con maletas, llegar en taxi o en Bolt – las callejuelas son empinadas y empedradas."
+ },
+ "חשמלית 28 עוצרת ממש בשער. שטוח ונוח לעגלה, ומקום טוב להפסקה של שעה באמצע היום.": {
+  "en": "Tram 28 stops right at the gate. Flat and stroller-friendly, and a good spot for an hour's break in the middle of the day.",
+  "es": "El tranvía 28 para justo en la puerta. Llano y cómodo con cochecito, y un buen sitio para una pausa de una hora a mitad del día."
  },
  "חשמלית 28 עוצרת ממש כאן. באור הבוקר הנוף הכי צלול.": {
   "en": "Tram 28 stops right here. The view is at its clearest in the morning light.",
@@ -3346,6 +3814,14 @@
  "טופו שיאדו": {
   "en": "Topo Chiado",
   "es": "Topo Chiado"
+ },
+ "טוק־טוק לתצפיות ולטירה": {
+  "en": "Tuk-tuk to the viewpoints and the castle",
+  "es": "Tuk-tuk a los miradores y al castillo"
+ },
+ "טוק־טוקים מחכים בכיכר המסחר, ליד הקתדרלה ובתצפית פורטש דו סול. לסגור מחיר, מסלול ומשך זמן לפני שעולים – המחיר הוא לרכב ולא לאדם. לבקש לסיים ליד הטירה או במלון.": {
+  "en": "Tuk-tuks wait at Praça do Comércio, by the cathedral and at the Portas do Sol viewpoint. Agree on price, route and duration before getting in – the price is per vehicle, not per person. Ask to finish near the castle or at your hotel.",
+  "es": "Los tuk-tuks esperan en la Praça do Comércio, junto a la catedral y en el mirador de Portas do Sol. Acordar precio, ruta y duración antes de subir – el precio es por vehículo, no por persona. Pedir que termine junto al castillo o en el hotel."
  },
  "טיול חברים": {
   "en": "Trip with friends",
@@ -3475,6 +3951,18 @@
   "en": "A day outside the centre",
   "es": "Un día fuera del centro"
  },
+ "יום מלא, כ־10 שעות": {
+  "en": "Full day, about 10 hours",
+  "es": "Día completo, unas 10 horas"
+ },
+ "יום מלא, כ־8 שעות": {
+  "en": "Full day, about 8 hours",
+  "es": "Día completo, unas 8 horas"
+ },
+ "יום מלא, כ־9–10 שעות": {
+  "en": "Full day, about 9–10 hours",
+  "es": "Día completo, unas 9–10 horas"
+ },
  "יום מלא. הכי פשוט בסיור מאורגן מהמרכז. בהרים קר – להתלבש חם.": {
   "en": "A full day. Simplest with an organised tour from the centre. It's cold in the mountains – dress warmly.",
   "es": "Un día entero. Lo más sencillo es un tour organizado desde el centro. En la montaña hace frío: abrígate."
@@ -3515,6 +4003,10 @@
   "en": "journal.txt",
   "es": "diario.txt"
  },
+ "יוצאת מהטרמינל שליד תחנת קאיש דו סודרה, ומשלמים בכרטיס התחבורה הטעון. מקסיליאש אפשר להמשיך באוטובוס או במונית קצרה לפסל כריסטו ריי, או פשוט לחזור במעבורת הבאה.": {
+  "en": "It leaves from the terminal next to Cais do Sodré station, and you pay with your topped-up transport card. From Cacilhas you can continue by bus or a short taxi ride to the Cristo Rei statue, or simply return on the next ferry.",
+  "es": "Sale de la terminal junto a la estación de Cais do Sodré y se paga con la tarjeta de transporte recargada. Desde Cacilhas se puede seguir en autobús o en un taxi corto hasta la estatua del Cristo Rei, o simplemente volver en el siguiente ferri."
+ },
  "יוצאת מכיכר סינטגמה, סיבוב של כשעה. אפשר לרדת ולעלות.": {
   "en": "Leaves from Syntagma Square, about an hour per loop. You can hop on and off.",
   "es": "Sale de la plaza Syntagma y la vuelta dura una hora aproximadamente. Puedes bajar y volver a subir."
@@ -3531,6 +4023,10 @@
   "en": "Sea and farewell",
   "es": "Mar y despedida"
  },
+ "ים, חול וארמונות.": {
+  "en": "Sea, sand and sandcastles.",
+  "es": "Mar, arena y castillos."
+ },
  "ים, מקדש וכדורגל": {
   "en": "Sea, temple and football",
   "es": "Mar, templo y fútbol"
@@ -3538,6 +4034,10 @@
  "ים, שוק ופרידה": {
   "en": "Sea, market and goodbye",
   "es": "Mar, mercado y despedida"
+ },
+ "ים: לחופים של קרקבלוש ושל קשקאיש מגיעים ברכבת מקאיש דו סודרה בפחות משעה. מי האוקיינוס קרים גם באוגוסט ולפעמים יש גלים – להיכנס רק בחופים עם מצילים ולפי צבע הדגל.": {
+  "en": "Beach: the beaches of Carcavelos and Cascais are less than an hour by train from Cais do Sodré. The ocean is cold even in August and there can be waves – swim only at lifeguarded beaches and follow the flag colour.",
+  "es": "Playa: a las playas de Carcavelos y Cascais se llega en tren desde Cais do Sodré en menos de una hora. El agua del océano está fría incluso en agosto y a veces hay olas: báñate solo en playas con socorristas y según el color de la bandera."
  },
  "יפה במיוחד לקראת ערב, כשהטירה מוארת. משם חמש דקות הליכה לפרינסיפה ריאל.": {
   "en": "Especially lovely towards evening, when the castle is lit up. From there it's a five-minute walk to Príncipe Real.",
@@ -3550,6 +4050,10 @@
  "יציאה מהקבוצה": {
   "en": "Leave the group",
   "es": "Salir del grupo"
+ },
+ "יציאה מוקדמת לפטימה: הרחבה הגדולה והבזיליקות.": {
+  "en": "Early start for Fátima: the great esplanade and the basilicas.",
+  "es": "Salida temprana hacia Fátima: la gran explanada y las basílicas."
  },
  "יצירת המופת של הסגנון המנואליני: חצר קלויסטר מגולפת כמו תחרה, וכנסייה שבה קבור וסקו דה גאמה.": {
   "en": "The masterpiece of the Manueline style: a cloister carved like lace, and a church where Vasco da Gama is buried.",
@@ -3607,6 +4111,14 @@
   "en": "About 40 minutes by ferry, and pistachios to take home.",
   "es": "Unos 40 minutos en ferri, y pistachos para llevar a casa."
  },
+ "כ־40 דקות לקשקאיש, כ־25 לקרקבלוש, כמה דקות לבלם, וכעשר דקות במעבורת לקסיליאש": {
+  "en": "About 40 minutes to Cascais, about 25 to Carcavelos, a few minutes to Belém, and about ten minutes by ferry to Cacilhas",
+  "es": "Unos 40 minutos hasta Cascais, unos 25 hasta Carcavelos, unos minutos hasta Belém y unos diez minutos en ferri hasta Cacilhas"
+ },
+ "כ־40 דקות נסיעה לסינטרה, כ־20 דקות לקלוז": {
+  "en": "About 40 minutes to Sintra, about 20 minutes to Queluz",
+  "es": "Unos 40 minutos hasta Sintra, unos 20 minutos hasta Queluz"
+ },
  "כ־45 דקות מוקדם יותר": {
   "en": "about 45 minutes earlier",
   "es": "unos 45 minutos antes"
@@ -3634,6 +4146,10 @@
  "כבר לא בשרת · ללחוץ כדי לבקש שוב": {
   "en": "No longer on the server · tap to request again",
   "es": "Ya no está en el servidor · toca para pedirlo de nuevo"
+ },
+ "כדאי לבדוק באיזה יום הארמון סגור (בדרך כלל שלישי). באריסיירה נושבת רוח גם ביום חם – להביא שכבה.": {
+  "en": "Check which day the palace is closed (usually Tuesday). Ericeira is windy even on a hot day – bring a layer.",
+  "es": "Conviene comprobar qué día cierra el palacio (normalmente los martes). En Ericeira sopla el viento incluso en días calurosos: lleva una capa de abrigo."
  },
  "כדאי לוודא שעות והזמנה מראש, במיוחד לארוחת שישי.": {
   "en": "Best to check opening hours and book ahead, especially for Friday night dinner.",
@@ -3687,6 +4203,10 @@
   "en": "A shot of ginjinha",
   "es": "Un chupito de ginjinha"
  },
+ "כוסית ז׳ינז׳יניה בכוס שוקולד, וחנות הספרים שבתוך הכנסייה.": {
+  "en": "A shot of ginjinha in a chocolate cup, and the bookshop inside the church.",
+  "es": "Un chupito de ginjinha en vasito de chocolate y la librería que hay dentro de la iglesia."
+ },
  "כוסית קצרה ותמונה מול הקיר.": {
   "en": "A quick drink and a photo in front of the wall.",
   "es": "Una copa rápida y una foto delante de la pared."
@@ -3739,6 +4259,10 @@
   "en": "Praça do Comércio facing the river, the arch, and the pedestrian Rua Augusta.",
   "es": "La Praça do Comércio frente al río, el arco y la peatonal Rua Augusta."
  },
+ "כיכר ז׳ירלדו וקפלת העצמות.": {
+  "en": "Praça do Giraldo and the Chapel of Bones.",
+  "es": "Praça do Giraldo y la Capilla de los Huesos."
+ },
  "כיכר, כנסייה בלי גג וגלידה": {
   "en": "A square, a roofless church and ice cream",
   "es": "Una plaza, una iglesia sin techo y helado"
@@ -3747,9 +4271,17 @@
   "en": "Square, lift and ice cream",
   "es": "Plaza, elevador y helado"
  },
+ "כיכר, שיט קצר בנהר וארוחה בשוק": {
+  "en": "A square, a short river cruise and a meal at the market",
+  "es": "Una plaza, un breve paseo en barco por el río y comida en el mercado"
+ },
  "כל 3 שעות האפליקציה מזכירה לגבות אם יש תמונות חדשות. באנדרואיד ובמחשב היא שומרת אותן לבד לתיקיית ההורדות. אפשר לכבות את זה בחלון הגיבוי.": {
   "en": "Every 3 hours the app reminds you to back up if there are new photos. On Android and on a computer it saves them to the Downloads folder by itself. You can turn this off in the backup window.",
   "es": "Cada 3 horas la app te recuerda hacer la copia si hay fotos nuevas. En Android y en el ordenador las guarda sola en la carpeta de descargas. Puedes desactivarlo en la ventana de copia."
+ },
+ "כל אחד בוחר דוכן, ולקינוח פשטל דה נאטה חם.": {
+  "en": "Everyone picks a stall, and for dessert a warm pastel de nata.",
+  "es": "Cada uno elige un puesto, y de postre un pastel de nata caliente."
  },
  "כל אחד בוחר דוכן, ונפגשים בשולחן.": {
   "en": "Everyone picks a stall, and we meet at the table.",
@@ -3883,6 +4415,10 @@
   "en": "Flight tickets and boarding pass",
   "es": "Billetes de avión y tarjeta de embarque"
  },
+ "כרטיסים: ברוב האתרים והמוזיאונים ילדים קטנים נכנסים חינם ולגדולים יותר יש הנחה או כרטיס משפחתי, וגם בתחבורה הציבורית ילדים קטנים נוסעים בדרך כלל חינם. הגילים משתנים ממקום למקום – כדאי לבדוק.": {
+  "en": "Tickets: at most sights and museums small children get in free and older ones get a discount or a family ticket, and small children usually ride public transport free too. Ages vary from place to place – worth checking.",
+  "es": "Entradas: en la mayoría de monumentos y museos los niños pequeños entran gratis y los mayores tienen descuento o entrada familiar, y en el transporte público los pequeños también suelen viajar gratis. Las edades varían según el lugar: conviene comprobarlo."
+ },
  "כריך ביד, ואז כיכר המסחר והנהר.": {
   "en": "Sandwich in hand, then Praça do Comércio and the river.",
   "es": "Bocadillo en mano, y luego la Praça do Comércio y el río."
@@ -3898,6 +4434,22 @@
  "כשהטלפון שואל, לבחור \"אפשר\".": {
   "en": "When the phone asks, choose \"Allow\".",
   "es": "Cuando el teléfono pregunte, elige \"Permitir\"."
+ },
+ "כשעה דרומה": {
+  "en": "About an hour south",
+  "es": "Aproximadamente una hora al sur"
+ },
+ "כשעה וחצי צפונה": {
+  "en": "About an hour and a half north",
+  "es": "Aproximadamente hora y media al norte"
+ },
+ "כשעה צפון־מערבה": {
+  "en": "About an hour northwest",
+  "es": "Aproximadamente una hora al noroeste"
+ },
+ "כשעה צפונה": {
+  "en": "About an hour north",
+  "es": "Aproximadamente una hora al norte"
  },
  "כתיבה": {
   "en": "Write",
@@ -3975,6 +4527,10 @@
   "en": "Check the sunset time and get there a little early.",
   "es": "Consulta la hora del atardecer y llega un poco antes."
  },
+ "לבדוק בלוח איזו רכבת עוצרת בתחנה הרצויה – לא כל הרכבות עוצרות בבלם.": {
+  "en": "Check the board to see which train stops at your station – not all trains stop at Belém.",
+  "es": "Comprobar en el panel qué tren para en tu estación: no todos los trenes paran en Belém."
+ },
  "לבדוק מראש הקרנות באנגלית.": {
   "en": "Check in advance for screenings in English.",
   "es": "Comprueba antes si hay proyecciones en inglés."
@@ -3995,9 +4551,21 @@
   "en": "Choose",
   "es": "Elige"
  },
+ "לבחור אחד: בובות, דינוזאורים או ג׳ונגל בתוך חממה.": {
+  "en": "Pick one: puppets, dinosaurs or a jungle inside a greenhouse.",
+  "es": "Elige uno: marionetas, dinosaurios o una selva dentro de un invernadero."
+ },
+ "לבחור חוף: קרוב לעיירה למי שרוצה נוחות, דרומה יותר למי שמחפש שקט ודיונות.": {
+  "en": "Pick a beach: close to town for convenience, further south for quiet and dunes.",
+  "es": "Elegir playa: cerca del pueblo si buscas comodidad, más al sur si buscas tranquilidad y dunas."
+ },
  "לבחור לפי שעת הטיסה": {
   "en": "Choose according to your flight time",
   "es": "Elige según la hora del vuelo"
+ },
+ "לבחור לפי שעת הטיסה ומזג האוויר": {
+  "en": "Choose according to your flight time and the weather",
+  "es": "Elige según la hora del vuelo y el tiempo"
  },
  "לבחור סוג, לכתוב שם ולבחור אירוע אם יש.": {
   "en": "Choose a type, enter a name and choose an occasion if there is one.",
@@ -4010,6 +4578,14 @@
  "לבקש המלצה על בירה מקומית. יושבים גם בחוץ על המדרחוב.": {
   "en": "Ask for a local beer recommendation. There's outdoor seating on the pedestrian street too.",
   "es": "Pide que te recomienden una cerveza local. También hay mesas fuera, en la calle peatonal."
+ },
+ "לבקש חדר שפונה לחצר פנימית ולא לרחוב, ולהביא אטמי אוזניים. מוניות לא נכנסות לכל הסמטאות.": {
+  "en": "Ask for a room facing the inner courtyard rather than the street, and bring earplugs. Taxis can't get into every lane.",
+  "es": "Pide una habitación que dé al patio interior y no a la calle, y lleva tapones para los oídos. Los taxis no entran en todas las callejuelas."
+ },
+ "לבקש מראש מיטת תינוק, כיסא אוכל ועגלה. כדאי לבדוק את שעות מועדון הילדים ואם צריך להירשם אליו. הרחוב עצמו בשיפוע.": {
+  "en": "Request a crib, high chair and stroller in advance. Worth checking the kids' club hours and whether you need to sign up. The street itself is on a slope.",
+  "es": "Pedir con antelación cuna, trona y cochecito. Conviene comprobar el horario del club infantil y si hay que inscribirse. La calle está en cuesta."
  },
  "לבקש שולחן טוב ולציין שזה יום נישואין.": {
   "en": "Ask for a good table and mention that it's your wedding anniversary.",
@@ -4115,6 +4691,10 @@
   "en": "Be at the airport by {0}",
   "es": "En el aeropuerto antes de: {0}"
  },
+ "להיכנס בשער הראשי (פורטה דה וילה) וללכת ברחוב הראשי עד הטירה.": {
+  "en": "Enter through the main gate (Porta da Vila) and walk along the main street to the castle.",
+  "es": "Entrar por la puerta principal (Porta da Vila) y recorrer la calle principal hasta el castillo."
+ },
  "להיכנס לעמוד הקבוצה וללחוץ \"הפעלת התראות\".": {
   "en": "Go to the group page and tap \"Turn on notifications\".",
   "es": "Entra en la página del grupo y toca \"Activar notificaciones\"."
@@ -4122,6 +4702,10 @@
  "להסיר? ללחוץ שוב": {
   "en": "Remove? Tap again",
   "es": "¿Quitar? Toca otra vez"
+ },
+ "להעביר את הכרטיס בשער ולעלות לרכבת לכיוון Sintra.": {
+  "en": "Tap your card at the gate and board the train towards Sintra.",
+  "es": "Pasar la tarjeta por el torno y subir al tren en dirección Sintra."
  },
  "להצטרף ולהתקין": {
   "en": "Join and install",
@@ -4167,6 +4751,10 @@
   "en": "Start a new trip",
   "es": "Empezar un viaje nuevo"
  },
+ "להתמקם ליד עמדת המצילים.": {
+  "en": "Set up near the lifeguard station.",
+  "es": "Instalarse cerca del puesto de socorristas."
+ },
  "להתנייד בעיר": {
   "en": "Getting around the city",
   "es": "Moverse por la ciudad"
@@ -4210,6 +4798,10 @@
  "לחזור לכאן, ללחוץ \"רענון\", וכשהטלפון שואל לבחור": {
   "en": "Come back here, tap \"Refresh\", and when the phone asks, choose",
   "es": "Vuelve aquí, toca \"Actualizar\" y, cuando el teléfono pregunte, elige"
+ },
+ "לחזור לפני שעות העומס של אחר הצהריים.": {
+  "en": "Head back before the afternoon rush hour.",
+  "es": "Volver antes de la hora punta de la tarde."
  },
  "לחיים!": {
   "en": "Cheers!",
@@ -4255,6 +4847,14 @@
   "en": "Look for a Tax Free sign (Global Blue or Planet) and ask at the till:",
   "es": "Busca un cartel de Tax Free (Global Blue o Planet) y pide en caja:"
  },
+ "לטעון את כרטיס התחבורה במכונות שבתחנה, כרטיס לכל נוסע.": {
+  "en": "Top up your transport card at the station machines – one card per passenger.",
+  "es": "Recargar la tarjeta de transporte en las máquinas de la estación: una tarjeta por pasajero."
+ },
+ "לטעון את כרטיס התחבורה, כרטיס לכל נוסע.": {
+  "en": "Top up your transport card – one card per passenger.",
+  "es": "Recargar la tarjeta de transporte: una tarjeta por pasajero."
+ },
  "ליבראריה ברטראנד – חנות הספרים העתיקה בעולם": {
   "en": "Livraria Bertrand – the oldest bookshop in the world",
   "es": "Livraria Bertrand – la librería más antigua del mundo"
@@ -4266,6 +4866,10 @@
  "ליד השוק": {
   "en": "Near the market",
   "es": "Junto al mercado"
+ },
+ "ליד התחנה האחרונה של חשמלית 28, בשכונה שטוחה ושקטה. להגיע מוקדם בצהריים או בערב כדי למצוא שולחן. יש כיסאות גבוהים – כדאי לשאול.": {
+  "en": "Next to the last stop of tram 28, in a flat, quiet neighborhood. Come early for lunch or dinner to find a table. High chairs are available – worth asking.",
+  "es": "Junto a la última parada del tranvía 28, en un barrio llano y tranquilo. Llegar pronto a mediodía o por la noche para encontrar mesa. Hay tronas – conviene preguntar."
  },
  "ליום גשום: הפלנטריום": {
   "en": "For a rainy day: the planetarium",
@@ -4286,6 +4890,10 @@
  "לילה טוב": {
   "en": "Good night",
   "es": "Buenas noches"
+ },
+ "לילה ראשון מוקדם. מחר יום גדול.": {
+  "en": "An early first night. Big day tomorrow.",
+  "es": "Primera noche temprana. Mañana es un gran día."
  },
  "ליסבואה קארד (24, 48 או 72 שעות): תחבורה ציבורית חופשית, כולל הרכבות לסינטרה ולקשקאיש, וכניסה חופשית או בהנחה לאתרים רבים. משתלם בעיקר ביום של בלם ומוזיאונים – לחשב לפני שקונים.": {
   "en": "Lisboa Card (24, 48 or 72 hours): free public transport, including the trains to Sintra and Cascais, and free or discounted entry to many sights. It pays off mainly on a day of Belém and museums – do the sums before you buy.",
@@ -4411,9 +5019,17 @@
   "en": "To this hotel, please",
   "es": "A este hotel, por favor"
  },
+ "למעבורת: לעבור לטרמינל הצמוד ולעלות על הקו לקסיליאש.": {
+  "en": "For the ferry: go to the adjoining terminal and board the Cacilhas line.",
+  "es": "Para el ferri: pasar a la terminal contigua y tomar la línea a Cacilhas."
+ },
  "למפה בלי אינטרנט": {
   "en": "Go to the offline map",
   "es": "Ir al mapa sin conexión"
+ },
+ "למרכז העיר כ־20 דקות במונית או בחשמלית 15, אז פחות מתאים למי שרוצה לצאת כל ערב. הטיילת שטוחה ומצוינת לריצת בוקר.": {
+  "en": "The city centre is about 20 minutes away by taxi or tram 15, so it's less suitable if you want to go out every evening. The riverfront promenade is flat and great for a morning run.",
+  "es": "El centro queda a unos 20 minutos en taxi o en el tranvía 15, así que no es lo ideal si quieres salir cada noche. El paseo fluvial es llano y perfecto para correr por la mañana."
  },
  "למשל Electra Palace": {
   "en": "e.g. Electra Palace",
@@ -4463,6 +5079,10 @@
   "en": "Mark places with ♥",
   "es": "Marca lugares con ♥"
  },
+ "לעלות במדרגות הנעות לרציפים שבקומה העליונה.": {
+  "en": "Take the escalators up to the platforms on the top floor.",
+  "es": "Subir por las escaleras mecánicas a los andenes de la planta superior."
+ },
  "לעלות במטרו או במונית עד למעלה ולרדת ברגל. צמוד לאל קורטה אינגלס.": {
   "en": "Take the metro or a taxi to the top and walk down. Right next to El Corte Inglés.",
   "es": "Sube en metro o en taxi hasta arriba y baja a pie. Está junto a El Corte Inglés."
@@ -4474,6 +5094,10 @@
  "לעלות בתחנה הראשונה, מוקדם.": {
   "en": "Get on at the first stop, early.",
   "es": "Sube en la primera parada, temprano."
+ },
+ "לעלות לשכונת סיטיו שעל הצוק, לתצפית על החוף והאוקיינוס.": {
+  "en": "Go up to the clifftop Sítio quarter for the view over the beach and the ocean.",
+  "es": "Subir al barrio de Sítio, en lo alto del acantilado, para ver la playa y el océano."
  },
  "לערב חגיגי באמת. להזמין שבועות מראש.": {
   "en": "For a truly special evening. Book weeks ahead.",
@@ -4522,6 +5146,14 @@
  "לפתוח את תפריט הדפדפן": {
   "en": "Open the browser menu",
   "es": "Abre el menú del navegador"
+ },
+ "לצאת בבוקר, לפני הפקקים על הגשר.": {
+  "en": "Leave in the morning, before the traffic builds up on the bridge.",
+  "es": "Salir por la mañana, antes de los atascos en el puente."
+ },
+ "לצאת מוקדם, במיוחד בקיץ ובסופי שבוע.": {
+  "en": "Set out early, especially in summer and at weekends.",
+  "es": "Salir temprano, sobre todo en verano y los fines de semana."
  },
  "לצאת? ללחוץ שוב לאישור": {
   "en": "Leave? Tap again to confirm",
@@ -4579,13 +5211,33 @@
   "en": "Walk down the alleys to the cathedral.",
   "es": "Baja por los callejones hasta la catedral."
  },
+ "לרדת בתחנה האחרונה ולשמור את הכרטיס לחזרה.": {
+  "en": "Get off at the last stop and keep your card for the return.",
+  "es": "Bajar en la última parada y guardar la tarjeta para la vuelta."
+ },
  "לרדת למדרגות האבן שנכנסות למים (Cais das Colunas) – מקום יפה לשבת מול הנהר.": {
   "en": "Walk down to the stone steps that lead into the water (Cais das Colunas) – a lovely spot to sit facing the river.",
   "es": "Baja a los escalones de piedra que se meten en el agua (Cais das Colunas): un lugar precioso para sentarse frente al río."
  },
+ "לרדת למרכז העיירה לצהריים ולמאפה טרבסיירו ב־Piriquita.": {
+  "en": "Head down to the town centre for lunch and a travesseiro pastry at Piriquita.",
+  "es": "Bajar al centro del pueblo para comer y probar un travesseiro en Piriquita."
+ },
  "לרוחב": {
   "en": "Landscape",
   "es": "Horizontal"
+ },
+ "לשאול בקבלה על ארוחת הערב המשותפת ועל הסיורים הרגליים. כדאי לבדוק אם יש חדר פרטי פנוי.": {
+  "en": "Ask at reception about the communal dinner and the walking tours. Worth checking whether a private room is available.",
+  "es": "Preguntar en recepción por la cena compartida y los tours a pie. Conviene comprobar si hay alguna habitación privada libre."
+ },
+ "לשאול מראש על חדרי משפחה או חדרים מחוברים. מטרו אבנידה במרחק שתי דקות.": {
+  "en": "Ask in advance about family or connecting rooms. Avenida metro is two minutes away.",
+  "es": "Pregunta con antelación por habitaciones familiares o comunicadas. El metro Avenida está a dos minutos."
+ },
+ "לשבת בפנים.": {
+  "en": "Sit inside.",
+  "es": "Sentarse dentro."
  },
  "לשלב עם אגם ווליאגמני ושופינג בגליפדה ליום ריביירה שלם.": {
   "en": "Combine with Lake Vouliagmeni and shopping in Glyfada for a full Riviera day.",
@@ -4618,6 +5270,10 @@
  "לשתף מיקום חי עם הקבוצה בוואטסאפ – הכפתור בעמוד הבית.": {
   "en": "Share your live location with the group on WhatsApp – the button is on the home page.",
   "es": "Comparte tu ubicación en tiempo real con el grupo por WhatsApp: el botón está en la página de inicio."
+ },
+ "לתחנה מגיעים ברגל מבאישה, או במטרו: קו ירוק לתחנת רוסיו או קו כחול לרסטאורדורש. הרכבת לסינטרה עוצרת בדרך גם בקלוז (לארמון).": {
+  "en": "Reach the station on foot from Baixa, or by metro: green line to Rossio station or blue line to Restauradores. The Sintra train also stops at Queluz (for the palace) on the way.",
+  "es": "A la estación se llega a pie desde la Baixa o en metro: línea verde hasta Rossio o línea azul hasta Restauradores. El tren a Sintra también para de camino en Queluz (para el palacio)."
  },
  "לתמונות – לבוא ביום, כשהרחוב ריק. בלילה צפוף ורועש, לשמור על התיק.": {
   "en": "For photos, come during the day, when the street is empty. At night it's crowded and noisy – keep an eye on your bag.",
@@ -4678,6 +5334,10 @@
  "מגדל בלם": {
   "en": "Belém Tower",
   "es": "Torre de Belém"
+ },
+ "מגדל בנהר, פשטל חם וגבעות בלי לטפס": {
+  "en": "A tower in the river, a warm pastel and hills without the climb",
+  "es": "Una torre en el río, un pastel caliente y colinas sin subir a pie"
  },
  "מגדל בנהר, פשטל חם וטירה": {
   "en": "A tower in the river, a warm pastel de nata and a castle",
@@ -4775,6 +5435,10 @@
   "en": "From the highest hill in the city, or at the temple by the sea.",
   "es": "Desde la colina más alta de la ciudad, o en el templo junto al mar."
  },
+ "מהמטרו באישה־שיאדו יש מדרגות נעות ארוכות שחוסכות את העלייה מבאישה – לצאת ביציאת Chiado.": {
+  "en": "Baixa-Chiado metro has long escalators that save you the climb from Baixa – take the Chiado exit.",
+  "es": "El metro Baixa-Chiado tiene largas escaleras mecánicas que ahorran la subida desde la Baixa: sal por la salida Chiado."
+ },
  "מהמלון: {}{}": {
   "en": "From the hotel: {0}{1}",
   "es": "Desde el hotel: {0}{1}"
@@ -4799,6 +5463,14 @@
   "en": "Muito bonito",
   "es": "Muito bonito"
  },
+ "מודרני, שטוח ורגוע על הנהר": {
+  "en": "Modern, flat and relaxed on the river",
+  "es": "Moderno, llano y tranquilo junto al río"
+ },
+ "מוזיאון בבניין אוניברסיטה ישן: שלדי דינוזאורים, מינרלים, מעבדת כימיה מהמאה ה־19 ותצוגות מדע, ומאחוריו גן בוטני עם עצים ענקיים ושבילים מוצלים.": {
+  "en": "A museum in an old university building: dinosaur skeletons, minerals, a 19th-century chemistry lab and science exhibits, with a botanical garden behind it full of giant trees and shady paths.",
+  "es": "Un museo en un antiguo edificio universitario: esqueletos de dinosaurios, minerales, un laboratorio de química del siglo XIX y exposiciones de ciencia, y detrás un jardín botánico con árboles gigantes y senderos sombreados."
+ },
  "מוזיאון בנאקי": {
   "en": "Benaki Museum",
   "es": "Museo Benaki"
@@ -4819,9 +5491,29 @@
   "en": "National Tile Museum",
   "es": "Museo Nacional del Azulejo"
  },
+ "מוזיאון הבובות": {
+  "en": "Puppet Museum",
+  "es": "Museo de la Marioneta"
+ },
+ "מוזיאון החשמליות": {
+  "en": "Tram Museum",
+  "es": "Museo del Tranvía"
+ },
+ "מוזיאון החשמליות – קאריש": {
+  "en": "Tram Museum – Carris",
+  "es": "Museo de los Tranvías – Carris"
+ },
+ "מוזיאון הטבע והמדע והגן הבוטני": {
+  "en": "Natural History and Science Museum and the Botanical Garden",
+  "es": "Museo de Historia Natural y de la Ciencia y el Jardín Botánico"
+ },
  "מוזיאון המדע": {
   "en": "The science museum",
   "es": "El museo de ciencias"
+ },
+ "מוזיאון חברת התחבורה של ליסבון: חשמליות ואוטובוסים ישנים שאפשר לעלות עליהם, ונסיעה קצרה בחשמלית עתיקה בין אולמות התצוגה.": {
+  "en": "The museum of Lisbon's public transport company: old trams and buses you can climb aboard, plus a short ride on a vintage tram between the exhibition halls.",
+  "es": "El museo de la empresa de transporte de Lisboa: tranvías y autobuses antiguos a los que se puede subir, y un breve trayecto en un tranvía de época entre las salas de exposición."
  },
  "מוזיאון לבחירה": {
   "en": "A museum of your choice",
@@ -4834,6 +5526,10 @@
  "מוזיאון מודרני ומרהיב, רצפות זכוכית מעל חפירות וקומה עליונה מול הפרתנון.": {
   "en": "A stunning modern museum, with glass floors above the excavations and a top floor facing the Parthenon.",
   "es": "Un museo moderno y espectacular, con suelos de cristal sobre las excavaciones y una última planta frente al Partenón."
+ },
+ "מוזיאון קטן במנזר ישן, עם בובות תיאטרון, מריונטות ומסכות מכל העולם, ופינות שבהן הילדים מפעילים בובות בעצמם.": {
+  "en": "A small museum in an old convent, with theater puppets, marionettes and masks from around the world, and corners where kids can work the puppets themselves.",
+  "es": "Un pequeño museo en un antiguo convento, con títeres de teatro, marionetas y máscaras de todo el mundo, y rincones donde los niños manejan los títeres ellos mismos."
  },
  "מוזיאון קטן ואלגנטי עם הפסלונים הקיקלדיים המינימליסטיים, וחנות עיצוב מצוינת.": {
   "en": "A small, elegant museum with the minimalist Cycladic figurines, and an excellent design shop.",
@@ -4862,6 +5558,10 @@
  "מומלצת. ברורה לקריאה, וזו המפה שנשמרת לאוף־ליין": {
   "en": "Recommended. Easy to read, and this is the map that gets saved for offline use",
   "es": "Recomendado. Fácil de leer, y es el mapa que se guarda para usar sin conexión"
+ },
+ "מוניות ו־Bolt: במוניות רגילות אין בדרך כלל כיסא בטיחות. באפליקציות יש לפעמים אפשרות להזמין רכב עם מושב לילד, ולהסעה מהשדה אפשר להזמין מראש רכב עם כיסא – כדאי לבדוק לפני הנסיעה.": {
+  "en": "Taxis and Bolt: regular taxis usually don't have a child seat. The apps sometimes let you request a car with a child seat, and for the airport transfer you can pre-book a car with one – check before you travel.",
+  "es": "Taxis y Bolt: los taxis normales no suelen llevar silla infantil. En las aplicaciones a veces se puede pedir un coche con silla para niños, y para el traslado desde el aeropuerto se puede reservar con antelación un coche con silla: conviene comprobarlo antes del viaje."
  },
  "מוניות זולות יחסית. בלילה עדיף מונית מהאפליקציה מאשר הליכה ארוכה.": {
   "en": "Taxis are relatively cheap. At night, a taxi from the app is better than a long walk.",
@@ -5043,6 +5743,14 @@
   "en": "Metaxourgeio",
   "es": "Metaxourgeio"
  },
+ "מטרו אבנידה ממש בפתח. הבריכה החיצונית פועלת בעונה החמה – כדאי לבדוק לפני שמבטיחים לילדים.": {
+  "en": "Avenida metro is right at the door. The outdoor pool is open in the warm season – check before promising the kids.",
+  "es": "El metro Avenida está en la misma puerta. La piscina exterior funciona en la temporada cálida – conviene comprobarlo antes de prometérsela a los niños."
+ },
+ "מטרו טרייירו דו פאסו במרחק שתי דקות. לבקש חדר שפונה לכיכר.": {
+  "en": "Terreiro do Paço metro is two minutes away. Ask for a room facing the square.",
+  "es": "El metro Terreiro do Paço está a dos minutos. Pedir una habitación con vistas a la plaza."
+ },
  "מטרו קו 1 (ירוק) ממונסטירקי, כ־20 דקות. להגיע חצי שעה לפני ההפלגה.": {
   "en": "Metro line 1 (green) from Monastiraki, about 20 minutes. Arrive half an hour before sailing.",
   "es": "Metro línea 1 (verde) desde Monastiraki, unos 20 minutos. Llega media hora antes de la salida."
@@ -5079,6 +5787,14 @@
   "en": "Red metro line with one change, about half an hour, or taxi / Bolt. Details in the \"More\" tab.",
   "es": "Línea roja del metro con un transbordo, una media hora, o taxi / Bolt. Detalles en la pestaña \"Más\"."
  },
+ "מטרו קו אדום: שלוש תחנות לשדה, ולמרכז עם החלפה אחת. הכול שטוח ומתאים לעגלה, אבל ליד הנהר נושבת רוח.": {
+  "en": "Red metro line: three stops to the airport, and one change to the centre. Everything is flat and stroller-friendly, but it's windy by the river.",
+  "es": "Metro línea roja: tres paradas al aeropuerto, y al centro con un transbordo. Todo es llano y apto para carritos, pero junto al río sopla el viento."
+ },
+ "מטרו קו ירוק עד התחנה האחרונה, או הליכה שטוחה של כרבע שעה מכיכר המסחר לאורך הנהר. הרכבות יוצאות מהאולם הראשי, והמעבורות מהטרמינל הצמוד שעל המים.": {
+  "en": "Metro green line to the last stop, or a flat walk of about 15 minutes from Praça do Comércio along the river. Trains leave from the main hall, and ferries from the adjoining terminal on the water.",
+  "es": "Metro línea verde hasta la última parada, o una caminata llana de un cuarto de hora desde la Praça do Comércio junto al río. Los trenes salen del vestíbulo principal y los ferris, de la terminal contigua sobre el agua."
+ },
  "מטרו קו ירוק עד התחנה האחרונה. טיים אאוט מרקט ממש מעבר לכביש.": {
   "en": "Metro green line to the last stop. Time Out Market is just across the road.",
   "es": "Metro, línea verde hasta la última parada. El Time Out Market está justo al otro lado de la calle."
@@ -5094,6 +5810,10 @@
  "מטרו קו כחול עד תחנת קולז׳יו מיליטר/לוז, ממש מול אצטדיון בנפיקה. פתוח גם בימי ראשון ועד מאוחר בערב.": {
   "en": "Metro blue line to Colégio Militar/Luz station, right opposite the Benfica stadium. Open on Sundays too, and until late in the evening.",
   "es": "Metro línea azul hasta la estación Colégio Militar/Luz, justo enfrente del estadio del Benfica. Abre también los domingos y hasta tarde por la noche."
+ },
+ "מטרו: לא בכל תחנה יש מעלית, ולפעמים היא מושבתת. כדאי לבדוק מראש את התחנה, או להיות מוכנים להרים את העגלה במדרגות.": {
+  "en": "Metro: not every station has a lift, and sometimes it's out of service. Check the station in advance, or be ready to carry the stroller up the stairs.",
+  "es": "Metro: no todas las estaciones tienen ascensor, y a veces está fuera de servicio. Conviene comprobar la estación con antelación, o estar dispuesto a subir el carrito por las escaleras."
  },
  "מטרייה קטנה": {
   "en": "Small umbrella",
@@ -5171,6 +5891,10 @@
   "en": "Live location on the map",
   "es": "Ubicación en directo en el mapa"
  },
+ "מיקום שטוח בין השדרה לבאישה, ליד מטרו רסטאורדורש. מלון קטן, מתמלא מהר בעונה.": {
+  "en": "A flat location between the avenue and Baixa, next to Restauradores metro. A small hotel that fills up fast in season.",
+  "es": "Ubicación llana entre la avenida y la Baixa, junto al metro Restauradores. Un hotel pequeño que se llena rápido en temporada."
+ },
  "מיקרולימנו, פיראוס": {
   "en": "Mikrolimano, Piraeus",
   "es": "Mikrolimano, El Pireo"
@@ -5207,6 +5931,58 @@
   "en": "is fuller; cash carries an extra fee.",
   "es": "es más completa; en efectivo hay una comisión adicional."
  },
+ "מלון ארבעה כוכבים מודרני עם חדרים גדולים, צעדים מתחנת אוריינטה, מהקניון ומהאוקיינריום. נוח למשפחות: אזור שטוח, מדרכות רחבות ומחיר טוב.": {
+  "en": "Modern four-star hotel with large rooms, steps from Oriente station, the shopping centre and the Oceanarium. Easy for families: flat area, wide pavements and a good price.",
+  "es": "Hotel moderno de cuatro estrellas con habitaciones grandes, a pocos pasos de la estación de Oriente, el centro comercial y el Oceanario. Cómodo para familias: zona llana, aceras anchas y buen precio."
+ },
+ "מלון ארבעה כוכבים קלאסי בניהול משפחתי, ברחוב צדדי שקט ליד השדרה. חדרים מרווחים יחסית ומחיר הגון – בחירה נוחה למשפחות ולקבוצות.": {
+  "en": "Classic family-run four-star hotel on a quiet side street near the avenue. Fairly spacious rooms and a fair price – a comfortable choice for families and groups.",
+  "es": "Hotel clásico de cuatro estrellas de gestión familiar, en una tranquila calle lateral junto a la avenida. Habitaciones relativamente amplias y precio razonable: una opción cómoda para familias y grupos."
+ },
+ "מלון בוטיק בבניין מהמאה ה־18 בתחתית השדרה, צעד מרסטאורדורש. שירות אישי, חדרים נעימים ואווירה שקטה – לזוגות ולקבוצות קטנות.": {
+  "en": "A boutique hotel in an 18th-century building at the bottom of the avenue, a step from Restauradores. Personal service, pleasant rooms and a quiet atmosphere – for couples and small groups.",
+  "es": "Un hotel boutique en un edificio del siglo XVIII en la parte baja de la avenida, a un paso de Restauradores. Servicio personal, habitaciones agradables y ambiente tranquilo – para parejas y grupos pequeños."
+ },
+ "מלון בוטיק מפואר על כיכר קמואש, בדיוק בין שיאדו לבאירו אלטו, עם מרפסת גג מול הנהר. מתאים לחגיגה, לשופינג ולמי שרוצה הכול מתחת לבית.": {
+  "en": "A grand boutique hotel on Praça Luís de Camões, right between Chiado and Bairro Alto, with a rooftop terrace facing the river. Great for a celebration, for shopping and for having everything on your doorstep.",
+  "es": "Un elegante hotel boutique en la Praça Luís de Camões, justo entre Chiado y Bairro Alto, con una terraza en la azotea frente al río. Ideal para una celebración, para ir de compras y para quien quiere tenerlo todo a la puerta."
+ },
+ "מלון בוטיק קטן בסמטה ליד הקתדרלה, עם מרפסת, בר יין ובריכה קטנה מעל גגות אלפמה והנהר. מתאים לזוגות ולקבוצות קטנות שמחפשות אווירה.": {
+  "en": "A small boutique hotel in an alley near the cathedral, with a terrace, wine bar and small pool above the rooftops of Alfama and the river. Good for couples and small groups looking for atmosphere.",
+  "es": "Un pequeño hotel boutique en una callejuela junto a la catedral, con terraza, bar de vinos y una pequeña piscina sobre los tejados de Alfama y el río. Ideal para parejas y grupos pequeños que buscan ambiente."
+ },
+ "מלון דירות שנבנה במיוחד למשפחות: סוויטות עם מטבחון, מועדון ילדים וציוד לתינוקות לפי בקשה. בין שיאדו לקאיש דו סודרה.": {
+  "en": "An apartment hotel built especially for families: suites with a kitchenette, a kids' club and baby equipment on request. Between Chiado and Cais do Sodré.",
+  "es": "Un aparthotel pensado especialmente para familias: suites con cocina pequeña, club infantil y equipamiento para bebés bajo petición. Entre Chiado y Cais do Sodré."
+ },
+ "מלון חמישה כוכבים ותיק על השדרה, עם בריכה חיצונית בגן, ספא ובר הגג סקיי בר. מתאים לנסיעת פינוק ושופינג, וגם למשפחות שרוצות בריכה.": {
+  "en": "A long-established five-star hotel on the avenue, with an outdoor pool in the garden, a spa and the Sky Bar rooftop bar. Good for a pampering, shopping trip, and also for families who want a pool.",
+  "es": "Un veterano hotel de cinco estrellas en la avenida, con piscina exterior en el jardín, spa y el bar de azotea Sky Bar. Ideal para un viaje de mimos y compras, y también para familias que quieren piscina."
+ },
+ "מלון יוקרה בבניין היסטורי על הכיכר הגדולה של העיר, עם פסלים ויצירות אמנות בחללים ובריכה פנימית קטנה. מתאים למי שרוצה מיקום מרכזי ושטוח ברמה גבוהה.": {
+  "en": "A luxury hotel in a historic building on the city's grand square, with sculptures and artworks throughout and a small indoor pool. Ideal if you want a central, flat location at a high standard.",
+  "es": "Un hotel de lujo en un edificio histórico en la gran plaza de la ciudad, con esculturas y obras de arte en sus espacios y una pequeña piscina interior. Ideal para quien busca una ubicación céntrica y llana de alto nivel."
+ },
+ "מלון יוקרה צמוד למגדל וסקו דה גאמה, עם חלונות מהרצפה עד התקרה מול הנהר והגשר, ספא ובריכה פנימית. מודרני לגמרי – ההפך מהעיר העתיקה.": {
+  "en": "Luxury hotel attached to the Vasco da Gama Tower, with floor-to-ceiling windows facing the river and the bridge, a spa and an indoor pool. Thoroughly modern – the opposite of the old town.",
+  "es": "Hotel de lujo adosado a la Torre Vasco da Gama, con ventanales de suelo a techo frente al río y el puente, spa y piscina cubierta. Totalmente moderno: lo opuesto al casco antiguo."
+ },
+ "מלון מודרני ושקט על המרינה, בין אנדרטת המגלים למגדל בלם, עם ספא, בריכה ומסעדת שף. למי שמעדיף נהר, מרחב ושקט על פני רעש המרכז.": {
+  "en": "Modern, quiet hotel on the marina, between the Monument to the Discoveries and Belém Tower, with a spa, pool and chef's restaurant. For those who prefer river, space and calm over the noise of the centre.",
+  "es": "Hotel moderno y tranquilo en el puerto deportivo, entre el Monumento a los Descubrimientos y la Torre de Belém, con spa, piscina y restaurante de autor. Para quien prefiere río, espacio y calma al ruido del centro."
+ },
+ "מלון מעוצב ושקט שמסתתר בסמטה קטנה, עם בריכה חיצונית ומרפסת שמשקיפה על כל העיר. מתאים למי שאוהב עיצוב, בוטיקים ומסעדות טובות.": {
+  "en": "A quiet design hotel tucked away in a small lane, with an outdoor pool and a terrace overlooking the whole city. For those who love design, boutiques and good restaurants.",
+  "es": "Un hotel de diseño tranquilo escondido en un pequeño callejón, con piscina exterior y una terraza con vistas a toda la ciudad. Ideal para quien disfruta del diseño, las boutiques y los buenos restaurantes."
+ },
+ "מלון עירוני מודרני על כיכר פיגיירה, צעד מרוסיו. חדרים קומפקטיים ונקיים במחיר סביר – מתאים לקבוצות שרוצות להיות במרכז ולהגיע לכל מקום ברגל.": {
+  "en": "A modern city hotel on Praça da Figueira, a step from Rossio. Compact, clean rooms at a fair price – good for groups who want to be in the center and walk everywhere.",
+  "es": "Un hotel urbano moderno en la Praça da Figueira, a un paso de Rossio. Habitaciones compactas y limpias a un precio razonable – ideal para grupos que quieren estar en el centro y llegar a todas partes a pie."
+ },
+ "מלון פשוט ונעים בתוך מנזר ישן שחודש, בלב הסמטאות ומתחת לתצפיות. מחיר נוח לאזור, עם חצר פנימית ושקט בלילה.": {
+  "en": "A simple, pleasant hotel inside a renovated old convent, in the heart of the alleys and below the viewpoints. Good value for the area, with an inner courtyard and quiet nights.",
+  "es": "Un hotel sencillo y agradable dentro de un antiguo convento renovado, en pleno laberinto de callejuelas y bajo los miradores. Buen precio para la zona, con patio interior y noches tranquilas."
+ },
  "מלונות": {
   "en": "Hotels",
   "es": "Hoteles"
@@ -5227,6 +6003,10 @@
   "en": "One portion is enough for two.",
   "es": "Una ración basta para dos."
  },
+ "מנוחה במלון": {
+  "en": "Rest at the hotel",
+  "es": "Descanso en el hotel"
+ },
  "מנות לחלוקה והרמת כוסית ראשונה – סאודה!": {
   "en": "Sharing plates and a first toast – Saúde!",
   "es": "Platos para compartir y el primer brindis – ¡Saúde!"
@@ -5234,6 +6014,10 @@
  "מנות קטנות לחלוקה והרמת כוסית ראשונה – סאודה!": {
   "en": "Small plates to share and a first toast – Saúde!",
   "es": "Platos pequeños para compartir y el primer brindis – Saúde!"
+ },
+ "מנזר בטליה: הכנסייה, הקלויסטר והקפלות הלא גמורות.": {
+  "en": "Batalha Monastery: the church, the cloister and the Unfinished Chapels.",
+  "es": "Monasterio de Batalha: la iglesia, el claustro y las Capillas Inacabadas."
  },
  "מנזר ז׳רונימוש": {
   "en": "Jerónimos Monastery",
@@ -5326,6 +6110,10 @@
  "מספרי חירום": {
   "en": "Emergency numbers",
   "es": "Números de emergencia"
+ },
+ "מעבורת הנוסעים הכתומה שחוצה את הנהר בכעשר דקות: שיט קצר וזול עם נוף על העיר, הגשר ופסל כריסטו ריי. לילדים זה חלק מהכיף.": {
+  "en": "The orange passenger ferry that crosses the river in about ten minutes: a short, cheap ride with views of the city, the bridge and the Cristo Rei statue. For kids, it's part of the fun.",
+  "es": "El ferri naranja de pasajeros que cruza el río en unos diez minutos: un trayecto corto y barato con vistas a la ciudad, el puente y la estatua del Cristo Rei. Para los niños es parte de la diversión."
  },
  "מעבורת לגדה השנייה": {
   "en": "Ferry to the other bank",
@@ -5583,6 +6371,10 @@
   "en": "Family",
   "es": "Familia"
  },
+ "משפחות עם ילדים": {
+  "en": "Families with children",
+  "es": "Familias con niños"
+ },
  "משקה אחרון": {
   "en": "Last drink",
   "es": "La última copa"
@@ -5606,6 +6398,42 @@
  "משתפת מיקום": {
   "en": "Sharing location",
   "es": "Comparte ubicación"
+ },
+ "מתאים לביקור ראשון בעיר, למשפחות עם עגלה ולמי שלא רוצה לטפס – זה האזור השטוח ביותר במרכז.": {
+  "en": "Good for a first visit, for families with a stroller and for anyone who doesn't want to climb – this is the flattest area in the centre.",
+  "es": "Ideal para una primera visita, para familias con carrito y para quien no quiere subir cuestas: es la zona más llana del centro."
+ },
+ "מתאים לזוגות ולמי שמחפש אווירה, שקט יחסי בלילה ונוף מהחלון.": {
+  "en": "Good for couples and anyone looking for atmosphere, relative quiet at night and a view from the window.",
+  "es": "Ideal para parejas y para quien busca ambiente, relativa tranquilidad por la noche y vistas desde la ventana."
+ },
+ "מתאים לחבר׳ה ולמי שבא בשביל חיי הלילה ורוצה לחזור למיטה ברגל.": {
+  "en": "Good for groups of friends and anyone who's here for the nightlife and wants to walk back to bed.",
+  "es": "Ideal para grupos de amigos y para quien viene por la vida nocturna y quiere volver a la cama a pie."
+ },
+ "מתאים ליום שבו רוצים טיול קצר בלי לקום מוקדם. הגנים שטוחים ונוחים גם לעגלה.": {
+  "en": "Ideal for a day when you want a short outing without an early start. The gardens are flat and stroller-friendly.",
+  "es": "Ideal para un día en que apetece una excursión corta sin madrugar. Los jardines son llanos y cómodos también con cochecito."
+ },
+ "מתאים למי שכבר היה בליסבון, לאוהבי ריצה והליכה על המים ולמי שמחפש שקט ומרחב.": {
+  "en": "Good for those who've been to Lisbon before, for lovers of running and walking by the water and for anyone looking for quiet and space.",
+  "es": "Ideal para quien ya ha estado en Lisboa, para amantes de correr y pasear junto al agua y para quien busca tranquilidad y espacio."
+ },
+ "מתאים למי שכבר מכיר את המרכז, לאוהבי עיצוב ואוכל ולמי שמעדיף ערבים רגועים.": {
+  "en": "Good for those who already know the centre, for design and food lovers and for anyone who prefers relaxed evenings.",
+  "es": "Ideal para quien ya conoce el centro, para amantes del diseño y la gastronomía y para quien prefiere noches tranquilas."
+ },
+ "מתאים למי שרוצה מלון נוח עם מעלית, בריכה וחדרים גדולים, לנסיעת שופינג ולמשפחות.": {
+  "en": "Good for those who want a comfortable hotel with a lift, pool and large rooms, for a shopping trip and for families.",
+  "es": "Ideal para quien quiere un hotel cómodo con ascensor, piscina y habitaciones grandes, para un viaje de compras y para familias."
+ },
+ "מתאים למשפחות עם ילדים קטנים ועגלות, לטיסה מוקדמת או מאוחרת ולמי שמעדיף נוחות על פני אווירה.": {
+  "en": "Good for families with small children and strollers, for an early or late flight and for anyone who prefers comfort over atmosphere.",
+  "es": "Ideal para familias con niños pequeños y carritos, para un vuelo temprano o tardío y para quien prefiere comodidad a ambiente."
+ },
+ "מתאים לנסיעת שופינג ואוכל, לזוגות ולמי שרוצה לצאת בערב ולחזור ברגל.": {
+  "en": "Good for a shopping and food trip, for couples and for anyone who wants to go out in the evening and walk back.",
+  "es": "Ideal para un viaje de compras y gastronomía, para parejas y para quien quiere salir por la noche y volver a pie."
  },
  "מתאים לשעתיים של מנוחה אחרי יום שופינג. להזמין מראש, במיוחד לקבוצה.": {
   "en": "Good for a couple of hours' rest after a day of shopping. Book ahead, especially for a group.",
@@ -5679,6 +6507,10 @@
   "en": "An activation link is needed",
   "es": "Hace falta un enlace de activación"
  },
+ "נהר, מוזיאונים ומרחבים פתוחים": {
+  "en": "River, museums and open spaces",
+  "es": "Río, museos y espacios abiertos"
+ },
  "נואל": {
   "en": "Noel",
   "es": "Noel"
@@ -5710,6 +6542,10 @@
  "נוף": {
   "en": "View",
   "es": "Vistas"
+ },
+ "נזארה: צהריים של דגים על החוף.": {
+  "en": "Nazaré: fish for lunch on the beach.",
+  "es": "Nazaré: almuerzo de pescado en la playa."
  },
  "נחיתה ונשימה ראשונה": {
   "en": "Landing and a first breath",
@@ -5758,6 +6594,14 @@
  "נמל ציורי בלי מכוניות.": {
   "en": "A picturesque harbour with no cars.",
   "es": "Un puerto pintoresco sin coches."
+ },
+ "ננרלה – גלידה איטלקית": {
+  "en": "Nannarella – Italian gelato",
+  "es": "Nannarella – helado italiano"
+ },
+ "נסיעה בכביש הנוף שבהר, עם עצירה בתצפית.": {
+  "en": "A drive along the scenic mountain road, with a stop at a viewpoint.",
+  "es": "Recorrido por la carretera panorámica de la sierra, con parada en un mirador."
  },
  "נסיעה חדשה": {
   "en": "New trip",
@@ -5835,6 +6679,10 @@
   "en": "Saúde!",
   "es": "Saúde!"
  },
+ "סאו בנטו": {
+  "en": "São Bento",
+  "es": "São Bento"
+ },
  "סאו סבסטיאו": {
   "en": "São Sebastião",
   "es": "São Sebastião"
@@ -5899,6 +6747,10 @@
   "en": "Sete Rios",
   "es": "Sete Rios"
  },
+ "סטובל וחופי ארביטה": {
+  "en": "Setúbal and the Arrábida beaches",
+  "es": "Setúbal y las playas de Arrábida"
+ },
  "סטטוס טיסה": {
   "en": "Flight status",
   "es": "Estado del vuelo"
@@ -5910,6 +6762,14 @@
  "סטרופי – מול האקרופוליס": {
   "en": "Strofi – facing the Acropolis",
   "es": "Strofi – frente a la Acrópolis"
+ },
+ "סיבוב בטוק־טוק בעיר העתיקה": {
+  "en": "Tuk-tuk ride through the old town",
+  "es": "Vuelta en tuk-tuk por el casco antiguo"
+ },
+ "סיבוב במדרחוב ובמפרצונים שבמרכז העיירה.": {
+  "en": "A stroll along the pedestrian street and the little coves in the town centre.",
+  "es": "Paseo por la calle peatonal y las pequeñas calas del centro del pueblo."
  },
  "סיבוב ברים": {
   "en": "Bar crawl",
@@ -6003,6 +6863,10 @@
   "en": "Emojis",
   "es": "Emojis"
  },
+ "סנטוש – מדרגואה": {
+  "en": "Santos – Madragoa",
+  "es": "Santos – Madragoa"
+ },
  "סנטיני – גלידה": {
   "en": "Santini – ice cream",
   "es": "Santini – helados"
@@ -6075,6 +6939,10 @@
   "en": "עברית",
   "es": "עברית"
  },
+ "עגלה: המדרכות מרוצפות אבן קטנה, צרות ותלולות, ובאלפמה יש מדרגות. מנשא נוח יותר, או עגלה קלה שמתקפלת ביד אחת. באישה, בלם ופארק האומות שטוחים ונוחים.": {
+  "en": "Stroller: the pavements are paved with small cobbles, narrow and steep, and Alfama has stairs. A baby carrier is easier, or a light stroller that folds with one hand. Baixa, Belém and Parque das Nações are flat and easy.",
+  "es": "Carrito: las aceras son de adoquín pequeño, estrechas y empinadas, y en Alfama hay escaleras. Es más cómoda una mochila portabebés, o un carrito ligero que se pliegue con una mano. Baixa, Belém y el Parque das Nações son llanos y cómodos."
+ },
  "עדכונים": {
   "en": "Updates",
   "es": "Actualizaciones"
@@ -6135,6 +7003,10 @@
   "en": "Go up by funicular from Aristippou Street in Kolonaki. For sunset, arrive at least half an hour early and bring a jacket.",
   "es": "Se sube en funicular desde la calle Aristippou, en Kolonaki. Para la puesta de sol, llega al menos media hora antes y lleva una chaqueta."
  },
+ "עוף על האש וצ׳יפס, או בית הבירה עם אולם האריחים.": {
+  "en": "Grilled chicken and chips, or the beer hall with the tiled room.",
+  "es": "Pollo a la brasa con patatas fritas, o la cervecería con la sala de azulejos."
+ },
  "עוף פירי־פירי": {
   "en": "Piri-piri chicken",
   "es": "Pollo piri-piri"
@@ -6163,9 +7035,17 @@
   "en": "A green town in the hills with fairy-tale palaces: the colourful Pena Palace on the hilltop, Quinta da Regaleira with its mysterious well, and the Moorish Castle.",
   "es": "Un pueblo verde en la sierra con palacios de cuento: el colorido Palacio da Pena en lo alto del monte, la Quinta da Regaleira con su pozo misterioso y el Castillo de los Moros."
  },
+ "עיירה קטנה מימי הביניים שכולה בתוך חומה: בתים לבנים עם פסים כחולים וצהובים, בוגנוויליה, חנויות קטנות וטירה בקצה הרחוב הראשי.": {
+  "en": "A small medieval town entirely enclosed by walls: white houses with blue and yellow stripes, bougainvillea, little shops and a castle at the end of the main street.",
+  "es": "Un pequeño pueblo medieval completamente amurallado: casas blancas con franjas azules y amarillas, buganvillas, tiendecitas y un castillo al final de la calle principal."
+ },
  "עיירת דייגים שהפכה לעיירת נופש אלגנטית: מפרצונים קטנים, מרינה, מדרחוב עם בוטיקים וגלידה, וטיילת לאורך הים עד אשטוריל.": {
   "en": "A fishing village turned elegant resort: small coves, a marina, a pedestrian street with boutiques and ice cream, and a seafront promenade all the way to Estoril.",
   "es": "Un pueblo de pescadores convertido en elegante localidad de veraneo: pequeñas calas, puerto deportivo, una calle peatonal con boutiques y helados, y un paseo marítimo que llega hasta Estoril."
+ },
+ "עיר עתיקה ושקטה בלב אזור היין והשעם: מקדש רומי, קתדרלה שאפשר לעלות לגג שלה, קפלת העצמות וכיכר ז׳ירלדו. אתר מורשת עולמית.": {
+  "en": "A quiet, ancient city in the heart of wine and cork country: a Roman temple, a cathedral whose roof you can climb, the Chapel of Bones and Praça do Giraldo. A World Heritage Site.",
+  "es": "Una ciudad antigua y tranquila en el corazón de la región del vino y el corcho: un templo romano, una catedral a cuyo tejado se puede subir, la Capilla de los Huesos y la Praça do Giraldo. Patrimonio de la Humanidad."
  },
  "עכשיו": {
   "en": "just now",
@@ -6174,6 +7054,10 @@
  "על גג, עם תמונה קבוצתית.": {
   "en": "On a rooftop, with a group photo.",
   "es": "En una azotea, con foto de grupo."
+ },
+ "על החומה אפשר ללכת, אבל אין מעקה בצד הפנימי – לא מתאים לילדים קטנים או למי שחושש מגבהים. לטעום ז׳ינז׳יניה בכוסית שוקולד.": {
+  "en": "You can walk on the walls, but there's no railing on the inner side – not suitable for small children or anyone afraid of heights. Try ginjinha in a chocolate cup.",
+  "es": "Se puede caminar por la muralla, pero no hay barandilla en el lado interior: no es apto para niños pequeños ni para quien tenga vértigo. Prueba la ginjinha en vasito de chocolate."
  },
  "על מה? (מונית, ארוחה…)": {
   "en": "What for? (taxi, meal…)",
@@ -6347,6 +7231,42 @@
   "en": "Open the app from the new icon.",
   "es": "Abre la app desde el icono nuevo."
  },
+ "פחות מתאים לביקור ראשון קצר ולמי שרוצה לצאת בערבים – המרכז במרחק 20–30 דקות נסיעה.": {
+  "en": "Less suitable for a short first visit and for anyone who wants to go out in the evenings – the centre is a 20–30 minute ride away.",
+  "es": "Menos indicado para una primera visita corta y para quien quiere salir por las noches: el centro está a 20–30 minutos de trayecto."
+ },
+ "פחות מתאים למי שבא בשביל הסמטאות, הפאדו וחיי הלילה – העיר העתיקה במרחק 25 דקות במטרו.": {
+  "en": "Less suitable if you're here for the lanes, fado and nightlife – the old town is 25 minutes away by metro.",
+  "es": "Menos indicado para quien viene por las callejuelas, el fado y la vida nocturna: el casco antiguo está a 25 minutos en metro."
+ },
+ "פחות מתאים למי שמחפש אווירה שכונתית ושקט: תיירותי מאוד, והמסעדות במדרחוב בינוניות ויקרות.": {
+  "en": "Less suitable if you want a neighbourhood feel and quiet: very touristy, and the restaurants on the pedestrian street are mediocre and pricey.",
+  "es": "Menos indicado para quien busca ambiente de barrio y tranquilidad: muy turístico, y los restaurantes de la calle peatonal son mediocres y caros."
+ },
+ "פחות מתאים למי שמחפש סמטאות ואווירה של עיר עתיקה מתחת לבית – כאן זה עירוני ומסודר.": {
+  "en": "Less suitable if you want lanes and old-town atmosphere on your doorstep – here it's urban and orderly.",
+  "es": "Menos indicado para quien busca callejuelas y ambiente de casco antiguo en la puerta: aquí todo es urbano y ordenado."
+ },
+ "פחות מתאים למי שרוצה מטרו מתחת לבית או הליכה שטוחה לאתרים – השכונה בראש הגבעה.": {
+  "en": "Less suitable if you want a metro on your doorstep or a flat walk to the sights – the neighbourhood sits on top of the hill.",
+  "es": "Menos indicado para quien quiere metro en la puerta o un paseo llano hasta los monumentos: el barrio está en lo alto de la colina."
+ },
+ "פחות מתאים למשפחות ולמי שישן קל: בסופי שבוע יש רעש מהרחוב עד שלוש־ארבע בבוקר.": {
+  "en": "Less suitable for families and light sleepers: at weekends there's street noise until three or four in the morning.",
+  "es": "Menos indicado para familias y para quien tiene el sueño ligero: los fines de semana hay ruido en la calle hasta las tres o las cuatro de la madrugada."
+ },
+ "פחות מתאים למשפחות עם עגלה, למי שמתקשה בהליכה ולמי שמגיע עם מזוודות גדולות.": {
+  "en": "Less suitable for families with a stroller, anyone with limited mobility and anyone arriving with large suitcases.",
+  "es": "Menos indicado para familias con carrito, para quien tiene dificultades para caminar y para quien llega con maletas grandes."
+ },
+ "פחות מתאים לתקציב קטן – המלונות כאן יקרים – ולמי שמתקשה בעליות.": {
+  "en": "Less suitable for a tight budget – hotels here are expensive – and for anyone who struggles with hills.",
+  "es": "Menos indicado para presupuestos ajustados (los hoteles aquí son caros) y para quien lleva mal las cuestas."
+ },
+ "פטימה, בטליה ונזארה": {
+  "en": "Fátima, Batalha and Nazaré",
+  "es": "Fátima, Batalha y Nazaré"
+ },
  "פיירה דה לאדרה – שוק הפשפשים": {
   "en": "Feira da Ladra – the flea market",
   "es": "Feira da Ladra – el mercadillo"
@@ -6495,6 +7415,10 @@
   "en": "Start a new group",
   "es": "Abrir un grupo nuevo"
  },
+ "פתרון טוב ליום גשום, ובגן מתאווררים אחר כך. הגן יורד במדרון – עם עגלה להישאר בחלק העליון. כדאי לבדוק באיזה יום סגור (בדרך כלל שני).": {
+  "en": "A good rainy-day option, with the garden for fresh air afterwards. The garden slopes downhill – with a stroller, stay in the upper part. Worth checking which day it is closed (usually Monday).",
+  "es": "Una buena opción para un día de lluvia, y después se toma el aire en el jardín. El jardín baja en pendiente – con cochecito, quedarse en la parte alta. Conviene comprobar qué día cierra (normalmente los lunes)."
+ },
  "פתרון טוב ליום גשום. לבדוק מראש אילו הקרנות יש באנגלית.": {
   "en": "A good option for a rainy day. Check in advance which shows are in English.",
   "es": "Buena opción para un día de lluvia. Comprueba antes qué proyecciones hay en inglés."
@@ -6503,6 +7427,10 @@
   "en": "Lunch",
   "es": "Comida"
  },
+ "צהריים או גלידה באחד המקומות שעל הטיילת.": {
+  "en": "Lunch or ice cream at one of the spots on the promenade.",
+  "es": "Comida o helado en uno de los locales del paseo marítimo."
+ },
  "צהריים אחרונים": {
   "en": "Last lunch",
   "es": "Última comida"
@@ -6510,6 +7438,14 @@
  "צהריים ב־LX Factory": {
   "en": "Lunch at LX Factory",
   "es": "Almuerzo en LX Factory"
+ },
+ "צהריים בסטובל: דיונון מטוגן (choco frito) ליד השוק.": {
+  "en": "Lunch in Setúbal: fried cuttlefish (choco frito) near the market.",
+  "es": "Almuerzo en Setúbal: sepia frita (choco frito) junto al mercado."
+ },
+ "צהריים בעיירה וקטע הליכה על החומה.": {
+  "en": "Lunch in town and a stretch of the wall walk.",
+  "es": "Almuerzo en el pueblo y un tramo de paseo por la muralla."
  },
  "צהריים בקוקאקי": {
   "en": "Lunch in Koukaki",
@@ -6526,6 +7462,22 @@
  "צהריים ושופינג ב־LX Factory": {
   "en": "Lunch and shopping at LX Factory",
   "es": "Comida y compras en LX Factory"
+ },
+ "צהריים של דגים בבר חוף.": {
+  "en": "Fish for lunch at a beach bar.",
+  "es": "Almuerzo de pescado en un chiringuito."
+ },
+ "צהריים של דגים, וגלידה בסנטיני המקורית.": {
+  "en": "Fish for lunch, and ice cream at the original Santini.",
+  "es": "Almuerzo de pescado y helado en el Santini original."
+ },
+ "צהריים של מטבח אלנטז׳ו.": {
+  "en": "An Alentejo lunch.",
+  "es": "Almuerzo de cocina alentejana."
+ },
+ "צהריים של פירות ים, וסיבוב בסמטאות ובתצפית שמעל חוף הדייגים.": {
+  "en": "A seafood lunch, then a wander through the alleys and up to the viewpoint above the fishermen's beach.",
+  "es": "Comida de marisco y un paseo por las callejuelas y el mirador sobre la playa de los pescadores."
  },
  "צילום": {
   "en": "Photo",
@@ -6623,6 +7575,10 @@
   "en": "Cais do Sodré",
   "es": "Cais do Sodré"
  },
+ "קאיש דו סודרה – קסיליאש": {
+  "en": "Cais do Sodré – Cacilhas",
+  "es": "Cais do Sodré – Cacilhas"
+ },
  "קאיש דו סודרה – רכבת לקשקאיש ומעבורות": {
   "en": "Cais do Sodré – train to Cascais and ferries",
   "es": "Cais do Sodré: tren a Cascais y ferris"
@@ -6634,6 +7590,10 @@
  "קו בריאות SNS 24 (ייעוץ רפואי)": {
   "en": "SNS 24 health line (medical advice)",
   "es": "Línea de salud SNS 24 (asesoramiento médico)"
+ },
+ "קו המטרו הכחול עובר לכל אורך השדרה (רסטאורדורש, אבנידה, מרקש דה פומבל). השדרה בעלייה מתונה – המרכז העתיק בקצה התחתון.": {
+  "en": "The blue metro line runs the full length of the avenue (Restauradores, Avenida, Marquês de Pombal). The avenue climbs gently – the old centre is at the lower end.",
+  "es": "La línea azul del metro recorre toda la avenida (Restauradores, Avenida, Marquês de Pombal). La avenida sube suavemente: el centro histórico está en el extremo inferior."
  },
  "קוֹמוּ שְׁטָה?": {
   "en": "Como está?",
@@ -6747,6 +7707,10 @@
   "en": "Got an invite link to the group?",
   "es": "¿Te ha llegado un enlace de invitación al grupo?"
  },
+ "קינטה דה רגליירה: הבאר, המנהרות והגנים.": {
+  "en": "Quinta da Regaleira: the well, the tunnels and the gardens.",
+  "es": "Quinta da Regaleira: el pozo, los túneles y los jardines."
+ },
  "קלובה דה פאדו – ארוחה עם פאדו": {
   "en": "Clube de Fado – dinner with fado",
   "es": "Clube de Fado – cena con fado"
@@ -6754,6 +7718,10 @@
  "קליתאה": {
   "en": "Kallithea",
   "es": "Kallithea"
+ },
+ "קמפו דה אוריקה": {
+  "en": "Campo de Ourique",
+  "es": "Campo de Ourique"
  },
  "קניון גולדן הול": {
   "en": "Golden Hall shopping centre",
@@ -6782,6 +7750,10 @@
  "קסיליאש (מעבר לנהר)": {
   "en": "Cacilhas (across the river)",
   "es": "Cacilhas (al otro lado del río)"
+ },
+ "קפה או צהריים קלים ליד הארמון, ורכבת חזרה.": {
+  "en": "Coffee or a light lunch near the palace, then the train back.",
+  "es": "Un café o una comida ligera junto al palacio, y tren de vuelta."
  },
  "קפה אחד, בבקשה": {
   "en": "One coffee, please",
@@ -6851,9 +7823,21 @@
   "en": "Lisbon Cathedral – Sé",
   "es": "Catedral de Lisboa – Sé"
  },
+ "רבע שעה הליכה שטוחה לאורך הנהר עד קאיש דו סודרה, ומשם מעבורת של עשר דקות לגדה השנייה וחזרה. מי שעייף מדלג.": {
+  "en": "A flat 15-minute walk along the river to Cais do Sodré, then a ten-minute ferry to the other bank and back. Skip it if you're tired.",
+  "es": "Un cuarto de hora de paseo llano junto al río hasta Cais do Sodré, y de allí un ferri de diez minutos a la otra orilla y vuelta. Quien esté cansado, se lo salta."
+ },
  "רבע שעה משדה התעופה ופתוח בשבת עד הערב. עצירה אחרונה לפני הטיסה, אם נשאר מקום במזוודה.": {
   "en": "A quarter of an hour from the airport and open on Saturdays until the evening. A last stop before the flight, if there's room left in your suitcase.",
   "es": "A un cuarto de hora del aeropuerto y abierto los sábados hasta la noche. Última parada antes del vuelo, si queda sitio en la maleta."
+ },
+ "רוב הסמטאות סגורות לרכב והאבנים חלקות. להגיע עם מזוודות במונית עד הנקודה הקרובה ביותר, ולתאם עם המלון מראש. המטרו הקרוב – סנטה אפולוניה, למטה.": {
+  "en": "Most lanes are closed to cars and the cobbles are slippery. With luggage, take a taxi to the nearest drop-off point and arrange it with the hotel in advance. The nearest metro is Santa Apolónia, down below.",
+  "es": "La mayoría de las callejuelas están cerradas al tráfico y el empedrado resbala. Con maletas, ve en taxi hasta el punto más cercano y coordínalo antes con el hotel. El metro más cercano es Santa Apolónia, abajo."
+ },
+ "רובע המונומנטים שבמערב העיר: המנזר, המגדל, מוזיאונים וגנים, עם טיילת ארוכה על הנהר. ביום מלא מבקרים, ובערב שקט מאוד.": {
+  "en": "The monument district in the west of the city: the monastery, the tower, museums and gardens, with a long riverside promenade. Packed with visitors by day, very quiet in the evening.",
+  "es": "El barrio de los monumentos, al oeste de la ciudad: el monasterio, la torre, museos y jardines, con un largo paseo junto al río. De día lleno de visitantes, y por la noche muy tranquilo."
  },
  "רווקות או רווקים": {
   "en": "Hen or stag party",
@@ -6923,6 +7907,10 @@
   "en": "Licence for {0} · valid until {1}{2}",
   "es": "Licencia de {0} · válida hasta {1}{2}"
  },
+ "רכב קטן ופתוח שמטפס בסמטאות אלפמה וגראסה ועוצר בתצפיות. דרך טובה לראות את הגבעות עם ילדים, בלי לטפס ברגל.": {
+  "en": "A small open vehicle that climbs the alleys of Alfama and Graça and stops at the viewpoints. A good way to see the hills with kids, without climbing on foot.",
+  "es": "Un vehículo pequeño y abierto que sube por las callejuelas de Alfama y Graça y para en los miradores. Una buena manera de ver las colinas con niños, sin subir a pie."
+ },
  "רכבות יוצאות בתדירות גבוהה. משלמים בכרטיס התחבורה הטעון, והנסיעה כלולה גם בליסבואה קארד.": {
   "en": "Trains run frequently. Pay with your pre-loaded transport card; the journey is also included in the Lisboa Card.",
   "es": "Los trenes salen con mucha frecuencia. Se paga con la tarjeta de transporte recargada, y el trayecto también está incluido en la Lisboa Card."
@@ -6943,6 +7931,22 @@
   "en": "Cable car over the river",
   "es": "Teleférico sobre el río"
  },
+ "רכבת חזרה לפני הערב – לבדוק מראש את שעת הרכבת האחרונה.": {
+  "en": "Train back before evening – check the time of the last train in advance.",
+  "es": "Tren de vuelta antes del anochecer; comprueba de antemano la hora del último tren."
+ },
+ "רכבת חזרה לפני שהילדים מתעייפים.": {
+  "en": "Train back before the kids get tired.",
+  "es": "Tren de vuelta antes de que los niños se cansen."
+ },
+ "רכבת חזרה לרוסיו לפני הערב.": {
+  "en": "Train back to Rossio before evening.",
+  "es": "Tren de vuelta a Rossio antes del anochecer."
+ },
+ "רכבת חזרה, או עצירה בחוף בדרך.": {
+  "en": "Train back, or a stop at a beach on the way.",
+  "es": "Tren de vuelta, o una parada en la playa por el camino."
+ },
  "רכבת לאורך הים מקאיש דו סודרה.": {
   "en": "Train along the coast from Cais do Sodré.",
   "es": "Tren junto al mar desde Cais do Sodré."
@@ -6951,21 +7955,61 @@
   "en": "Train to Cascais, or a taxi to the Caparica beaches.",
   "es": "Tren a Cascais, o taxi a las playas de Caparica."
  },
+ "רכבת מוקדמת מרוסיו, לפני 9:00.": {
+  "en": "Early train from Rossio, before 9:00.",
+  "es": "Tren temprano desde Rossio, antes de las 9:00."
+ },
  "רכבת מקאיש דו סודרה, כ־40 דקות, רוב הדרך צמוד לים – לשבת בצד שמאל. אפשר ללכת עד צוק בוקה דו אינפרנו, כחצי שעה.": {
   "en": "Train from Cais do Sodré, about 40 minutes, running right by the sea most of the way – sit on the left. You can walk to the Boca do Inferno cliff, about half an hour.",
   "es": "Tren desde Cais do Sodré, unos 40 minutos, casi todo el trayecto pegado al mar: siéntate en el lado izquierdo. Se puede ir a pie hasta el acantilado de Boca do Inferno, a una media hora."
+ },
+ "רכבת מקאיש דו סודרה, לשבת בצד שמאל מול הים.": {
+  "en": "Train from Cais do Sodré – sit on the left, facing the sea.",
+  "es": "Tren desde Cais do Sodré; siéntate a la izquierda, del lado del mar."
+ },
+ "רכבת מרוסיו לתחנת Queluz-Belas.": {
+  "en": "Train from Rossio to Queluz-Belas station.",
+  "es": "Tren desde Rossio hasta la estación Queluz-Belas."
  },
  "רכבת מרוסיו, 40 דקות. כרטיס לארמון פנה קונים מראש.": {
   "en": "Train from Rossio, 40 minutes. Buy Pena Palace tickets in advance.",
   "es": "Tren desde Rossio, 40 minutos. Compra la entrada del Palacio da Pena con antelación."
  },
+ "רכבת מתחנות אוריינטה, אנטרקמפוש או סטה ריוש, כשעה וחצי, ומהתחנה כרבע שעה הליכה למרכז. יש רק כמה רכבות ביום, אז לקנות כרטיס עם מקום שמור מראש. אפשר גם באוטובוס מסטה ריוש.": {
+  "en": "Train from Oriente, Entrecampos or Sete Rios stations, about an hour and a half, then about a 15-minute walk from the station to the centre. There are only a few trains a day, so buy a reserved-seat ticket in advance. You can also go by bus from Sete Rios.",
+  "es": "Tren desde las estaciones de Oriente, Entrecampos o Sete Rios, alrededor de hora y media, y desde la estación un cuarto de hora a pie hasta el centro. Hay pocos trenes al día, así que compra el billete con asiento reservado con antelación. También se puede ir en autobús desde Sete Rios."
+ },
+ "רכבת מתחנת קאיש דו סודרה עד התחנה האחרונה, כ־40 דקות. יוצאת בערך כל 20 דקות, ומשלמים בכרטיס התחבורה הטעון.": {
+  "en": "Train from Cais do Sodré station to the last stop, about 40 minutes. Runs roughly every 20 minutes, and you pay with your topped-up transport card.",
+  "es": "Tren desde la estación de Cais do Sodré hasta la última parada, unos 40 minutos. Sale aproximadamente cada 20 minutos y se paga con la tarjeta de transporte recargada."
+ },
+ "רכבת מתחנת רוסיו עד התחנה האחרונה, כ־40 דקות. מהתחנה לארמון פנה: אוטובוס 434, Bolt או טוק־טוק – העלייה ברגל ארוכה ותלולה. למי שרוצה גם את כף רוקה ואת אזניאש דו מאר שעל הצוק – סיור מאורגן או רכב, כי בתחבורה ציבורית זה לא נכנס ביום אחד.": {
+  "en": "Train from Rossio station to the last stop, about 40 minutes. From the station to Pena Palace: bus 434, Bolt or a tuk-tuk – the walk up is long and steep. If you also want Cabo da Roca and clifftop Azenhas do Mar, take an organized tour or a car – it doesn't fit into one day by public transport.",
+  "es": "Tren desde la estación de Rossio hasta la última parada, unos 40 minutos. De la estación al Palacio da Pena: autobús 434, Bolt o tuk-tuk; la subida a pie es larga y empinada. Si además quieres ver el Cabo da Roca y Azenhas do Mar, sobre el acantilado, mejor un tour organizado o coche: en transporte público no cabe en un solo día."
+ },
  "רכבת מתחנת רוסיו, כ־40 דקות. לקנות כרטיס לארמון פנה מראש עם שעת כניסה, ולצאת מוקדם. בהרים קריר וערפילי יותר מבעיר – להביא שכבה. שני ארמונות ביום זה מספיק.": {
   "en": "Train from Rossio station, about 40 minutes. Buy a timed ticket for Pena Palace in advance and set off early. It's cooler and mistier in the hills than in the city – bring a layer. Two palaces in a day is enough.",
   "es": "Tren desde la estación de Rossio, unos 40 minutos. Compra la entrada al Palacio da Pena con antelación y con hora de acceso, y sal temprano. En la sierra hace más fresco y hay más niebla que en la ciudad: lleva una capa de abrigo. Dos palacios en un día son suficientes."
  },
+ "רכבת קו סינטרה מתחנת רוסיו עד תחנת Queluz-Belas, כ־20 דקות, ומשם כרבע שעה הליכה. אפשר גם ב־Bolt מהמרכז, כ־20 דקות.": {
+  "en": "Sintra line train from Rossio station to Queluz-Belas station, about 20 minutes, then roughly a 15-minute walk. You can also take a Bolt from the center, about 20 minutes.",
+  "es": "Tren de la línea de Sintra desde la estación de Rossio hasta la estación Queluz-Belas, unos 20 minutos, y desde allí un cuarto de hora a pie. También se puede ir en Bolt desde el centro, unos 20 minutos."
+ },
+ "רכבת קו קשקאיש מתחנת קאיש דו סודרה עד תחנת Carcavelos, כ־25 דקות, ומשם כעשר דקות הליכה שטוחה לחוף.": {
+  "en": "Cascais line train from Cais do Sodré station to Carcavelos station, about 25 minutes, then a flat walk of around ten minutes to the beach.",
+  "es": "Tren de la línea de Cascais desde la estación de Cais do Sodré hasta la estación Carcavelos, unos 25 minutos, y desde allí unos diez minutos a pie por terreno llano hasta la playa."
+ },
  "רכבת קטנה על גלגלים שעושה סיבוב סביב האקרופוליס, פלאקה ומונסטירקי. מנוחה לרגליים קטנות וסיור היכרות לכל המשפחה.": {
   "en": "A little train on wheels that loops around the Acropolis, Plaka and Monastiraki. A rest for little legs and an introductory tour for the whole family.",
   "es": "Un trenecito sobre ruedas que da la vuelta por la Acrópolis, Plaka y Monastiraki. Descanso para las piernas pequeñas y una primera toma de contacto para toda la familia."
+ },
+ "רכבת של בוקר מקאיש דו סודרה.": {
+  "en": "Morning train from Cais do Sodré.",
+  "es": "Tren de la mañana desde Cais do Sodré."
+ },
+ "רכבת של בוקר, עם כרטיס שהוזמן מראש.": {
+  "en": "Morning train, with a pre-booked ticket.",
+  "es": "Tren de la mañana, con billete reservado de antemano."
  },
  "רנטיס": {
   "en": "Rentis",
@@ -7011,6 +8055,10 @@
   "en": "Packing list",
   "es": "Lista de equipaje"
  },
+ "רשת של סמטאות צרות על הגבעה, עם ברים קטנים, בתי פאדו ומסעדות. ביום השכונה מנומנמת, ואחרי 22:00 הרחובות מתמלאים עד השעות הקטנות.": {
+  "en": "A grid of narrow lanes on the hill, with small bars, fado houses and restaurants. By day the neighbourhood is sleepy, and after 22:00 the streets fill up until the small hours.",
+  "es": "Una red de callejuelas estrechas en la colina, con pequeños bares, casas de fado y restaurantes. De día el barrio está adormilado, y a partir de las 22:00 las calles se llenan hasta la madrugada."
+ },
  "שְׁטָה מוּיְטוּ בּוֹם": {
   "en": "Está muito bom",
   "es": "Está muito bom"
@@ -7022,6 +8070,10 @@
  "שגרירות ישראל בליסבון": {
   "en": "Embassy of Israel in Lisbon",
   "es": "Embajada de Israel en Lisboa"
+ },
+ "שדרה רחבה וירוקה, מלונות גדולים ומותגים": {
+  "en": "A wide, leafy avenue, big hotels and designer brands",
+  "es": "Avenida ancha y arbolada, grandes hoteles y marcas"
  },
  "שואלים אם עם דובדבן בכוס (com elas) או בלי (sem elas). כוסית עולה בערך אירו וחצי.": {
   "en": "You'll be asked if you want it with a cherry in the glass (com elas) or without (sem elas). A shot costs about a euro and a half.",
@@ -7071,6 +8123,14 @@
   "en": "Monastiraki flea market",
   "es": "Mercadillo de Monastiraki"
  },
+ "שוק קמפו דה אוריקה": {
+  "en": "Campo de Ourique Market",
+  "es": "Mercado de Campo de Ourique"
+ },
+ "שוק שכונתי מקורה עם דוכני אוכל ושולחנות משותפים: פיצה, המבורגרים, דגים, סושי וקינוחים. קטן ורגוע בהרבה מטיים אאוט, וכל ילד מוצא משהו.": {
+  "en": "A covered neighborhood market with food stalls and shared tables: pizza, burgers, fish, sushi and desserts. Much smaller and calmer than Time Out, and every child finds something.",
+  "es": "Un mercado de barrio cubierto con puestos de comida y mesas compartidas: pizza, hamburguesas, pescado, sushi y postres. Mucho más pequeño y tranquilo que el Time Out, y cada niño encuentra algo."
+ },
  "שוק, פינוק ולילה": {
   "en": "Market, pampering and night",
   "es": "Mercado, mimos y noche"
@@ -7094,6 +8154,14 @@
  "שיאדו: קפה ופשטל דה נאטה ראשון": {
   "en": "Chiado: coffee and a first pastel de nata",
   "es": "Chiado: café y el primer pastel de nata"
+ },
+ "שיט במעבורת": {
+  "en": "Ferry ride",
+  "es": "Paseo en ferri"
+ },
+ "שיט במעבורת לקסיליאש": {
+  "en": "Ferry ride to Cacilhas",
+  "es": "Paseo en ferri a Cacilhas"
  },
  "שימורי סרדינים ובקבוק ז׳ינז׳יניה, או קניון שלוש תחנות מהשדה.": {
   "en": "Tinned sardines and a bottle of ginjinha, or a shopping centre three stops from the airport.",
@@ -7127,9 +8195,17 @@
   "en": "Share photos",
   "es": "Compartir fotos"
  },
+ "שכונה אלגנטית מעל באירו אלטו, סביב גן עם עץ ארז ענק. קונספט־סטורים, גלריות, ברים טובים וכמה מהמסעדות המדוברות בעיר.": {
+  "en": "An elegant neighbourhood above Bairro Alto, around a garden with a giant cedar tree. Concept stores, galleries, good bars and some of the most talked-about restaurants in town.",
+  "es": "Un barrio elegante sobre el Bairro Alto, en torno a un jardín con un cedro gigante. Concept stores, galerías, buenos bares y algunos de los restaurantes más comentados de la ciudad."
+ },
  "שכונה של סמטאות צרות שביום ישנה ובלילה הופכת לבר אחד גדול. קונים משקה בכוס פלסטיק ועומדים ברחוב עם כולם.": {
   "en": "A neighbourhood of narrow lanes that sleeps by day and turns into one big bar at night. Buy a drink in a plastic cup and stand in the street with everyone else.",
   "es": "Un barrio de callejuelas estrechas que duerme de día y de noche se convierte en un gran bar. Compra una bebida en vaso de plástico y quédate en la calle con todo el mundo."
+ },
+ "שכונתי ואופנתי: בוטיקים, גנים ומסעדות": {
+  "en": "Local and trendy: boutiques, gardens and restaurants",
+  "es": "De barrio y a la moda: boutiques, jardines y restaurantes"
  },
  "של כל הקבוצה. מה שמצלמים כאן מופיע אצל כולם, עם השם שלך.": {
   "en": "Belongs to the whole group. What you shoot here shows up for everyone, with your name.",
@@ -7142,6 +8218,18 @@
  "שלום / להתראות": {
   "en": "Hello / Goodbye",
   "es": "Hola / Adiós"
+ },
+ "שלוש עצירות ביום אחד: מתחם העלייה לרגל של פטימה, מנזר בטליה הגותי, ועיירת הדייגים נזארה עם החוף הרחב והצוק שמעליו. בחורף באים לנזארה לראות את הגלים הענקיים.": {
+  "en": "Three stops in one day: the Fátima pilgrimage sanctuary, the Gothic Batalha Monastery, and the fishing town of Nazaré with its wide beach and the cliff above it. In winter people come to Nazaré to see the giant waves.",
+  "es": "Tres paradas en un día: el santuario de peregrinación de Fátima, el monasterio gótico de Batalha y el pueblo pesquero de Nazaré, con su amplia playa y el acantilado que la domina. En invierno se va a Nazaré a ver las olas gigantes."
+ },
+ "שלוש תחנות מטרו (רוסיו, באישה־שיאדו, טרייירו דו פאסו), והרכבת לסינטרה יוצאת מרוסיו. ברחובות הראשיים יש רעש עד מאוחר.": {
+  "en": "Three metro stations (Rossio, Baixa-Chiado, Terreiro do Paço), and the train to Sintra leaves from Rossio. The main streets are noisy until late.",
+  "es": "Tres estaciones de metro (Rossio, Baixa-Chiado, Terreiro do Paço), y el tren a Sintra sale de Rossio. En las calles principales hay ruido hasta tarde."
+ },
+ "שלוש תחנות מטרו מהשדה. למרכז העתיק כ־25 דקות במטרו עם החלפה. לשאול על חדר משפחה או מיטה נוספת.": {
+  "en": "Three metro stops from the airport. About 25 minutes to the old centre by metro with one change. Ask about a family room or an extra bed.",
+  "es": "A tres paradas de metro del aeropuerto. Unos 25 minutos al centro histórico en metro con un transbordo. Pregunta por habitación familiar o cama supletoria."
  },
  "שלוש תחנות מטרו מהשדה. עצירה אחרונה לפני הטיסה, אם נשאר מקום במזוודה.": {
   "en": "Three metro stops from the airport. A last stop before the flight, if there's room left in your suitcase.",
@@ -7191,6 +8279,10 @@
   "en": "Saved on your phone",
   "es": "Guardado en el teléfono"
  },
+ "שמורת טבע של הרים ירוקים שיורדים אל מפרצים עם מים שקטים וצלולים, מהחופים היפים בפורטוגל. בעיר סטובל הסמוכה: שוק דגים גדול ודיונון מטוגן, המנה המקומית.": {
+  "en": "A nature reserve of green hills dropping down to coves with calm, clear water – among the most beautiful beaches in Portugal. In the nearby city of Setúbal: a big fish market and fried cuttlefish, the local dish.",
+  "es": "Un parque natural de montes verdes que descienden hasta calas de aguas tranquilas y cristalinas, entre las playas más bonitas de Portugal. En la cercana ciudad de Setúbal: un gran mercado de pescado y choco frito, el plato local."
+ },
  "שמירה": {
   "en": "Save",
   "es": "Guardar"
@@ -7214,6 +8306,18 @@
  "שעה וחצי דרומה": {
   "en": "An hour and a half south",
   "es": "A hora y media hacia el sur"
+ },
+ "שעה וחצי מזרחה": {
+  "en": "An hour and a half east",
+  "es": "Una hora y media al este"
+ },
+ "שעה מספיקה. ליד הכניסה יש אגם וגן שעשועים. כדאי לבדוק שעות פתיחה ומחיר לילדים.": {
+  "en": "An hour is enough. There is a pond and a playground near the entrance. Worth checking opening hours and the children's price.",
+  "es": "Con una hora basta. Junto a la entrada hay un estanque y un parque infantil. Conviene comprobar el horario y el precio para niños."
+ },
+ "שעה עד שעה וחצי, מתאים גם ליום גשום. כדאי לבדוק באיזה יום סגור (בדרך כלל שני).": {
+  "en": "An hour to an hour and a half; good for a rainy day too. Worth checking which day it is closed (usually Monday).",
+  "es": "De una hora a hora y media; también vale para un día de lluvia. Conviene comprobar qué día cierra (normalmente los lunes)."
  },
  "שעה־שעה וחצי. משתלב יפה ביום קולונאקי.": {
   "en": "An hour to an hour and a half. Fits nicely into a Kolonaki day.",
@@ -7278,6 +8382,10 @@
  "שפה · Language · Idioma": {
   "en": "שפה · Language · Idioma",
   "es": "שפה · Language · Idioma"
+ },
+ "שקט ביום, מסיבת רחוב בלילה": {
+  "en": "Quiet by day, street party by night",
+  "es": "Tranquilo de día, fiesta callejera de noche"
  },
  "שקט וירוק, הרבה פחות עמוס מהאקרופוליס.": {
   "en": "Quiet and green, far less crowded than the Acropolis.",
