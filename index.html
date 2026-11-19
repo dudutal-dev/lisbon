@@ -199,13 +199,22 @@ try { var th = localStorage.getItem('lisboa.theme'); if (th === 'dark' || th ===
 
   <!-- צ׳אט -->
   <section class="view chatview" id="v-chat" data-view="chat" hidden>
-    <header class="chat-head"><div><p class="jr-kicker" id="chatStatus"></p><h1 class="hand">הצ׳אט שלנו</h1></div><button class="btn ghost sm" data-go="group" type="button">הקבוצה</button></header>
+    <header class="chat-head"><button class="chat-hd" data-go="group" type="button" aria-label="פרטי הקבוצה"><span class="faces" id="chatFaces"></span><span class="chat-tt"><b id="chatTitle">הצ׳אט שלנו</b><small id="chatStatus"></small></span><svg class="chat-chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button></header>
     <div class="chat-empty" id="chatEmpty" hidden><p>עוד אין קבוצה. פותחים קבוצה או מצטרפות עם קוד, ואז הצ׳אט נפתח כאן.</p><button class="btn" data-go="group" type="button">לקבוצה</button></div>
     <div class="chat-body" id="chatBody">
-        <div id="grpChat" class="chat"></div>
+        <div class="chat-wrap"><div id="grpChat" class="chat"></div>
+          <button type="button" class="chat-down" id="chatDown" aria-label="להודעות האחרונות" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg><em id="chatDownN" hidden></em></button></div>
         <div id="grpQuick" class="tags"><button class="tag" type="button">איפה כולם?</button><button class="tag" type="button">אני בדרך</button><button class="tag" type="button">נפגשים במלון</button><button class="tag" type="button" data-here>📍 אני כאן, בואו</button></div>
         <div id="emojiPanel" class="emoji-panel" hidden></div>
-        <form id="grpForm" class="chatform"><button type="button" class="cbtn" id="emojiBtn" aria-label="סמיילים">😊</button><label class="cbtn" for="chatFile" aria-label="צירוף תמונה או מסמך">📎</label><input id="grpText" autocomplete="off" maxlength="500" placeholder="הודעה לקבוצה…" enterkeyhint="send"><button class="btn sm send" aria-label="שליחה"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12 21 3l-6 18-3-8z"/></svg></button></form>
+        <div class="composer">
+          <div class="replybar" id="replyBar" hidden><span class="rb-txt"><b id="replyWho"></b><small id="replyTxt" translate="no" dir="auto"></small></span><button type="button" class="rb-x" id="replyX" aria-label="ביטול"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+          <form id="grpForm" class="chatform">
+            <div class="cpill"><button type="button" class="cbtn" id="emojiBtn" aria-label="סמיילים"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.500 14.500a4.500 4.500 0 0 0 7 0M9 9.500h.01M15 9.500h.01"/></svg></button><textarea id="grpText" rows="1" autocomplete="off" maxlength="1000" placeholder="הודעה לקבוצה…" dir="auto"></textarea><label class="cbtn" for="chatFile" aria-label="צירוף תמונה או מסמך"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.500 11.500l-8.300 8.300a5 5 0 0 1-7.100-7.100l8.500-8.500a3.300 3.300 0 0 1 4.700 4.700l-8.500 8.500a1.700 1.700 0 0 1-2.400-2.400l7.800-7.800"/></svg></label></div>
+            <button class="cround send" id="sendBtn" aria-label="שליחה" hidden><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12 21 3l-6 18-3-8z"/></svg></button>
+            <button type="button" class="cround mic" id="micBtn" aria-label="הקלטת הודעה קולית" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.500 11a6.500 6.500 0 0 0 13 0M12 17.500V21"/></svg></button>
+          </form>
+          <div class="recbar" id="recBar" hidden><button type="button" class="cbtn rec-x" id="recCancel" aria-label="ביטול ההקלטה"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M9 7V4.500h6V7M6.500 7l1 12.500h9l1-12.500M10 11v5M14 11v5"/></svg></button><i class="rec-dot"></i><b id="recTime" translate="no">0:00</b><span class="rec-hint">מקליטה…</span><button type="button" class="cround send" id="recSend" aria-label="שליחת ההקלטה"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12 21 3l-6 18-3-8z"/></svg></button></div>
+        </div>
         <input type="file" id="chatFile" hidden>
     </div>
   </section>
@@ -516,32 +525,33 @@ try { var th = localStorage.getItem('lisboa.theme'); if (th === 'dark' || th ===
   <p class="taxi-n" id="taxiName" translate="no" dir="ltr"></p>
   <p class="taxi-he">"בבקשה, קח אותי לכאן"</p>
 </dialog>
-<dialog id="msgDlg" class="sheet">
-  <p class="msg-prev" id="msgPrev" translate="no"></p>
+<dialog id="msgDlg" class="msgmenu">
+  <div class="rx-pill" id="msgRx"></div>
+  <p class="msg-prev" id="msgPrev" translate="no" dir="auto"></p>
   <div class="msg-acts">
-    <button class="btn ghost" id="msgCopy" type="button">העתקה</button>
-    <button class="btn danger" id="msgDelAll" type="button">מחיקה אצל כולם</button>
-    <button class="btn ghost" id="msgDelMe" type="button">מחיקה רק אצלי</button>
-    <button class="link" id="msgCancel" type="button">ביטול</button>
+    <button id="msgReply" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7l-5 5 5 5M4 12h10a6 6 0 0 1 6 6v1"/></svg><span>השבה</span></button>
+    <button id="msgCopy" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg><span>העתקה</span></button>
+    <button id="msgEdit" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16zM13.500 6.500l4 4"/></svg><span>עריכה</span></button>
+    <button id="msgInfo" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12.500l4 4 8-9M11 16l1 .800 9-9.300"/></svg><span>מי קרא</span></button>
+    <button id="msgRetry" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.300-5.600M20 4v4.500h-4.500"/></svg><span>לנסות לשלוח שוב</span></button>
+    <button id="msgDelAll" class="dng" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M9 7V4.500h6V7M6.500 7l1 12.500h9l1-12.500M10 11v5M14 11v5"/></svg><span>מחיקה אצל כולם</span></button>
+    <button id="msgDelMe" class="dng" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M9 7V4.500h6V7M6.500 7l1 12.500h9l1-12.500"/></svg><span>מחיקה רק אצלי</span></button>
+    <button id="msgCancel" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><span>ביטול</span></button>
   </div>
 </dialog>
 <dialog id="infoDlg" class="sheet">
   <div class="form">
-    <h2>מי קרא</h2>
+    <h2 id="infoTitle">מי קרא</h2>
     <p class="info-quote" id="infoQuote"></p>
     <div id="infoBody"></div>
     <div class="row end"><button type="button" class="btn" id="infoClose">סגירה</button></div>
   </div>
 </dialog>
 
-<dialog id="fileDlg" class="sheet">
-  <div class="form">
-    <div class="entry-img"><img id="fileImg" alt=""></div>
-    <div class="row end">
-      <button type="button" class="btn ghost sm" id="fileShare">שמירה או שיתוף</button>
-      <button type="button" class="btn" id="fileClose">סגירה</button>
-    </div>
-  </div>
+<dialog id="fileDlg" class="viewer">
+  <img id="fileImg" alt="">
+  <button type="button" class="vw-x" id="fileClose" aria-label="סגירה"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button type="button" class="vw-share" id="fileShare"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V4M8 8l4-4 4 4M5 13v6h14v-6"/></svg><span>שמירה או שיתוף</span></button>
 </dialog>
 
 <dialog id="docDlg" class="sheet">
